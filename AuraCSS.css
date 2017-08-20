@@ -19,7 +19,7 @@
     content: "Aura CSS" var(--version-content) "\A \A Changelog\A \A - Major overhaul\A \A Want to share the theme with a friend? Tell them to join:\A\A https://discord.io/auracss"!important;
 }
 .need-help-modal .header h1::after {
-    content: "Aura CSS " var(--version-content);
+    content: "Aura CSS Test " var(--version-content);
     color: #fff;
     font-weight: 700;
     font-size: 250%;
