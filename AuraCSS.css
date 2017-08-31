@@ -5,7 +5,7 @@ TROUBLESHOOTING: IF YOU NEED ANY HELP GO FUCK YOURSELF, YOU TOO PASTRY. THIS IS 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 :root {
-    --version-content: "Beta 4.0"
+    --version-content: "Beta 4.0.1"
 }
 /* Version Displayed */
 
@@ -9672,4 +9672,9 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
     border-radius: 10px;
     right: -2px;
     bottom: -2px;
+}
+.theme-dark .header-1-f9X5 {
+    font-weight: 900!important;
+    color:#fff!important;
+    font-size: 20px!important;
 }
