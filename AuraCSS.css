@@ -1,13 +1,11 @@
 
-
-
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
-TROUBLESHOOTING: IF YOU NEED ANY HELP GO FUCK YOURSELF, YOU TOO PASTRY
+TROUBLESHOOTING: If you need help with my css. DM me. If you are adding your own additions. Figure it out.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 :root {
-    --version-content: "4.0.3"
+    --version-content: "4.0.4"
 }
 /* Version Displayed */
 
@@ -9199,7 +9197,7 @@ font-size: 14px;
 text-shadow:0px 2px 3px rgba(0,0,0,0.4); 
 }
 .theme-dark .description-3MVziF, .theme-dark .labelDescriptor-1BebCl,.create-guild-container.deprecated .action .action-body,#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name,
-.status-picker .popout-menu-item .status-icon-text {
+.status-picker .popout-menu-item .status-icon-text, .emoji-row .emoji-row-text {
     font-weight: 900!important;
 color:#fff!important;
 font-size: 14px;
@@ -9451,7 +9449,7 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
     color:#fff!important;
     font-size: 20px!important;
 }
-.horizontal-2BEEBe>.flex-lFgbSz, .horizontal-2BEEBe>.flexChild-1KGW5q,.theme-dark .buttonPrimaryOutlinedDefault--H0hhk, .theme-dark .buttonPrimaryOutlinedSubmitting-3m3eFx,.alignCenter-3VxkQP {
+.horizontal-2BEEBe>.flex-lFgbSz,.theme-dark .buttonPrimaryOutlinedDefault--H0hhk, .theme-dark .buttonPrimaryOutlinedSubmitting-3m3eFx,.alignCenter-3VxkQP {
     background: transparent!important;
     border:none!important;
 }
@@ -9460,12 +9458,14 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
 }
 /* Patch 4.0.3 */
 .popout.popout-bottom:not(.no-arrow) .popout-menu {
-    margin: 0px -17px!important;
+    margin: 0px -2px!important;
+    height: 275px!important;
+    display: table-cell!important;
 }
 .popout.popout-top-left {
     margin-top: -82px!important;
     margin-left: -6px!important;
-    z-index: 99999!important;
+    z-index: -1!important;
     overflow: hidden!important;
     visibility: visible!important;
     left: 86px!important;
@@ -9480,4 +9480,14 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
 }
 .popout {
     box-shadow: none!important;
+}
+.emoji-row .emoji-row-text {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    right: 0;
+}
+.popout.popout-bottom:not(.no-arrow) .popout-menu .popout-menu-item {
+       margin-bottom: 26px;
+    margin-top: 0px; 
 }
