@@ -9465,15 +9465,14 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
 .popout.popout-top-left {
     margin-top: -82px!important;
     margin-left: -6px!important;
-    z-index: 1000!important;
+    z-index: 99999!important;
     overflow: hidden!important;
     visibility: visible!important;
-    left: 82px!important;
+    left: 86px!important;
     top: 850.5px;
     height: 152px;
-    width: 223px!important;
+    width: 250px!important;
     transform: translateY(-100%) translateX(0%) translateZ(0px)!important;
-    background: #131313;
     border-radius: 5px!important; 
     transition: all ease-in-out 0.4s;
     box-shadow: none!important;
