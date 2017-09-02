@@ -1,11 +1,11 @@
 
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
-TROUBLESHOOTING: If you need help with my css. DM me. If you are adding your own additions. Figure it out.
+TROUBLESHOOTING: IF YOU NEED ANY HELP GO FUCK YOURSELF, YOU TOO PASTRY
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 :root {
-    --version-content: "4.0.4"
+    --version-content: "4.0.5"
 }
 /* Version Displayed */
 
@@ -2537,13 +2537,7 @@ code {
 .guild-settings-modal-emoji .emoji-row {
     border-bottom: 2px solid #151515;
 }
-.status-picker .popout-menu-item .helper {
-    margin: -21px 0px 0 -4px;
-    color: #fff;
-    text-align: center;
-    padding-top: 6px;
-    opacity: 0;
-}
+
 .chat .welcome-message .item-container .icon.exclamation,
 .chat .welcome-message .item-container .icon.share,
 .chat .welcome-message .item-container .icon.apps,
@@ -4464,7 +4458,7 @@ form.modal-content.form.need-help-modal::after {
     color: #fff;
     text-align: center;
     padding-top: 6px;
-    opacity: 0
+    opacity: 0;
 }
 #bda-qem {
     background: #121213;
@@ -9277,10 +9271,7 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
     filter:drop-shadow (0px 2px 2px rgba(0,0,0,0.4)!important);
     
 }
-.status-picker .popout-menu-item:hover:nth-of-type(5) > .status-icon-text > .status-text:after {
-    z-index: 999!important;
-    overflow: visible!important;
-}
+
 .avatarDefault-3jtQoc {
     border-radius: 7px!important;
     transition: border-radius ease 0.3s;
@@ -9493,4 +9484,10 @@ text-shadow:0px 2px 3px rgba(0,0,0,0.4);
 }
 .popout.popout-bottom:not(.no-arrow) .popout-menu .popout-menu-item .popout-menu-item-label {
         visibility: visible!important;
+}
+.app, .layer, .content .flex-spacer, .theme-dark .layer, .theme-dark .layers body, .guilds-wrapper, .channels-wrap {
+    z-index: -4;
+}
+.container-RYiLUQ,.channel-members-wrap,.ui-standard-sidebar-view .content-transition-wrap {
+    z-index: 999!important;
 }
