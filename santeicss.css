@@ -1,3 +1,4 @@
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
@@ -170,23 +171,7 @@ span:not(.spinner-item) {
 .channel-members .avatar-small .status {
     border-color: rgba(0, 0, 0, 0.7) !important;
 }
-.channel-members h2 {
-    color: var(--main-color) !important;
-    background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), transparent);
-    background-size: 100% 3px;
-    /* This get flipped. */
-    
-    background-position: 0 0, 0 100%;
-    /* The last argument gets flipped. */
-    
-    background-repeat: no-repeat;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
-    border-radius: 3px;
-    width: 145px;
-    margin-left: 15px;
-}
+
 .channel-members h2:first-of-type {
     margin-top: 0px !important;
 }
@@ -2665,35 +2650,30 @@ div.platform-osx .theme-light + div .user-settings-modal .tab-bar.SIDE .tab-bar-
     width: 26px!important;
     background: #43b581 !important;
     border: 2px solid transparent !important;
-    margin: 22px 0px 0px 14px;
     transition: .3s all ease-in-out;
 }
 .status.status-typing.status-idle {
     width: 26px!important;
     background: #faa61a !important;
     border: 2px solid transparent !important;
-    margin: 22px 0px 0px 14px;
     transition: .3s all ease-in-out;
 }
 .status.status-typing.status-dnd {
     width: 26px!important;
     background: #f04747 !important;
     border: 2px solid transparent !important;
-    margin: 22px 0px 0px 14px;
     transition: .3s all linear;
 }
 .status.status-typing.status-invisible {
     width: 26px!important;
     background: #747f8d !important;
     border: 2px solid transparent !important;
-    margin: 22px 0px 0px 14px;
     transition: .3s all linear;
 }
 .status.status-typing.status-offline {
     width: 26px!important;
     background: #282829 !important;
     border: 2px solid transparent !important;
-    margin: 22px 0px 0px 14px;
     transition: .3s all linear;
 }
 .user-popout .avatar-wrapper .avatar-popout .status.status-online {
@@ -5835,7 +5815,7 @@ polyline[stroke*="#7289da"] {
 .theme-dark .chat form .typing .ellipsis {
     border-top-left-radius: 3px;
     height: 23px;
-    margin-top: 0px;
+    margin-top: -2px!important;
 }
 .theme-dark .chat form .typing .text {
     border-top-right-radius: 3px;
@@ -7803,10 +7783,6 @@ form .bf-toolbar {
     top: -56px;
     border-bottom: none
 }
-.channel-members h2 {
-    background: rgba(0, 0, 0, 0.4)!important;
-    font-weight: 900;
-}
 .theme-dark #friends .friends-header,
 .private-channels .search-bar {
     border: none!important;
@@ -8669,7 +8645,7 @@ Channel Lists
 /*Opacity Settings*/
 
 .guilds-wrapper .guilds {
-    background: rgba(0,0,0,0.75)!important;
+    background: rgba(0,0,0,0.85)!important;
     box-shadow: inset 0px 0px 5px #000!important;
 }
 #friends .friends-table {
@@ -8684,7 +8660,7 @@ Channel Lists
 /* LAYERS TO ADJUST OPACITY */
 
 .spacer-3Dkonz {
-    background: rgba(0, 0, 0, 0.2)!important;
+    background: rgba(0, 0, 0, 0.1)!important;
 }
 /*END OF OPACITY*/
 
@@ -10007,24 +9983,12 @@ background: transparent!important;
 .theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member {
     background: transparent!important;
     box-shadow: none!important;
-    margin-top: 0px!important;
+    margin-top: 5px!important;
     padding-bottom: 5px;
-margin-bottom: 5px;
+margin-bottom: 5px!important;
 }
 .theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
     box-shadow: none!important;
-}
-.theme-dark .channel-members h2 {
-    width: auto;
-    margin-right: 0px!important;
-    padding-right: 0px!important;
-    margin-left: 25px;
-    margin-bottom: 0px!important;
-    padding-left: 7px!important;
-    font-weight: 900!important;
-    font-family: Whitney!important;
-    background: rgba(0, 0, 0, 0.55)!important;
-    border-radius: 5px;
 }
 .theme-dark .channel-members .member.popout-open {
 background: rgba(0,0,0,0.55)!important;
@@ -10070,9 +10034,15 @@ padding-right: 17px!important;
 .name-3gtcmp,.system-message .system-message-content,.theme-dark .topic-1KFf6J,
 .nameCollapsed-3_ChMu, .nameDefault-Lnjrwm, .nameHovered-1YFSWq, .nameHoveredCollapsed-2c-EHI,
 .nameDefault-1I0lx8, .nameHovered-28u_Fz, .nameSpeaking-3ROx9q,
-.chat>.content .messages .message-group a
+.chat>.content .messages .message-group a,.wrapper-2ldvyE,
+.nameDefaultText-QoumjC, .nameUnreadText-1pxldj, .nameHoveredText-2FFqiz, .nameSelectedText-32NDX5, .nameMutedText-1YDcP-, .nameMutedVoice-26k4cP,
+.theme-dark .channel-members h2,.theme-dark .guild-role,
+.channel-members .member .member-username-inner
  {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+.theme-dark .guild-role {
+    font-weight: 900!important;
 }
 .theme-dark .topic-1KFf6J,.theme-dark .channelName-1G03vu, .theme-dark .groupDM-3gzbyG .channelName-1G03vu, 
 .theme-dark .groupDMManaged-2z2S1A .channelName-1G03vu {
@@ -10085,4 +10055,88 @@ padding-right: 17px!important;
 .mention-RlZ5F3 {
     background: var(--main-color)!important;
     font-weight: 900!important;
+}
+.bodyDivider-3OPnU2 {
+    background: transparent;
+}
+.nameUserPopout-1Hbg0M {
+    font-weight: 900;
+    color: #fff!important;
+    font-size: 14px;
+}
+.theme-dark .activityProfile-2pymp0 .details-vSFjFG, .theme-dark .activityProfile-2pymp0 .name-8onsv0, .theme-dark .activityUserPopout-1nmgaw .details-vSFjFG, 
+.theme-dark .activityUserPopout-1nmgaw .name-8onsv0, .theme-light .activityProfile-2pymp0 .details-vSFjFG, .theme-light .activityProfile-2pymp0 .name-8onsv0, 
+.theme-light .activityUserPopout-1nmgaw .details-vSFjFG, .theme-light .activityUserPopout-1nmgaw .name-8onsv0,.theme-dark .activityProfile-2pymp0 .content-P9ThHS,
+.theme-dark .activityProfile-2pymp0 .headerText-2CVBxK, .theme-dark .activityUserPopout-1nmgaw .content-P9ThHS, .theme-dark .activityUserPopout-1nmgaw .headerText-2CVBxK, 
+.theme-light .activityProfile-2pymp0 .content-P9ThHS, .theme-light .activityProfile-2pymp0 .headerText-2CVBxK, 
+.theme-light .activityUserPopout-1nmgaw .content-P9ThHS, .theme-light .activityUserPopout-1nmgaw .headerText-2CVBxK {
+  font-weight: 900;
+    color: #fff!important;  
+}
+.status.status-typing .spinner-item {
+    margin-top: 5px;
+}
+.wrapperDefault-1Dl4SS, .wrapperHovered-1KDCyZ, .wrapperMuted-PmsxPn, .wrapperUnread-450E16 {
+    border-radius: 5px;
+    margin:3px;
+    padding-bottom: 25px;
+  transition: all ease 0.6s!important;
+}
+.channelTextArea-os01xC {
+    margin:10px 0 40px;
+}
+.icon-3dhTrw,.actionIcon-2JXNvo {
+filter:drop-shadow(0px 1px 2px rgba(0,0,0,0.8))!important;
+}
+.icon-2WU8ha {
+    margin-right: 0px!important;
+    fill:var(--main-color)!important;
+}
+.channel-members h2 {
+    color: currentColor!important;
+    background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), transparent);
+    background-size: 100% 3px;
+    /* This get flipped. */
+    
+    background-position: 0 0, 0 100%;
+    /* The last argument gets flipped. */
+    
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-radius: 3px;
+    width: 145px;
+    margin-left: 15px;
+    font-weight: 900!important;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.6))!important;
+}
+.wrapperDefault-1Dl4SS, .wrapperHovered-1KDCyZ, .wrapperMuted-PmsxPn, .wrapperUnread-450E16 {
+        background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), transparent);
+    background-size: 100% 3px;
+     background-repeat: no-repeat;
+     background-position: 0 0, 0 100%;
+filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.75))!important;
+}
+
+.theme-dark .channel-members h2 {
+text-align: center!important;
+}
+.typing {
+    background-color: hsla(0,0%,100%,.8);
+    bottom: 15px;
+    color: #737f8d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    height: 26px;
+    left: 0;
+    line-height: 24px;
+    overflow-y: hidden;
+    position: absolute;
+    resize: none;
+    width: 100%;
+    margin-top: -100px!important;
 }
