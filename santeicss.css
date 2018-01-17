@@ -62,7 +62,7 @@ body::after {
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 :root {
-    --version-content: "1.5"
+    --version-content: "1.5.1"
 }
 /* Version Displayed */
 .version {
