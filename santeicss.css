@@ -65,7 +65,7 @@ body::after {
     background-position: center!important;
 }
 :root {
-    --version-content: "1.6.3"
+    --version-content: "1.7"
 }
 /* Version Displayed */
 .version {
@@ -10572,10 +10572,43 @@ font-family: Roboto,Whitney;}
   .mention {
     background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
   }
-  .chat .base-2KDOo9 h1 {
+  .chat .base-2KDOo9 h1m {
     font-family: Oswald, Whitney!important;
     font-weight: 900!important; 
     font-size: 20px;
     letter-spacing: 0.01em;
     color:rgba(255,255,255,0.5)!important;
   }
+.message-group .accessory {
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.9))!important;
+}
+.theme-dark .header-1-f9X5, #bd-settings-sidebar .ui-tab-bar-header {
+  font-family: Oswald, Whitney!important;
+    font-weight: 900!important; 
+    font-size: 25px!important;  
+    color:var(--main-color)!important; 
+}
+.theme-dark .itemDefault-3NDwnY, #bd-settings-sidebar .ui-tab-bar-item {
+    color:#fff!important;
+}
+.buttonBrandInverted-VFL7Yc {
+    border:none!important;
+    background: rgba(0,0,0,0.6)!important;
+    color:#fff!important;
+}
+.theme-dark #friends .friends-empty p {
+      font-family: Oswald, Whitney!important;
+    font-weight: 900!important; 
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color:rgba(255,255,255,0.5)!important;
+}
+.header-2Lg0Oe,.tabBarContainer-3RVZc-,.activity-1Sr8Y2 {
+    background: rgba(0,0,0,0.6)!important;
+}
+.theme-dark .note-2AtC_s textarea {
+    font-weight: 600!important;
+}
+.connectedAccount-3mKaTA {
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.8)!important;
+}
