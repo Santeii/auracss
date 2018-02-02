@@ -7,7 +7,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald, Whitney');
 
 body::after,
 #pubs-container::before,
@@ -24,7 +24,7 @@ body::after,
 body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-font-family: Roboto;}
+font-family: Roboto,Whitney;}
 body::after {
     content: "";
     position: absolute;
@@ -97,7 +97,7 @@ body::after {
     left: 0px;
     margin-left: -195px;
     top: 11px;
-    font-family: Whitney;
+    font-family: Oswald,Whitney;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
 }
 #bd-settingspane-container .content-column.default .ui-form-title.h2::after {
@@ -7712,7 +7712,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
 .guild-settings-modal-members .avatar-small[style*='/a_'] + .member-inner .member-username::after,
 .message-group .avatar-large[style*='/a_'] + .comment .user-name::after {
     content: "Nitro";
-    font-family:oswald!important;
+    font-family:Oswald, Whitney,Whitney!important;
     font-size:11px!important;
 }
 .avatar-small[style*='109679787630399488'] + .member-inner .member-username-inner::after,
@@ -7721,7 +7721,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
 .avatar-profile[style*='109679787630399488']::after,
 .message-group .avatar-large[style*='109679787630399488'] + .comment .user-name::after {
     content: "Theme Dev";
-    font-family:oswald!important;
+    font-family:Oswald, Whitney!important;
     font-size:11px!important;
 }
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
@@ -9917,10 +9917,11 @@ text-shadow: 0px 2px 2px rgba(0,0,0,1)!important;
     right: 0;
     bottom: 0;
     left: 0;
-    color: var(--main-color);
+    color: #fff;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
+    font-family: oswald,Whitney!important;
     line-height: 100vh;
     opacity: 0;
     text-shadow: 5px 5px 40px rgba(0,0,0,1)!important;
@@ -10448,7 +10449,7 @@ box-shadow: 0px 2px 3px var(--main-color)!important;
     height: 5px;
 }
 .theme-dark .textArea-20yzAH {
-font-family: Roboto;}
+font-family: Roboto,Whitney;}
 .headerSpotify-1fSJPO {
     background: rgba(29, 185, 84, 0.34);
 }
@@ -10481,7 +10482,7 @@ font-family: Roboto;}
     }
     .app .welcomeMessage-1U7Ntv h1 {
         color:var(--main-color);
-        font-family: Oswald;
+        font-family: Oswald, Whitney;
         font-weight: 900!important;
         font-size: 42px!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
@@ -10500,7 +10501,7 @@ font-family: Roboto;}
     }
 
     .header-NUC1Kl,.embedProvider-1KNREX {
-        font-family: oswald;
+        font-family: Oswald, Whitney;
         font-weight: 900!important;
     }
     .embedProvider-1KNREX {
@@ -10509,7 +10510,7 @@ font-family: Roboto;}
         text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
     .headerName-2N8Pdz, .headerTagUsernameNoNickname-1gGsAP,.name-3gtcmp {
-        font-family: oswald;
+        font-family: Oswald, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
@@ -10519,17 +10520,17 @@ font-family: Roboto;}
         text-shadow: 0px 2px 3px rgba(0,0,0,0.9)!important;
     }
     .username-24t9uh {
-     font-family: oswald;
+     font-family: Oswald, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);   
     }
     .tab-bar.TOP .tab-bar-item.selected {
-        font-family: oswald;
+        font-family: Oswald, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
     .embedTitleLink-1IGDvg {
-        font-family: oswald!important;
+        font-family: Oswald, Whitney!important;
     }
     .uploadModal-2KN6Mm .inner-1-09ZV {
         border: none!important;
@@ -10541,7 +10542,7 @@ font-family: Roboto;}
   }
   .uploadModal-2KN6Mm .inner-1-09ZV .file-XhJJS_ .description-2rzUJU .filename-1XsE3E {
     font-size: 30px;
-    font-family: oswald!important;
+    font-family: Oswald, Whitney!important;
     font-weight: 900!important;
     line-height: 26px!important;
     padding-bottom:20px;
@@ -10549,6 +10550,32 @@ font-family: Roboto;}
   }
   .theme-dark .channel-members h2,
   .nameCollapsed-3_ChMu, .nameDefault-Lnjrwm, .nameHovered-1YFSWq, .nameHoveredCollapsed-2c-EHI {
-   font-family: oswald!important;
+   font-family: Oswald, Whitney!important;
     font-weight: 900!important; 
+  }
+  .theme-dark .quickMessage-28pD5Y {
+    background: rgba(0,0,0,0.5)!important;
+    font-family: Oswald, Whitney!important;
+    font-weight: 900!important; 
+  }
+  .theme-dark .channelName-1G03vu {
+   font-family: Oswald, Whitney!important;
+    font-weight: 900!important;  
+  }
+  .theme-dark .topic-1KFf6J {
+    font-family: roboto Condensed, Whitney!important;
+    font-weight: 900!important; 
+  }
+  .chat .new-messages-bar {
+    background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
+  }
+  .mention {
+    background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
+  }
+  .chat .base-2KDOo9 h1 {
+    font-family: Oswald, Whitney!important;
+    font-weight: 900!important; 
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color:rgba(255,255,255,0.5)!important;
   }
