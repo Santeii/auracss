@@ -10059,11 +10059,6 @@ font-weight: 900!important;
     color:#fff!important;
     font-weight: 900!important;
 }
-.chat .avatar-large {
-filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.4));
-border-radius:15px!important;
-}
-
 .container-iksrDt .avatar-small::before {
     content: "";
     background: url(https://i.imgur.com/7p0spKp.png)!important;
@@ -10083,10 +10078,11 @@ border-radius:15px!important;
     opacity:1!important;
 }   
 .chat .avatar-large {
-    border: 2px solid rgba(255,255,255,0.25)!important;
     height: 55px!important;
     width: 55px!important;
     background-repeat: no-repeat!important;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.4));
+border-radius:15px!important;
 }
 
 .chat .avatar-large:hover {
@@ -10427,7 +10423,7 @@ box-shadow: 0px 2px 3px var(--main-color)!important;
     color:#fff!important;
 }
 .wrapper-VSYYTS .instantInviteModal-5L33Qh,.emojiPicker-3g68GS,.uploadModal-2KN6Mm {
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), var(--user-profile-background)!important;
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), var(--user-profile-background)!important;
     background-size: cover!important;
     background-position: center!important;
 }
@@ -10450,9 +10446,7 @@ box-shadow: 0px 2px 3px var(--main-color)!important;
 }
 .theme-dark .textArea-20yzAH {
 font-family: Roboto,Whitney;}
-.headerSpotify-1fSJPO {
-    background: rgba(29, 185, 84, 0.34);
-}
+
 .connectionHeader-2neBI0 .connectionAccountValue-1jN2ex,.connectionAccountLabel-3TJGKW {
     color:#fff!important;
 }
@@ -10578,7 +10572,7 @@ font-family: Roboto,Whitney;}
     font-size: 20px;
     letter-spacing: 0.01em;
     color:rgba(255,255,255,0.5)!important;
-  }
+     }
 .message-group .accessory {
     filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.9))!important;
 }
@@ -10613,5 +10607,44 @@ font-family: Roboto,Whitney;}
     box-shadow: 0px 2px 6px rgba(0,0,0,0.8)!important;
 }
 .topSectionSpotify-3744IX {
-    background: rgba(29, 185, 84, 0.38);
+    background: transparent;
+}
+.headerSpotify-1fSJPO {
+    background: rgba(0,0,0,0.55)!important;
+}
+.profile-3z9uol {
+    height: 120px;
+    width: 120px;
+}
+.backdrop-2ohBEd {
+    background-image: linear-gradient(to right,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.7) 22%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.3) 100%),var(--main-background)!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+.inner-1_1f7b {
+    filter: drop-shadow(0px 2px 15px rgba(0,0,0,0.8));
+}
+.avatarHint-2i5XWK {
+    top:0px;
+    left:0px;
+    border-radius: 35px!important;
+    z-index: 1!important;
+}
+.status-3jUEha {
+    z-index: 9999!important;
+}
+.assetsGameIcon-14Ewum,.assetsLargeImageActivityFeed-IurGz8, .assetsLargeImageProfile-2VlsXC {
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.6))!important;
+}
+.barInner-2eCe2h {
+    background-image: linear-gradient(to right,var(--main-color) 0%,var(--hover-color) 100%)!important;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
+}
+.headerTextNormal-3zWFIS.headerText-2CVBxK.marginBottom8-1mABJ4.small-3-03j1.size12-1IGJl9.height16-1qXrGy.weightBold-2qbcng {
+    color:var(--main-color)!important;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
+}
+.contentImagesProfile-11JToa.content-P9ThHS {
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important; 
 }
