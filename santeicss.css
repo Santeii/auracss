@@ -1,4 +1,3 @@
-
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
@@ -24,7 +23,7 @@ body::after,
 body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-font-family: Roboto,Whitney;}
+font-family: Roboto , Whitney!important;}
 body::after {
     content: "";
     position: absolute;
@@ -36,22 +35,23 @@ body::after {
     z-index: -9999;
 }
 /*========= SETTINGS ==========*/
-.sidebar-region-scroller {
+.ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .sidebar-region .scrollbar {
     margin: 0px 0;
     /* PASTE YOUR IMAGE LINK WITH HTTPS HERE VVVVVVVVVVV */
     
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), var(--settings-background)!important;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
     filter:drop-shadow(0px 0px 20px rgba(0,0,0,0.9));
-    background-size: cover;
-    margin-left: -200px;}
-/*=========New User Popout Menu============*/
-.userPopout-11hFKo {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95)), var(--user-popout)!important;
     background-size: cover!important;
-    background-position: center!important;
-    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.8);
+    margin-left: -200px;}
+
+.chat>.content .messages .message-group .markup,.theme-dark .textArea-20yzAH {
+   font-family: Roboto Condensed, Whitney!important;
+   font-weight: 500!important;
+font-size: 15px!important;}
+
 }
+
 .headerNormal-1cioxU,
 .body-3rkFrF,
 .footer-2J5zqP {
@@ -65,7 +65,7 @@ body::after {
     background-position: center!important;
 }
 :root {
-    --version-content: "1.7"
+    --version-content: "1.8.1"
 }
 /* Version Displayed */
 .version {
@@ -5226,10 +5226,6 @@ form .bf-toolbar {
 .ui-tab-bar.SIDE .ui-tab-bar-item.brand {
     color: var(--main-color);
 }
-.ui-standard-sidebar-view .sidebar-region,
-.ui-standard-sidebar-view .sidebar-region .scrollbar {
-    background: transparent !important;
-}
 .ui-standard-sidebar-view .content-region,
 .ui-standard-sidebar-view .content-region .scrollbar {
     background: transparent !important;
@@ -10099,7 +10095,7 @@ box-shadow: none!important;
 .container-iksrDt .avatar-small[style*='208432973450706945']::before,.container-iksrDt .avatar-small[style*='100603884107489280']::before,.container-iksrDt .avatar-small[style*='121396107359027200']::before,
 .container-iksrDt .avatar-small[style*='205889449807183873']::before,.container-iksrDt .avatar-small[style*='239998985903800320']::before,.container-iksrDt .avatar-small[style*='221837082635534336']::before,
 .container-iksrDt .avatar-small[style*='96432689170636800']::before,.container-iksrDt .avatar-small[style*='148457874698403840']::before,.container-iksrDt .avatar-small[style*='265388947964821504']::before,.container-iksrDt .avatar-small[style*='120443139986161666']::before, .container-iksrDt .avatar-small[style*='110752604484558848']::before,
-.container-iksrDt .avatar-small[style*='209174074411188225']::before,.container-iksrDt .avatar-small[style*='202972238595620866']::before{
+.container-iksrDt .avatar-small[style*='209174074411188225']::before,.container-iksrDt .avatar-small[style*='202972238595620866']::before,.container-iksrDt .avatar-small[style*='156794588483420160']::before{
 content:""!important; 
 background: transparent!important;
 padding: 0px;
@@ -10607,8 +10603,8 @@ font-family: Roboto,Whitney;}
 .connectedAccount-3mKaTA {
     box-shadow: 0px 2px 6px rgba(0,0,0,0.8)!important;
 }
-.headerSpotify-26yUf5{
-    background: rgba(0,0,0,0.55)!important;
+.headerSpotify-26yUf5,.topSectionSpotify-3744IX{
+    background: rgba(0,0,0,0.35)!important;
 }
 .profile-3z9uol {
     height: 120px;
@@ -10727,7 +10723,7 @@ font-size:15px!important;
         color:#fff!important;
     }
 .theme-dark .headerNormal-3Vn9nT,.headerPlaying-2Q7mBy {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0);
 }
 .theme-dark .body-3ljq11, .theme-dark .footer-2wFs91 {
     background: transparent;
@@ -10746,11 +10742,13 @@ font-size:15px!important;
     font-size: 27px!important;
     line-height: 28px;
     font-weight: 900!important;
+     text-shadow: 0px 2px 3px rgba(0,0,0,0.65)!important;
 }
 .headerName-3U6eDn, .headerTagUsernameNoNickname-22Y2PV {
     color:rgba(255,255,255,1)!important;
     margin-bottom: 15px;
     overflow: ellipsis!important;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.65)!important;
 }
 .discriminator {
     color:rgba(255,255,255,0.75)!important;
@@ -10765,4 +10763,27 @@ font-size:15px!important;
 }
 .video-3lOWa6 {
     background: transparent!important;
+}
+.theme-dark .attachment-1Vom9D {
+    background-color: rgba(0,0,0,0.25);
+}
+.nameTag-26T3kW {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: inherit;
+    word-break: break-word!important;  
+}
+.lookFilled-luDKDo.colorBrand-3PmwCE {
+   background-image: linear-gradient(to right,var(--main-color) 0%,var(--hover-color) 100%)!important;
+}
+/*=========New User Popout Menu============*/
+.userPopout-11hFKo {
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), var(--user-popout)!important;
+    background-size: cover!important;
+    background-position: center!important;
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.8);
+}
+.chat .base-2KDOo9 h1 {
+    font-weight: 900!important;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
 }
