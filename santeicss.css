@@ -1,3 +1,4 @@
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
@@ -10095,7 +10096,8 @@ box-shadow: none!important;
 .container-iksrDt .avatar-small[style*='208432973450706945']::before,.container-iksrDt .avatar-small[style*='100603884107489280']::before,.container-iksrDt .avatar-small[style*='121396107359027200']::before,
 .container-iksrDt .avatar-small[style*='205889449807183873']::before,.container-iksrDt .avatar-small[style*='239998985903800320']::before,.container-iksrDt .avatar-small[style*='221837082635534336']::before,
 .container-iksrDt .avatar-small[style*='96432689170636800']::before,.container-iksrDt .avatar-small[style*='148457874698403840']::before,.container-iksrDt .avatar-small[style*='265388947964821504']::before,.container-iksrDt .avatar-small[style*='120443139986161666']::before, .container-iksrDt .avatar-small[style*='110752604484558848']::before,
-.container-iksrDt .avatar-small[style*='209174074411188225']::before,.container-iksrDt .avatar-small[style*='202972238595620866']::before,.container-iksrDt .avatar-small[style*='156794588483420160']::before{
+.container-iksrDt .avatar-small[style*='209174074411188225']::before,.container-iksrDt .avatar-small[style*='202972238595620866']::before,.container-iksrDt .avatar-small[style*='156794588483420160']::before,
+.container-iksrDt .avatar-small[style*='137010224803348480']::before{
 content:""!important; 
 background: transparent!important;
 padding: 0px;
@@ -10604,7 +10606,7 @@ font-family: Roboto,Whitney;}
     box-shadow: 0px 2px 6px rgba(0,0,0,0.8)!important;
 }
 .headerSpotify-26yUf5,.topSectionSpotify-3744IX{
-    background: rgba(0,0,0,0.35)!important;
+    background: rgba(0,0,0,0.5)!important;
 }
 .profile-3z9uol {
     height: 120px;
