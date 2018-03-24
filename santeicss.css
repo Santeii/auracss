@@ -66,7 +66,7 @@ font-size: 15px!important;}
     background-position: center!important;
 }
 :root {
-    --version-content: "1.8.1"
+    --version-content: "1.8.5"
 }
 /* Version Displayed */
 .version {
@@ -10097,7 +10097,7 @@ box-shadow: none!important;
 .container-iksrDt .avatar-small[style*='205889449807183873']::before,.container-iksrDt .avatar-small[style*='239998985903800320']::before,.container-iksrDt .avatar-small[style*='221837082635534336']::before,
 .container-iksrDt .avatar-small[style*='96432689170636800']::before,.container-iksrDt .avatar-small[style*='148457874698403840']::before,.container-iksrDt .avatar-small[style*='265388947964821504']::before,.container-iksrDt .avatar-small[style*='120443139986161666']::before, .container-iksrDt .avatar-small[style*='110752604484558848']::before,
 .container-iksrDt .avatar-small[style*='209174074411188225']::before,.container-iksrDt .avatar-small[style*='202972238595620866']::before,.container-iksrDt .avatar-small[style*='156794588483420160']::before,
-.container-iksrDt .avatar-small[style*='137010224803348480']::before{
+.container-iksrDt .avatar-small[style*='137010224803348480']::before,.container-iksrDt .avatar-small[style*='286094217736880128']::before {
 content:""!important; 
 background: transparent!important;
 padding: 0px;
@@ -10462,7 +10462,7 @@ font-family: Roboto,Whitney;}
 }
 .emojiPicker-3g68GS .category-3rCtoh {
     color: #fff!important;
-    background: transparent;
+    background: rgba(0,0,0,0.6)!important;
     }
     .emojiPicker-3g68GS .stickyHeader-3LjM5X {
        background: transparent; 
@@ -10789,3 +10789,18 @@ font-size:15px!important;
     font-weight: 900!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
 }
+.headerStreaming-lmgoma,.topSectionStreaming-3rIBIm {
+    background: rgba(89, 54, 149, 0.63);
+}
+.callAvatar-i2aKmR.voice-3qolcc {
+    border-radius: 30%;
+}
+.callAvatarBorder-OF5XZJ.voice-3qolcc.speaking-dR1v0T {
+    box-shadow: inset 0 0 0 3px var(--main-color)!important;
+    border-radius: 30%!important;
+}
+.theme-dark .topSectionNormal-2LlRG1 {
+    background: transparent!important;
+}
+.theme-dark.contextMenu-uoJTbz{background:linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), var(--user-popout);
+background-size: cover!important;}
