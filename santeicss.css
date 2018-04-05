@@ -4,11 +4,6 @@
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Oswald, Whitney');
-
 body::after,
 #pubs-container::before,
 .auth-background,
@@ -24,7 +19,7 @@ body::after,
 body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-font-family: Roboto , Whitney!important;}
+font-family: Whitney , Whitney!important;}
 body::after {
     content: "";
     position: absolute;
@@ -44,15 +39,16 @@ body::after {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
     filter:drop-shadow(0px 0px 20px rgba(0,0,0,0.9));
     background-size: cover!important;
-    margin-left: -200px;}
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+}
 
 .chat>.content .messages .message-group .markup,.theme-dark .textArea-20yzAH {
-   font-family: Roboto Condensed, Whitney!important;
-   font-weight: 500!important;
+   font-family: Whitney, Whitney!important;
+   font-weight: 600!important;
 font-size: 15px!important;}
 
 }
-
 .headerNormal-1cioxU,
 .body-3rkFrF,
 .footer-2J5zqP {
@@ -66,7 +62,7 @@ font-size: 15px!important;}
     background-position: center!important;
 }
 :root {
-    --version-content: "1.8.5"
+    --version-content: "2.0"
 }
 /* Version Displayed */
 .version {
@@ -81,13 +77,13 @@ font-size: 15px!important;}
     color: #43B581;
 }
 .ui-standard-sidebar-view #bd-settingspane-container .content-column.default .bda-slist::before {
-    content: "Aura CSS " var(--version-content) "\A \A Changelog:\A \A"!important;
+    content: "Santae CSS " var(--version-content) "\A \A Changelog:\A \A"!important;
 }
 .bd-pfbtn.bd-updatebtn {
     top:-108px!important;
 }
 .need-help-modal .header h1::after {
-    content: "Aura CSS "var(--version-content);
+    content: "Santae CSS "var(--version-content);
     text-transform: uppercase;
     font-weight: 900!important;
     color: #fff;
@@ -98,11 +94,11 @@ font-size: 15px!important;}
     left: 0px;
     margin-left: -195px;
     top: 11px;
-    font-family: Oswald,Whitney;
+    font-family: Whitney,Whitney;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
 }
 #bd-settingspane-container .content-column.default .ui-form-title.h2::after {
-    content: "Join the Aura CSS server to recieve updates and read the rules for using this theme.\A This theme's base code was created by https://github.com/0mniscient \A All credit goes to him for the original theme."!important;
+    content: "Join the Santae CSS server to recieve updates and read the rules for using this theme.\A This theme's base code was created by https://github.com/0mniscient \A All credit goes to him for the original theme."!important;
 }
 .themedescription {
     display: block;
@@ -404,9 +400,6 @@ div.avatar-large {
 button.btn:hover {
     background-color: #151517;
     border-radius: 3px;
-}
-.tooltip {
-    background-color: var(--main-color) !important;
 }
 .tooltip.tooltip-top:after {
     border-top-color: var(--main-color) !important;
@@ -6564,9 +6557,6 @@ polyline[stroke*="#7289da"] {
 .channel-text-area-default {
     margin: 10px 0 14px;
 }
-.theme-dark .inner-3if5cm {
-    background-color: transparent;
-}
 .theme-dark [class*="attachButtonDivider-"] {
     background-color: transparent;
 }
@@ -6740,7 +6730,7 @@ polyline[stroke*="#7289da"] {
     content: "|";
     width: 24px;
     height: 0px;
-    font-family: BMTicons, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: BMTicons, Whitney, Whitney, Whitney, Arial, sans-serif;
     color: var(--main-color);
     font-size: 23px;
     transform: translate(0, 4px);
@@ -6751,7 +6741,7 @@ polyline[stroke*="#7289da"] {
 .layer[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item.selected:nth-of-type(7)::before {
     width: 24px;
     height: 0px;
-    font-family: BMTicons, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: BMTicons, Whitney, Whitney, Whitney, Arial, sans-serif;
     color: #fff;
     font-size: 23px;
     transform: translate(0, 4px);
@@ -7193,6 +7183,7 @@ form .bf-toolbar {
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5))!important;
     border-radius: 25px!important;
 }
+
 .botTagInvert-gorWR_ {
     background: var(--hover-color);
     color: #fff;
@@ -7587,15 +7578,6 @@ form .bf-toolbar {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.3)!important;
 box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
 }
-
-.chat > .content .messages .message-group h2 .user-name:hover {
-    background: #121212;
-    font-weight: 700!important;
-    border-radius: 3px;
-    font-size: 16px!important;
-    margin-left: -2px;
-    margin-top: -2px!important;
-}
 /*Emoji*/
 
 .emoji {
@@ -7700,16 +7682,13 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
     top: 23px;
     left: -4px;
 }
-.chat>.content .messages .message-group .markup {
-    font-weight: 500;
-    color: #fff;
-}
+
 /* nitro tags*/
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
 .guild-settings-modal-members .avatar-small[style*='/a_'] + .member-inner .member-username::after,
 .message-group .avatar-large[style*='/a_'] + .comment .user-name::after {
     content: "Nitro";
-    font-family:Oswald, Whitney,Whitney!important;
+    font-family:Whitney, Whitney,Whitney!important;
     font-size:11px!important;
 }
 .avatar-small[style*='109679787630399488'] + .member-inner .member-username-inner::after,
@@ -7718,7 +7697,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
 .avatar-profile[style*='109679787630399488']::after,
 .message-group .avatar-large[style*='109679787630399488'] + .comment .user-name::after {
     content: "Theme Dev";
-    font-family:Oswald, Whitney!important;
+    font-family:Whitney, Whitney!important;
     font-size:11px!important;
 }
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
@@ -8182,12 +8161,6 @@ overflow: hidden;
 .nameMutedVoice-26k4cP {
     font-weight: 900!important;
 }
-.theme-dark .inner-3if5cm {
-    background: rgba(0, 0, 0, 0.25)!important;
-    margin-left: 10px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.35);
-    margin-bottom: 4px;
-}
 .theme-dark .chat form {
     margin-top: -10px!important;
     margin-bottom: 5px;
@@ -8348,72 +8321,88 @@ overflow: hidden;
     background: rgba(0,0,0,0)!important;
 }
 .container-iksrDt  {
-      background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%)!important;
+      background:rgba(0,0,0,0.4)!important;
+      border-radius: 20px 20px 0px 0px!important;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 0px!important;
 }
 /*===========
 Channel Lists
 ===========*/
 
 #dv-container {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.75) 100%)!important; 
+  background: rgba(0,0,0,0.4)!important; 
   border: none!important;
   box-shadow: none!important; 
-}
-#bd-settingspane-container .scroller-wrap .scroller {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%)!important;
 }
 .content .flex-spacer,
 .content > .ui-flex,
 .ui-standard-sidebar-view .custom-scroller {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.75) 100%)!important;
+    background: rgba(0,0,0,0.4)!important;
 }
 .ui-standard-sidebar-view .content-region-scroller {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%)!important;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.2) 100%)!important;
 }
-.theme-dark .channel-members,
-.theme-dark .search-results-wrap {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.329) 0%, rgba(0, 0, 0, 0.71) 90%, rgba(0, 0, 0, 0.80) 100%)!important;
-}
+
 .chat>.title-wrap.title-wrap-dark {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.32) 100%)!important;
+    background: rgba(0,0,0,0.4)!important;
     height: 50px!important;
 }
 
 /*Guild name header*/
-.theme-dark .title-qAcLxz,.theme-dark .headerBar-cxbhPD{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.33) 100%)!important;
-    border:none!important;
-    box-shadow: none!important;
-}
-.theme-dark .chat form {
-     background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%)!important;
-}
 .header-1tSljs,.popout-open .header-1tSljs, .header-1tSljs:hover {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%)!important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0) 100%)!important;
 }
 /* Channels list area */
 .channels-3g2vYe{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.75) 100%)!important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 100%)!important;
+}
+.theme-dark .members-1bid1J,
+.theme-dark .search-results-wrap {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(to left, rgba(0,0,0,0.63) 0%, rgba(0,0,0,0) 100%)!important;
 }
 .channels-wrap {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.75) 100%)!important;
+    background: rgba(0,0,0,0.4)!important;
 }
 /*Opacity Settings*/
 
 .guilds-wrapper .guilds {
-    background:rgba(0,0,0,0.8);
-    box-shadow: inset 0px 0px 5px #000!important;
+    background:rgba(0,0,0,0.8)!important;
 }
-#friends .friends-table {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.75) 100%)!important;
+.theme-dark .title-qAcLxz,.theme-dark .headerBar-cxbhPD{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0.4) 100%),linear-gradient(to left, rgba(0,0,0,0.64) 0%, rgba(0,0,0,0.22) 150px, rgba(0, 0, 0, 0) 250px)!important;
+    border:none!important;
+    box-shadow: none!important;
+    height: 50px!important;
 }
-.theme-dark #friends .friends-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.32) 100%)!important;
-}
-.private-channels .search-bar {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)!important;
+.theme-dark .chat form {
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%)!important;
+     margin:10px!important;
+     border-radius: 15px!important;
+     background-size: 400%!important;
+     background-position: top!important;
 }
 
+#friends .friends-table {
+    background: rgba(0,0,0,0.4)!important;
+}
+.theme-dark #friends .friends-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0.4) 100%)!important;
+}
+.private-channels .search-bar {
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%)!important;
+}
+.theme-dark .inner-3if5cm {
+    background: rgba(255, 255, 255, 0.05)!important;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0);
+    margin-bottom: -5px;
+}
+.message-group {
+    padding: 3px 0px 19px 0px;
+}
 /*END OF OPACITY*/
 
 .theme-dark .messages-wrapper .messages .message-group-blocked,
@@ -8511,7 +8500,7 @@ Channel Lists
     background: var(--main-color)!important;
 }
 .guilds-wrapper .guilds-add:before {
-    content: "Aura CSS"!important;
+    content: "Santae CSS"!important;
     color: #fff!important;
     font-size: 10px;
     font-weight: 900;
@@ -9107,10 +9096,6 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .popout .themed-popout {
     margin-left: -5px!important;
 }
-.chat > .content .messages .message-group h2 .user-name:hover {
-    background: var(--main-color)!important;
-    color: #fff!important;
-}
 /* Patch 4.1 - New add role button, and various other tweaks and changes.*/
 
 .guild-settings-roles .sidebar-header .add-role-icon {
@@ -9558,10 +9543,6 @@ color:#fff;
 background: rgba(0,0,0,0.5);
 }
 */
-.container-iksrDt {
-    margin-bottom: 0px!important;
-    border-radius: 0px!important;
-}
 .theme-dark .layer, .theme-dark .layers,.container-2OU7Cz,.appMount-14L89u,
 .theme-dark .chat,.theme-dark .chat>.content,.theme-dark .friends-table{
     background:transparent!important;
@@ -9727,8 +9708,9 @@ margin-top: -10px!important;
 }
 .container-3lnMWU {
     background: rgba(0,0,0,0.5)!important;
-padding-right: 17px!important;
-border-radius: 30px;
+padding-right: 10px!important;
+border-radius: 15px;
+margin-left: 5px;
     position: relative;
     z-index: 1;
     border: none!important;
@@ -9769,9 +9751,16 @@ border-radius: 30px;
 .headerUsernameNoNickname-1iGxNP,
 .headerTagNormal-KyD3_J,
 .theme-dark .content-3KEfmo p, .theme-dark .content-3KEfmo ul li,
-.content-3KEfmo h1, .content-3KEfmo h2, .content-3KEfmo strong
+.content-3KEfmo h1, .content-3KEfmo h2, .content-3KEfmo strong,
+.usernameOffline-3MJ-JP,.container-iksrDt::before
  {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+/*Chat Font*/
+.chat>.content .messages .message-group .markup {
+    font-weight: 600!important;
+    color: #fff;
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.7);
 }
 .theme-dark .guild-role {
     font-weight: 900!important;
@@ -9824,31 +9813,36 @@ filter:drop-shadow(0px 1px 2px rgba(0,0,0,0.8))!important;
     margin-right: 0px!important;
     fill:var(--main-color)!important;
 }
-.channel-members h2 {
-    color: currentColor!important;
+.theme-dark .membersGroup-3_dP5E {
+    color: var(--main-color)!important;
     background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), var(--hover-color), transparent);
-    background-size: 100% 3px;
+    padding-top:10px!important;
+    padding-left: 5px!important;
+    background-size: 100% 3px!important;
+    border-radius: 5px!important;
+    margin-bottom: 15px!important;
+    margin-top:15px!important;
+    margin-left: 10px!important;
+    font-size: 13px;
     /* This get flipped. */
     
     background-position: 0 0, 0 100%;
     /* The last argument gets flipped. */
-    
     background-repeat: no-repeat;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
+    text-align: center!important;
     border-radius: 3px;
-    width: 145px;
-    margin-left: 15px;
+    width: 210px;
+    margin-left: 0px;
     font-weight: 900!important;
     filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.6))!important;
+    height: 35px;
+    line-height: 15px!important;
 }
 .wrapperDefault-1Dl4SS, .wrapperHovered-1KDCyZ, .wrapperMuted-PmsxPn, .wrapperUnread-450E16 {
-        background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), var(--hover-color), transparent);
-    background-size: 100% 3px;
+     background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--main-color), var(--hover-color), transparent);
+     background-size: 100% 3px;
      background-repeat: no-repeat;
      background-position: 0 0, 0 100%;
-filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.75))!important;
 }
 
 .theme-dark .channel-members h2 {
@@ -9918,7 +9912,7 @@ text-shadow: 0px 2px 2px rgba(0,0,0,1)!important;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    font-family: oswald,Whitney!important;
+    font-family: Whitney,Whitney!important;
     line-height: 100vh;
     opacity: 0;
     text-shadow: 5px 5px 40px rgba(0,0,0,1)!important;
@@ -9931,7 +9925,7 @@ text-shadow: 0px 2px 2px rgba(0,0,0,1)!important;
 
 @keyframes initialize-bg {
     0% {
-        content: "Welcome to Aura CSS";
+        content: "Welcome to Santae CSS";
         -webkit-transform: scale(.7);
         transform: scale(.7);
     }
@@ -9951,7 +9945,7 @@ text-shadow: 0px 2px 2px rgba(0,0,0,1)!important;
         transform: scale(1);
     }
     29% {
-        content: "Welcome to Aura CSS";
+        content: "Welcome to Santae CSS";
         opacity: 0;
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
@@ -10007,6 +10001,11 @@ text-shadow: 0px 2px 2px rgba(0,0,0,1)!important;
 .accountDetails-15i-_e .username,.accountDetails-15i-_e .discriminator {
     font-weight: 900!important;
 }
+.accountDetails-15i-_e .username {
+	font-size:18px;
+	text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
+	color:var(--main-color);
+}
 .container-iksrDt .avatar-small {
     width: 45px;
     height: 45px;
@@ -10058,7 +10057,7 @@ font-weight: 900!important;
 }
 .container-iksrDt .avatar-small::before {
     content: "";
-    background: url(https://i.imgur.com/7p0spKp.png)!important;
+    background: url(https://i.imgur.com/XPMXuHK.png)!important;
     background-repeat: no-repeat!important;
     background-size: contain!important;
     background-position: center!important;
@@ -10249,17 +10248,8 @@ filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.9));
 .side-2nYO0F .itemSelected-3XxAMf {
     background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
 }
-[class*="buttonBrandFilled"],.buttonGreenFilled-6QHNrw,.theme-dark .message-group .comment .markup .mention,.guilds-wrapper .guilds-add,.chat > .content .messages .message-group h2 .user-name:hover,
-.chat .message-group:not(.compact) .message.mentioned .markup, .message-group.compact .message.mentioned .message-content {
-    color: #fff !important;
-background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
-filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.7));
-}
 [class*="buttonBrandFilledDefault-"]:hover {
 background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
-}
-.chat>.content .messages .message-group .markup {
-    color:rgba(255,255,255,0.8)!important;
 }
 .colorDefaultText-2v6rRX, .colorDefaultVoice-1x4dEl, .colorHoveredText-1CsxK1, .colorHoveredVoice-1P3kui, .colorLockedText-2onHWv, .colorLockedVoice-2VCSgk, .colorSelectedText-3YhFC6, .colorSelectedVoice-ieXC3Z, .colorUnreadText-1KwCnP, .colorUnreadVoice-1Ztv9I {
     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.7));
@@ -10370,12 +10360,7 @@ box-shadow: 0px 2px 3px var(--main-color)!important;
     border-radius: 5px!important;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.75)!important;
 }
-.theme-dark .contextMenu-uoJTbz {
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), var(--user-popout);
-    background-size: cover;
-    box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
-}
+
 .theme-dark .itemGroup-oViAgA {
     border: none!important;
     
@@ -10444,7 +10429,7 @@ box-shadow: 0px 2px 3px var(--main-color)!important;
     height: 5px;
 }
 .theme-dark .textArea-20yzAH {
-font-family: Roboto,Whitney;}
+font-family: Whitney,Whitney;}
 
 .connectionHeader-2neBI0 .connectionAccountValue-1jN2ex,.connectionAccountLabel-3TJGKW {
     color:#fff!important;
@@ -10475,7 +10460,7 @@ font-family: Roboto,Whitney;}
     }
     .app .welcomeMessage-1U7Ntv h1 {
         color:var(--main-color);
-        font-family: Oswald, Whitney;
+        font-family: Whitney, Whitney;
         font-weight: 900!important;
         font-size: 42px!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
@@ -10494,7 +10479,7 @@ font-family: Roboto,Whitney;}
     }
 
     .header-NUC1Kl,.embedProvider-1KNREX {
-        font-family: Oswald, Whitney;
+        font-family: Whitney, Whitney;
         font-weight: 900!important;
     }
     .embedProvider-1KNREX {
@@ -10503,7 +10488,7 @@ font-family: Roboto,Whitney;}
         text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
     .headerName-2N8Pdz, .headerTagUsernameNoNickname-1gGsAP,.name-3gtcmp {
-        font-family: Oswald, Whitney;
+        font-family: Whitney, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
@@ -10513,17 +10498,17 @@ font-family: Roboto,Whitney;}
         text-shadow: 0px 2px 3px rgba(0,0,0,0.9)!important;
     }
     .username-24t9uh {
-     font-family: Oswald, Whitney;
+     font-family: Whitney, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);   
     }
     .tab-bar.TOP .tab-bar-item.selected {
-        font-family: Oswald, Whitney;
+        font-family: Whitney, Whitney;
         font-weight: 900!important;
          text-shadow: 0px 2px 3px rgba(0,0,0,0.8);
     }
     .embedTitleLink-1IGDvg {
-        font-family: Oswald, Whitney!important;
+        font-family: Whitney, Whitney!important;
     }
     .uploadModal-2KN6Mm .inner-1-09ZV {
         border: none!important;
@@ -10535,7 +10520,7 @@ font-family: Roboto,Whitney;}
   }
   .uploadModal-2KN6Mm .inner-1-09ZV .file-XhJJS_ .description-2rzUJU .filename-1XsE3E {
     font-size: 30px;
-    font-family: Oswald, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-weight: 900!important;
     line-height: 26px!important;
     padding-bottom:20px;
@@ -10543,20 +10528,21 @@ font-family: Roboto,Whitney;}
   }
   .theme-dark .channel-members h2,
   .nameCollapsed-3_ChMu, .nameDefault-Lnjrwm, .nameHovered-1YFSWq, .nameHoveredCollapsed-2c-EHI {
-   font-family: Oswald, Whitney!important;
+   font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
+    color:var(--main-color)!important;
   }
   .theme-dark .quickMessage-28pD5Y {
     background: rgba(0,0,0,0.5)!important;
-    font-family: Oswald, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
   }
   .theme-dark .channelName-1G03vu {
-   font-family: Oswald, Whitney!important;
+   font-family: Whitney, Whitney!important;
     font-weight: 900!important;  
   }
   .theme-dark .topic-1KFf6J {
-    font-family: roboto Condensed, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
   }
   .chat .new-messages-bar {
@@ -10566,7 +10552,7 @@ font-family: Roboto,Whitney;}
     background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
   }
   .chat .base-2KDOo9 h1m {
-    font-family: Oswald, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -10576,7 +10562,7 @@ font-family: Roboto,Whitney;}
     filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.9))!important;
 }
 .theme-dark .header-1-f9X5, #bd-settings-sidebar .ui-tab-bar-header {
-  font-family: Oswald, Whitney!important;
+  font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
     font-size: 25px!important;  
     color:var(--main-color)!important; 
@@ -10590,7 +10576,7 @@ font-family: Roboto,Whitney;}
     color:#fff!important;
 }
 .theme-dark #friends .friends-empty p {
-      font-family: Oswald, Whitney!important;
+      font-family: Whitney, Whitney!important;
     font-weight: 900!important; 
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -10670,12 +10656,12 @@ background: transparent!important;
 .search-results-wrap .search-header .total-results {
     opacity: 1!important;
     font-size: 25px;
-    font-family: Oswald, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-weight: 900!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.8)!important;
 }
 .theme-dark .search-results-wrap .channel-separator .channel-name { 
-font-family: Oswald, Whitney!important;
+font-family: Whitney, Whitney!important;
 font-weight: 900!important;
 font-size:15px!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.8)!important;}
@@ -10699,7 +10685,7 @@ font-size:15px!important;
                 font-weight: 900!important;
         font-size:17px!important;
         text-shadow: 0px 2px 3px rgba(0,0,0,0.7)!important;
-        font-family: Oswald, Whitney!important;
+        font-family: Whitney, Whitney!important;
     }
     .messages-popout .channel-separator {
         border:none!important;
@@ -10740,7 +10726,7 @@ font-size:15px!important;
 }
 .headerTag-I11IJx {
     color:#fff;
-    font-family: Oswald, Whitney!important;
+    font-family: Whitney, Whitney!important;
     font-size: 27px!important;
     line-height: 28px;
     font-weight: 900!important;
@@ -10749,6 +10735,7 @@ font-size:15px!important;
 .headerName-3U6eDn, .headerTagUsernameNoNickname-22Y2PV {
     color:rgba(255,255,255,1)!important;
     margin-bottom: 15px;
+    font-weight: 900!important;
     overflow: ellipsis!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.65)!important;
 }
@@ -10802,5 +10789,124 @@ font-size:15px!important;
 .theme-dark .topSectionNormal-2LlRG1 {
     background: transparent!important;
 }
-.theme-dark.contextMenu-uoJTbz{background:linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), var(--user-popout);
-background-size: cover!important;}
+
+/*Addon*/
+.theme-dark .member-2FrNV0:hover .content-3JzEqq {
+	background: transparent;
+}
+.usernameOnline-jN8ojx {
+	font-weight: 900!important;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+line-height: 15px;
+}
+.activityText-258pdj {
+	font-weight: 900!important;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+	color:#fff!important;
+}
+
+.theme-dark .textArea-20yzAH {
+	color:#fff!important;
+	text-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
+}
+.username-MwOsla {
+	font-size:14px!important;
+}
+.aka-2Ba14Z {
+	background: rgba(0,0,0,0.45)!important;
+	    border-radius: 3px;
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 5px;
+    padding: 0px 7px;
+    position: relative;
+    text-transform: uppercase;
+    top: 3px;
+    vertical-align: top;
+}
+.button-1aU9q1,.button-3WJ5FX {
+	filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.95));
+}
+.theme-dark .quickMessage-OCo-Q0 {
+	background: rgba(0,0,0,0.5)!important;
+}
+.avatar-small .status {
+	box-shadow: none!important;
+	border:none!important;
+}
+.chat .jump-to-present-bar {
+    border-radius: 5px 5px 0px 0px;
+    bottom: 10px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 400;
+    left: 25px!important;
+    position: absolute;
+    right: 20px;
+    text-transform: capitalize;
+text-align: center!important;
+padding-left: 15px;
+background: rgba(0,0,0,0.75)!important;
+z-index: 2;
+}
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq, .theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq {background: none!important}
+
+.usernameOffline-3MJ-JP{font-weight: 900!important}
+
+.container-iksrDt::before{
+	content:"Santae CSS V"var(--version-content);
+	position: absolute;
+	font-weight: 500;
+	top:58px;
+	text-transform: uppercase;
+	color:rgba(255,255,255,0.5);
+	font-size: 9px;
+	right:7px;
+}
+.profileBadges-2B6TBS,.icon-mr9wAc {
+	filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.9))!important;
+}
+.content-3JzEqq {
+	opacity: 0.7;
+	transition: all ease-in-out 0.2s!important;
+}
+.content-3JzEqq:hover {
+	opacity: 1!important;
+	filter: drop-shadow(0px 1px 2px var(--main-color))!important;
+}
+.code {
+	border:none!important;
+	border-radius: 5px!important;
+	background:rgba(0,0,0,0.5)!important;
+}
+.lookOutlined-1c5nhl.colorRed-3HTNPV {
+	border:none!important;
+	color:#fff!important;
+background: linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important; 
+}
+.contextMenu-uoJTbz {
+    border-radius: 5px;
+    display: inline-block;
+    position: fixed;
+    width: 200px;
+    z-index: 1005;
+}
+.theme-dark.contextMenu-uoJTbz {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.75) 100%), var(--user-popout);
+    background-size: cover!important;
+}
+.theme-dark .item-1XYaYf, .item-rK1j5B {
+    opacity: 1!important;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 10px;
+    transition: padding 0.2s ease-in-out!important;
+    font-weight: 900!important;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.8)!important;
+    font-size: 14px;
+}
