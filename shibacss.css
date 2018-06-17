@@ -322,7 +322,6 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
 /*Selected*/
 .contentSelectedText-3wUhMi {
     background: none!important;
-
 }
 .nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5 {
     font-weight: 900!important;
@@ -330,7 +329,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
    text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
 }
 /*---Default and Locked*/
-.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1{
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1,.nameHoveredVoice-YJ1Vfd{
     text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
     font-weight: 900;
     color:rgba(255,255,255,0.7);
@@ -343,11 +342,15 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
     text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
 }
 /*=============Channel Categories===========*/
-.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,.nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB {
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,.nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB,.nameMuted-1MCOt4,
+.iconMuted-1HVBGH {
     font-size:14px!important;
     font-weight: 900!important;
     color:#fff!important;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
+}
+.iconMuted-1HVBGH {
+    top:14px;
 }
 /*===================Voice Channels================*/
 .nameDefault-2s3kbY,.nameHovered-21k1eo{
