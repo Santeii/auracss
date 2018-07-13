@@ -6,7 +6,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 */
 /*Background Code*/
 :root {
-        --version-content: "Beta 1.0.1"; 
+        --version-content: "1.1.2"; 
 }
 body::after,
 #pubs-container::before,
@@ -52,6 +52,11 @@ body::after {
     width:var(--emoji-size);
     filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.6));
     border-radius: 2px;
+    transition: all ease 0.5s!important;
+}
+.reaction .emoji {
+  height:var(--reaction-size)!important;
+    width:var(--reaction-size)!important;  
 }
 /*======================================Edited-----------*/
 .theme-dark .message-group .comment .edited {
@@ -105,6 +110,9 @@ body::after {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.8)!important;
     margin-left: -3px!important;
 }
+.message-group .comment {
+    margin-top: 3px;
+}
 /*==============Avatars*/
 
 .chat .avatar-large  {
@@ -114,11 +122,10 @@ body::after {
     background-size: cover;
     border-radius: 15px;
     filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.45));
-    margin-left:5px;
+    margin-left:-2px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.85);
+    border:2px outset var(--main-color);
     transition: all ease-in-out 0.2s;
-}
-.large-3ChYtB {
-border:none!important;
 }
 .chat .avatar-large:hover {
     height: 85px!important;
@@ -126,6 +133,9 @@ border:none!important;
     opacity: 1!important;
     box-shadow: none!important;
     filter: saturate(130%) drop-shadow(0px 3px 3px rgba(0,0,0,0.45))!important;
+}
+.message-group {
+    padding: 20px 9px!important;
 }
 /*============Tooltip*/
 .tooltip.tooltip-black{
@@ -211,7 +221,7 @@ border:none!important;
     box-shadow: 0px 4px 5px rgba(0,0,0,0.5)!important;
 }
 /*==============Backdrop*/
-.backdrop-1ocfXc {
+.backdrop-1wrmKB {
     background-image: linear-gradient(to right,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.7) 22%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.3) 100%),var(--main-background)!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
@@ -265,6 +275,12 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
     font-weight: 900!important;
     filter:saturate(350%) contrast(150%)drop-shadow(0px 2px 3px rgba(0,0,0,0.8));
 }
+/*Activity Text*/
+.activityText-sLG0UL {
+    color:#fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.4);
+    opacity: 0.65;
+}
 /*Unread Dot*/
 .unread-1Dp-OI {
     background-color: var(--main-color);
@@ -283,6 +299,12 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
     opacity:1!important;
     filter: saturate(150%) drop-shadow(0px 2px 3px rgba(0,0,0,0.8));
 }
+.colorConnectedVoice-3kyvUN {
+    filter:drop-shadow(0px 2px 3px rgba(0,0,0,1))!important;
+    opacity: 1!important;
+    color:#fff!important;
+}
+
 /*Selected*/
 .contentSelectedText-3wUhMi {
     background: none!important;
@@ -293,7 +315,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
    text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
 }
 /*---Default and Locked*/
-.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1,.nameHoveredVoice-YJ1Vfd{
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1,.nameHoveredVoice-YJ1Vfd,.nameConnectedVoice-MHUX5F{
     text-shadow: 0px 2px 3px rgba(0,0,0,0.6)!important;
     font-weight: 900;
     color:rgba(255,255,255,0.7);
@@ -397,6 +419,7 @@ background: transparent!important;
 .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
     background: transparent;
 }
+
 /*Role Categories on Sidebar*/
 .membersGroup-v9BXpm {
     font-weight: 900!important;
@@ -425,6 +448,9 @@ background: transparent!important;
     filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.6))!important;
     height: 35px;
     line-height: 15px!important;
+}
+.containerDefault-3GGEv_, .containerDragAfter-3TEhpe, .containerDragBefore-3Dzc5x, .containerUserOver-1Tcb7l {
+    padding-top:0;
 }
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3{
   font-weight: 900!important;
@@ -1311,7 +1337,7 @@ padding-bottom:4px;}
 background:linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%)
 }
 .private-channels .channel.selected a {
-    background: rgba(0,0,0,0.5)!important;
+    background: rgba(0,0,0,0.4)!important;
 }
 .guild-inner {
     background: rgba(0,0,0,0.4)!important;
@@ -1400,10 +1426,6 @@ background:linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 1
 }
 .guilds-wrapper .guild-separator:after {
     background: transparent;
-}
-.reaction .emoji {
-    height: 30px;
-    width: 30px;
 }
 .theme-dark .reaction {
     background: rgba(0,0,0,.35);
@@ -1504,4 +1526,30 @@ display: none;
 .statusProfile-3ynqtt {
     height: 20px;
     width: 20px;
+}
+/*==========Private Channels*/
+
+.private-channels .channel .channel-name
+{
+    font-weight: 900;
+    color:#fff!important;
+    opacity: 0.5;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.6);
+}
+
+/*Icons*/
+.icon-29PTzq,.icon-3nr6O-{
+filter:drop-shadow(0px 1px 1px rgba(0,0,0,.9));
+opacity: 0.65;
+}
+.small-5Os1Bb {
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.4));
+}
+.listAvatar-1NlAhb{
+   filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.8));  
+}
+.listName-3w10cx {
+    color:#fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.5);
+    font-weight: 900;
 }
