@@ -6,7 +6,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 */
 /*Background Code*/
 :root {
-        --version-content: "1.1.2"; 
+        --version-content: "1.2"; 
 }
 body::after,
 #pubs-container::before,
@@ -91,45 +91,68 @@ body::after {
     text-transform: capitalize;
     margin-left: 5px;
 }
-
+.theme-dark .dividerEnabled-2TTlcf {
+    display: none;
+}
 /*=============Chat Settings*/
-.theme-dark .message-group h2 strong {
+.theme-dark .username-_4ZSMR {
     font-weight: 900!important;
     background: rgba(0,0,0,0.5);
     font-size: 15px!important;
     text-shadow: 0px 2px 2px rgba(0,0,0,0.8)!important;
     border-radius: 7px!important;
-    padding:3px 7px 5px 7px!important;
-    margin-left: -5px!important;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+    padding:4px 7px 4px 7px!important;
+    margin-left: 0px!important;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0);
 }
-.message-group .comment .markup {
+.container-1e22Ot {
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,.85))!important;
+}
+.containerCozy-B4noqO:not(:empty) {
+    margin-left: 20px;
+}
+.containerCozy-jafyvG {
+    padding: 30px 0;
+}
+.embedContentInner-FBnk7v.markup-2BOw-j.da-embedContentInner.da-markup {
+    padding: 0px;
+    margin-left: 0px!important;
+}
+.markup-2BOw-j {
     font-weight: 600!important;
     color:#fff!important;
     padding-top: 5px!important;
     text-shadow: 0px 2px 2px rgba(0,0,0,0.8)!important;
-    margin-left: -3px!important;
+    margin-left: 25px!important;
 }
 .message-group .comment {
     margin-top: 3px;
 }
+.chat .divider {
+    margin-top: 20px;
+}
 /*==============Avatars*/
-
-.chat .avatar-large  {
+.image-33JSyf {
+    border-radius: 25px!important;
+    background-repeat: no-repeat;
+    filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.75));
+}
+.usernameOffline-3VSVLk {
+    text-shadow: 0px 2px 3px rgba(0,0,0,.5);
+}
+.large-3ChYtB  {
     height: var(--avatar-size);
     width: var(--avatar-size);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.45));
-    margin-left:-2px;
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.85);
-    border:2px outset var(--main-color);
+    border-radius: 15px!important;
+    margin-left:10px;
+    margin-top: -3px;
     transition: all ease-in-out 0.2s;
 }
 .chat .avatar-large:hover {
-    height: 85px!important;
-    width: 85px!important;
+    height: var(--avatar-size-hover)!important;
+    width: var(--avatar-size-hover)!important;
     opacity: 1!important;
     box-shadow: none!important;
     filter: saturate(130%) drop-shadow(0px 3px 3px rgba(0,0,0,0.45))!important;
@@ -627,7 +650,7 @@ display: none;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.85);
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 /*==================================Collection of Main and Hover Color==================================*/
 .guilds-wrapper .guilds .guild.unread:before {
@@ -741,13 +764,13 @@ margin:0px!important;
 box-shadow:none;
 }
 .container-2Thooq::before {
-    content:"Shiba CSS " var(--version-content);
+    content:"Shiba CSS Ver " var(--version-content);
     position: absolute;
     bottom:0px;
     font-size:11px;
     font-weight: 900;
     text-shadow: 0px 2px 3px rgba(0,0,0,.5);
-    color:#fff;
+    color:var(--hover-color);
 }
 .accountDetails-3k9g4n .username {
     font-weight: 900!important;
@@ -800,6 +823,12 @@ filter: drop-shadow(0px 0px 10px var(--hover-color));
     border-color:var(--main-color)!important;
     border:2px solid;
     border-radius: 25px;
+    margin-left:-2px;
+    margin-top: -1px;
+}
+.theme-dark .userSettingsAccount-2eMFVR .viewBody-2Qz-jg {
+    font-weight: 900;
+    color:var(--main-color);
 }
 .scroller-2FKFPG.members-1998pB {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.64) 100%)!important; 
@@ -995,16 +1024,20 @@ filter: drop-shadow(0px 0px 10px var(--hover-color));
     border:none!important;
  }
  /*==========================Settings --------------------------------*/
+ .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.55) 50%, rgba(0, 0, 0, 0.85) 100%), var(--settings-background);
+background-size: cover;
+background-position: center;
+box-shadow: 15px 13px 25px rgba(0,0,0,0.55);
+border-radius: 0px 30px 30px 0px!important;
+ }
  .theme-dark .ui-standard-sidebar-view {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.4) 50%, rgba(0, 0, 0, 0.7) 100%), var(--settings-background);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.55) 50%, rgba(0, 0, 0, 0.85) 100%);
     background-size: cover!important;
     background-repeat: no-repeat;
     background-position: top center;
-    margin-top: 10px;
-    border-radius: 40px 40px 0 0;
-    box-shadow: 0px -15px 40px rgba(0,0,0,0.7);
  }
- .theme-dark .header-2RyJ0Y {
+ .theme-dark .header-2RyJ0Y,#bd-settings-sidebar .ui-tab-bar-header {
  background: -webkit-linear-gradient(var(--main-color), var(--hover-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1012,6 +1045,7 @@ filter: drop-shadow(0px 0px 10px var(--hover-color));
   margin-left: -15px;
   line-height: 35px;
   filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.9));
+  font-weight: 900!important;
  }
  .itemSelected-1qLhcL {
     background:linear-gradient(to left, var(--main-color) 0%, var(--hover-color) 100%)!important;
@@ -1029,7 +1063,7 @@ filter: drop-shadow(0px 0px 10px var(--hover-color));
  .inputDefault-3JxKJ2.input-3ITkQf {
 border:none;
  }
- .side-8zPYf6 .item-PXvHYJ {
+ .side-8zPYf6 .item-PXvHYJ,#bd-settings-sidebar .ui-tab-bar-item {
     color:#FFF;
     font-weight: 900;
     font-size: 18px;
@@ -1040,8 +1074,8 @@ border:none;
     border:none;
     background: rgba(0,0,0,0.4)!important;
 }
- .theme-dark .separator-gCa7yv {
-    background: transparent;;
+ .theme-dark .separator-gCa7yv,#bd-settings-sidebar .ui-tab-bar-separator{
+    background: transparent;
  }
 .theme-dark .attachButtonDivider-3Glu60 {
     background: transparent;
@@ -1145,6 +1179,7 @@ border:none;
     font-weight: 900;
     font-size: 40px;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.9);
+    line-height: 40px;
 }
 .userInfoSectionHeader-CBvMDh {
     color:#fff!important;
@@ -1284,11 +1319,6 @@ border:none;
     width: 100px;
     height: 100px;
 
-}
-.image-33JSyf {
-    border-radius: 25px!important;
-    background-repeat: no-repeat;
-    filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.75));
 }
 .embedImage-2W1cML {
     margin-left: 0px;
