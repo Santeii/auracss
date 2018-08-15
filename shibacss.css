@@ -6,7 +6,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 */
 /*Background Code*/
  :root {
-     --version-content: "2.0";
+     --version-content: "2.0.1";
 }
  body::after, #pubs-container::before, .auth-background, .auth-tiling-bg, .invite-modal .invite-splash, .radio-theme.light label, .radio-theme.dark label {
      background:var(--main-background)!important;
@@ -759,6 +759,10 @@ a,.theme-dark .embedTitleLink-1Zla9e {
      color:#fff!important;
      text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
+.theme-dark .textArea-2Spzkt {
+background: rgba(0,0,0,0.3)!important;
+border-radius: 3px;
+}
  .theme-dark .textArea-2Spzkt {
      font-weight: 600!important;
      color: #fff!important;
@@ -766,12 +770,16 @@ a,.theme-dark .embedTitleLink-1Zla9e {
      text-shadow: 0px 2px 2px rgba(0,0,0,0.8)!important;
 }
  .container-2Thooq .avatar-small {
-     width: 50px;
-     height: 50px;
+     width: 50px!important;
+     height: 50px!important;
      background-repeat: no-repeat;
      background-size: cover;
      border-radius: 15px;
      box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+.icon-3ZzoN7 {
+    height: 30px;
+    width: 30px;
 }
 /*==================================Collection of Main and Hover Color==================================*/
  .guilds-wrapper .guilds .guild.unread:before {
@@ -1299,6 +1307,33 @@ a,.theme-dark .embedTitleLink-1Zla9e {
      background-position: top center!important;
      background-repeat: no-repeat!important;
 }
+.emojiPicker-3m1S-j {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), var(--user-profile-background);
+  background-size: cover!important;  
+}
+.emojiPicker-3m1S-j .category-2U57w6 {
+color:#FFF!important;
+text-shadow: 0px 2px 3px rgba(0,0,0,0.4)!important;
+font-weight: 900!important;
+font-size: 17px;
+}
+
+.search-bar.search-bar-light input {
+    color:#FFF!important;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+    font-weight: 900!important;
+}
+
+.search-bar.search-bar-light .search-bar-inner {
+    background: rgba(0,0,0,0.75)!important;
+}
+
+.emojiPicker-3m1S-j .stickyHeader-1SS0JU{
+    background: rgba(0,0,0,.5)!important;
+}
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA 
+{filter: drop-shadow(0px 2px 3px rgba(0,0,0,.5));}
+
  .connectedAccount-36nQx7 {
      background: rgba(0,0,0,0.5);
      border-radius: 10px;
