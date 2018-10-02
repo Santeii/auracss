@@ -1,4 +1,3 @@
-
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
@@ -6,7 +5,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 */
 /*Background Code*/
  :root {
-     --version-content: "2.0.1";
+     --version-content: "2.2.1";
 }
  body::after, #pubs-container::before, .auth-background, .auth-tiling-bg, .invite-modal .invite-splash, .radio-theme.light label, .radio-theme.dark label {
      background:var(--main-background)!important;
@@ -46,7 +45,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
      border-radius: 2px;
      transition: all ease 0.5s!important;
 }
- .reaction .emoji {
+.reaction-1ELvT8 .emoji {
      height:var(--reaction-size)!important;
      width:var(--reaction-size)!important;
 }
@@ -221,7 +220,7 @@ a,.theme-dark .embedTitleLink-1Zla9e {
  .image-33JSyf {
      border-radius: 25px!important;
      background-repeat: no-repeat;
-     filter:drop-shadow(0px 2px 3px rgba(0,0,0,0.75));
+     filter:drop-shadow(0px 1px 2px rgba(0,0,0,0.75));
 }
  .embedImage-2W1cML, .embedImage-2W1cML img, .embedImage-2W1cML video {
      margin-left: 0px!important;
@@ -805,8 +804,10 @@ border-radius: 3px;
      padding: 3px;
      border-radius: 5px;
      margin-left: -2px;
+     font-style: italic;
+     text-transform: capitalize;
 }
-/*======================================================================================================*/
+/*==========================================OPACITY============================================================*/
 /*Transperancy Patches*/
  #voice-connection, #friends, .friends-header, .friends-table, .guilds-wrapper, .guild-header header, .channels-wrap, .private-channels .search-bar, .private-channels, .guild-channels, .account, .friend-table-add-header, .chat, .content, .title-wrap:not(.search-bar),
  .messages-wrapper, .messages .divider span, .messages .divider:before, .content, .message-group-blocked, .is-local-bot-message, .channel-members-loading, .channel-members-loading .heading, .channel-members-loading .member, .typing, .container-RYiLUQ, .theme-dark .ui-standard-sidebar-view,
@@ -844,6 +845,9 @@ border-radius: 3px;
  .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ {
      background: rgba(0, 0, 0, 0) !important;
 }
+.searchBar-6Kv8R2{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%)!important;  
+ }
  .typeWindows-1za-n7 {
      background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%),linear-gradient(to left, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 245px),linear-gradient(to right, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 85px);
 }
@@ -859,7 +863,7 @@ border-radius: 3px;
  .theme-dark .content-yTz4x3 {
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%)!important;
 }
- .theme-dark .title-3qD0b- {
+.titleWrapper-1l0xT9 {
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%),linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 245px)!important;
 }
  .guilds-wrapper .guilds {
@@ -894,7 +898,7 @@ border-radius: 3px;
      opacity: 1;
 }
  .theme-dark #friends {
-     background: rgba(0,0,0,0.4)!important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.479) 0%, rgba(0, 0, 0, 0.4) 5%)!important; 
 }
  .content .flex-spacer {
      background: rgba(0,0,0,0.4)!important;
@@ -1500,7 +1504,7 @@ font-size: 17px;
      box-shadow: none;
 }
  .private-channels .search-bar {
-     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%) 
+     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
 }
  .private-channels .channel.selected a {
      background: rgba(0,0,0,0.4)!important;
@@ -1541,11 +1545,35 @@ font-size: 17px;
      border:none!important;
      background: #3b3b3b;
 }
- .video-1FfuMD {
-     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 10%),linear-gradient(to left, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 245px);
-     box-shadow: none!important;
-     border:none!important;
+.wrapper-2h3Puq {
+padding: 30px;
 }
+
+.theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
+    border-color: var(--main-color);
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.5)!important;
+    box-shadow: 0px 0px 15px var(--hover-color)!important;
+}
+
+ .video-1FfuMD {
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 100%), var(--user-profile-background);
+     background-size: cover;
+     background-position:center!important;
+     box-shadow: 0px 0px 120px rgba(0,0,0,0.85);
+     border:none!important;
+     padding: 50px;
+     border-color: transparent!important;
+     border-radius: 15px 0px 0px 15px;
+}
+.theme-dark .wrapper-29NfPK {
+    background: transparent;
+    border:none!important;
+         border-color: transparent!important;
+    box-shadow: none!important;
+}
+
  .callAvatar-v-u4BM.voice-2D-tt_ {
      border-radius: 25%;
      filter:drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
@@ -1581,11 +1609,14 @@ font-size: 17px;
  .guilds-wrapper .guilds .guild {
      filter: drop-shadow(0px 2px 5px rgba(0,0,0,.98))!important;
 }
- .theme-dark .reaction.reaction-me {
-     background: var(--main-color);
+
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
+     background: rgba(0,0,0,0.5);
      color:#fff!important;
+     border:2px solid var(--main-color);
+     border-radius: 5px;
 }
- .theme-dark .reaction.reaction-me .reaction-count {
+.theme-dark .reactionCount-2ddRoS,.theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS {
      color:#fff;
      font-weight: 900;
      text-shadow: 0px 2px 3px rgba(0,0,0,.65);
@@ -1593,8 +1624,9 @@ font-size: 17px;
  .guilds-wrapper .guild-separator:after {
      background: transparent;
 }
- .theme-dark .reaction {
+.theme-dark .reaction-1ELvT8 {
      background: rgba(0,0,0,.35);
+     border:2px solid transparent;
 }
  .theme-dark .system-message {
      font-weight: 900;
@@ -1740,4 +1772,88 @@ font-size: 17px;
 }
  .theme-dark .inner-zqa7da {
      background: transparent;
+}
+.theme-dark .homeIcon-1FoKUJ {
+    background: var(--DM-Icon)!important;
+    background-size: cover!important;
+color:transparent;
+}
+.theme-dark .container-3-pyIM .content-2M3n_H a{
+    font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+}
+.icon-2Po-VO {
+filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5))!important;
+}
+.inner-btChU7 .channel-SEolQq {
+  font-weight: 900;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 1;
+}
+.inner-btChU7 .rtc-connection-status-connected {
+   font-weight: 900;
+    font-size: 14px;
+    font-style: italic; 
+}
+ .private-channels .search-bar .search-bar-inner input{
+    font-weight: 900;
+    font-style: italic;
+ }
+ .search-bar .search-bar-inner {
+    background: transparent;
+    border: none!important;
+ }
+ .button-2b6hmh {
+
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.85))!important;
+    opacity: 1!important;
+    transition: transform linear 0.2s;
+ }
+ .theme-dark .button-2b6hmh:hover, .theme-light .button-2b6hmh:hover {
+    background: transparent;
+background-repeat: no-repeat;
+background-position: center;
+ }
+
+  .searchBar-6Kv8R2 {
+    box-shadow: none;
+}
+/*Friends List Update*/
+.channel-2QD9_O.selected-1HYmZZ a {
+    background: rgba(0,0,0,0.5);
+}
+.search-bar {
+    background: transparent;
+}
+.search-bar input {
+        font-weight: 600!important;
+        font-style: italic;
+        font-size: 15px;
+}
+
+.channelIcon-MsmKOO {
+    color:var(--main-color)!important;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.75));
+}
+.privateChannels-1nO12o header {
+    opacity: 1;
+    font-weight: 900!important;
+    font-size: 20px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.5);
+    font-style: italic;
+}
+.name-2WpE7M {
+  opacity: 1;
+    font-weight: 900!important;
+    font-size: 14px;
+    padding-left: 5px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.5);
+    font-style: italic;  
+}
+.title-CZQTru .status-oxiHuE {
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5));
+    margin-right: 5px;
+    margin-bottom: 6px;
 }
