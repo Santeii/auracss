@@ -3,9 +3,28 @@
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 */
+/*Smarter Embeds*/
+.container-1YxwTf .container-1e22Ot {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot > :not(:last-of-type){
+    margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot > *{
+    margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+    width: 100%;
+    flex: 100%;
+    order: 9999999999;
+}
 /*Background Code*/
  :root {
-     --version-content: "2.2.1";
+     --version-content: "2.3";
 }
  body::after, #pubs-container::before, .auth-background, .auth-tiling-bg, .invite-modal .invite-splash, .radio-theme.light label, .radio-theme.dark label {
      background:var(--main-background)!important;
@@ -60,10 +79,11 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
      filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.8));
      margin-left: 5px;
 }
- .theme-dark .timestampCozy-2hLAPV {
+ .theme-dark .timestampCozy-2hLAPV,.theme-dark .timestamp-1E3uAL {
      font-style: italic!important;
      font-weight: 900;
      color:hsla(0,0%,100%,.4);
+     text-shadow: 0px 2px 3px rgba(0,0,0,0.5);
 }
  .theme-dark .dividerEnabled-2TTlcf {
      display: none;
@@ -117,6 +137,11 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 /*ITalics*/
 a,.theme-dark .embedTitleLink-1Zla9e {
     color:var(--main-color)!important;
+}
+.content-2M3n_H {
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5)!important;
+    color:#fff;
+    font-weight: 900;
 }
  .name-3YKhmS,.theme-dark .username-_4ZSMR,.membersGroup-v9BXpm,.channelName-3stJzi, .accountDetails-3k9g4n .username,.typeWindows-1za-n7::before,.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameHovered-1gxhWH, 
  .nameHoveredCollapsed-2orEWB, .nameMuted-1MCOt4, .iconMuted-1HVBGH,.label-1Y-LW5, .theme-dark .search .search-bar .public-DraftEditorPlaceholder-root,.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .description-2ug5H_ .filename-ovv3c5, .theme-dark .divider-3gKybi:not(.red-1YQ4s7) span, 
@@ -871,6 +896,42 @@ border-radius: 3px;
 }
  .channels-Ie2l6A {
      background: rgba(0,0,0,0.4)!important;
+}
+.theme-dark .applicationStore-1pNvnv,.theme-dark .gameLibrary-TTDw4Y {
+    background: rgba(0,0,0,0.65);
+}
+.theme-dark .distributionApplicationsActions-3D2_kD, .theme-dark .premiumApplicationsHeader-Zmkm5e,.theme-dark .sortFilterBar-3hePOV {
+    border:none;
+}
+.theme-dark .selectedSort-2JSohJ,.theme-dark .announcingNitro-3Ptg6m,.viewAllGames-3LNpt1, .viewAllNitroGames-3v3cAi,
+.theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {
+    font-weight: 900;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+.theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {
+    font-size:45px;
+    line-height: 45px;
+    padding: 10px;
+}
+.tile-367QuY, .tileWrapper-2khh-w {
+    filter: drop-shadow(0px 2px 15px rgba(0,0,0,0.85));
+}
+.theme-dark .header-39GIC8 {
+    border: none;
+    background: transparent;
+    color:#FFF;
+}
+.title-1rXJ86 {
+    margin-bottom: 10px;
+}
+.theme-dark .gameUpdates-2GPqBU {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(0,0,0,0.5);
+}
+.theme-dark .emptyStateSmall-2Ttdgm {
+    border:none;
 }
 /*=================User Container*/
  .container-2Thooq {
@@ -1856,4 +1917,45 @@ background-position: center;
     filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5));
     margin-right: 5px;
     margin-bottom: 6px;
+}
+/*Server Settings*/
+.theme-dark .select-2TCrqx .Select-control,.theme-dark .input-cIJ7To,.theme-dark .auditLog-3jNbM6 {
+    border:none;
+    background: rgba(0,0,0,0.5);
+}
+.theme-dark .divider-3573oO {
+opacity:0;
+}
+.wrapper-r-6rrt {
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.95));
+}
+.theme-dark .text-GwUZgS, .theme-dark .title-2BxgL2 {
+    color:#FFF;
+}
+.theme-dark .copyInputDefault-21sXtF {
+    border:none;
+    background: rgba(0,0,0,0.3);
+}
+.addRoleIcon-3YjErH {
+    height: 24px;
+    opacity: 1;
+filter:brightness(500%);
+}
+.themeDefault-24hCdX.sizeDefault-2YlOZr {
+box-shadow: 0px 4px 5px rgba(0,0,0,0.55)!important;
+}
+.theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:after, 
+.theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:before,
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI {
+    border-color: var(--main-color);
+    color:var(--hover-color);
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5));
+}
+.theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI {
+    color:#FFF;
+}
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:after,
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:before {
+    border-color:#fff;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5));
 }
