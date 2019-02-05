@@ -21,8 +21,9 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
     order: 9999999999;
 }
 /*Background Code*/
+/*current version*/
  :root {
-     --version-content: "4.0";
+     --version-content: "4.0.5";
 }
  body::after, #pubs-container::before, .auth-background, .auth-tiling-bg,
  .invite-modal .invite-splash, .radio-theme.light label,.radio-theme.dark label{
@@ -283,7 +284,7 @@ font-size: 15px;}
 .theme-dark .topic-2QX7LI,.searchBar-2_Yu-C input,.name-2WpE7M, .privateChannels-1nO12o header,.friendsTable-133bsv .friendsRow-2yicud .discord-tag .username,.friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .friendActivityText-2lmziy,
 .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF, .theme-dark .friendsTable-133bsv .friendsTableHeader-32yE7d .friendsColumn-eVHFqJ,.accountDetails-3k9g4n .username,
 .theme-dark .channelSeparator-1X1FuH .channelName-1QajIf, .theme-dark .textArea-2Spzkt, .theme-dark .friendsOnline-_wi_fM, .theme-light .friendsOnline-_wi_fM,.listDefault-36Sktb,.marginReset-3RfdVe,.guildSeparator-1X4GQ1,
-.theme-dark .item-1Yvehc {
+.theme-dark .item-1Yvehc,.content-2M3n_H,.inner-btChU7,.theme-dark .button-2KyEfG, .theme-light .button-2KyEfG {
   text-shadow:
        2px 2px 0 rgba(0,0,0,0.5),
      -1px -1px 0 rgba(0,0,0,0.5),
@@ -329,7 +330,7 @@ font-size: 15px;}
      background-repeat: no-repeat;
      filter:drop-shadow(0px 6px 4px rgba(0,0,0,0.85))!important;
 }
- .embedImage-2W1cML, .embedImage-2W1cML img, .embedImage-2W1cML video {
+.clickable-3Ya1ho {
      margin-left: 0px!important;
      filter:drop-shadow(0 5px 8px rgba(0,0,0,0.85));
 }
@@ -517,10 +518,12 @@ opacity: 1;
 }
 /*Voice*/
  .container-1UB9sr {
-     background: rgba(0,0,0,0.35)!important;
-     border-radius: 15px;
+     background:transparent!important;
+     border-radius: var(--divider)!important;
      margin-bottom: 10px;
-     margin-left: 10px;
+     margin-left: 2px;
+     box-shadow: none;
+     border-bottom:2px solid var(--main-color);
 }
  .wrapper-2NJDcI {
      background:transparent;
@@ -584,9 +587,9 @@ opacity: 1;
      background-color: transparent;
      box-shadow: 0px 0px 10px var(--hover-color)!important;
      transition: all ease-in-out 0.4s!important;
-     top:-3px;
-     width:var(--HSL-size);
-     height: var(--HSL-size);
+     top:-2px;
+     width:calc(var(--HSL-size) - 2px);
+     height: calc(var(--HSL-size) - 2px);
      border-radius: 50px;
      border: 3px solid var(--main-color);
 }
@@ -1003,7 +1006,8 @@ font-family:Roboto, sans-serif;
      filter:drop-shadow(0px 3px 3px rgba(0,0,0,0.2))!important;
 }
 #app-mount .membersWrap-2h-GB4 .members-1998pB {
-       background: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.4) 20px)!important;
+       background: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.47) 60px)!important;
+       margin-top: -1px!important;
 }
  .wordmark-2iDDfm {
     display: none!important
@@ -1012,23 +1016,24 @@ font-family:Roboto, sans-serif;
      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)!important;
 }
  .header-2o-2hj,.popout-open .header-2o-2hj,.header-2o-2hj:hover{
-     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.01) 100%);
 }
  .theme-dark .content-yTz4x3 {
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%)!important;
 }
 .titleWrapper-1l0xT9 {
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.4) 100%),linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 245px)!important;
-     filter:drop-shadow(0px 3px 3px rgba(0,0,0,0.1));
+     filter:drop-shadow(0px 3px 3px rgba(0,0,0,0.05));
 }
  .guilds-wrapper .guilds {
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 5%, rgba(0,0,0,0.4) 100%),linear-gradient(to right, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 75%);
 }
  .channels-Ie2l6A {
      background: linear-gradient(to bottom, rgba(0,0,0,0.41) 0%, rgba(0,0,0,0.4) 10px)!important;
+     margin-top: -3px;
 }
  .theme-dark .guildsWrapper-5TJh6A {
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.53) 100%),linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 245px)!important;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.515) 100%),linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 245px)!important;
  }
 .theme-dark .applicationStore-1pNvnv,.theme-dark .gameLibrary-TTDw4Y {
     background: rgba(0,0,0,0.65);
@@ -1421,8 +1426,12 @@ border-radius: 10px;
  .theme-dark .topSectionNormal-2-vo2m,.theme-dark .body-3ND3kc,.topSectionPlaying-1J5E4n,.headerFill-adLl4x, .topSectionSpotify-1lI0-P,.headerStreaming-2FjmGz,.topSectionStreaming-1Tpf5X {
      background: transparent;
 }
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ:disabled {border:none!important;}
  .gameIcon-_0rmMm,.assetsLargeImage-eYwpTX {
      filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.9));
+}
+.alignStart-H-X2h- {
+  align-items: inherit;
 }
  .theme-dark .activityProfile-2bJRaP .content-3JfFJh {
      font-weight: 900;
@@ -2224,7 +2233,6 @@ border: 2px solid var(--main-color)!important;
 .guildsWrapper-5TJh6A:not(.foldercontent) .guilds-1q_RqH > .guild-1EfMGQ:first-child, .guildsWrapper-5TJh6A:not(.foldercontent) .guilds-1q_RqH > .guild-1EfMGQ:first-child .guildInner-3DSoA4, .guildsWrapper-5TJh6A:not(.foldercontent) .guilds-1q_RqH > .guild-1EfMGQ:first-child .guildInner-3DSoA4 a {
   height: var(--HSL-size) !important;
     width: var(--HSL-size)!important;
-
 }
 .icon-3o6xvg.noIcon-1a_FrS {
   width: 50px!important ;
