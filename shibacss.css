@@ -1,3 +1,4 @@
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
@@ -87,12 +88,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
      color:hsla(0,0%,100%,.64);
      font-size: 12px;
      letter-spacing: -0.5px;
-     text-shadow:
-          2px 2px 0 rgba(0,0,0,0.2),
-        -1px -1px 0 rgba(0,0,0,0.2),
-         1px -1px 0 rgba(0,0,0,0.2),
-         -1px 1px 0 rgba(0,0,0,0.2),
-          1px 1px 0 rgba(0,0,0,0.2);
+     filter:var(--small-box-shadow);
 }
  .theme-dark .dividerEnabled-2TTlcf {
      display: none;
@@ -132,10 +128,11 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0,
  .theme-dark .selectorSelected-1_M1WV {
      background: rgba(0,0,0,.4);
 }
- .marginLeft8-1YseBe {
+ .marginLeft8-1YseBe,.marginLeft4-3VaXdt {
      font-size: 20px;
      font-weight: 900;
-     text-shadow:none;;
+     filter:var(--small-box-shadow);
+     color:#FFF;
 }
  .theme-dark .description-11DmNu, .theme-dark .descriptionUsername-J_75O8 {
      font-size: 15px;
@@ -321,7 +318,8 @@ font-size: 15px;}
 }
  .textAreaEdit-bNLDk3, .textAreaEnabled-3vQ5WZ, .textAreaEnabledNoAttach-1WxUwj, .textAreaForm-18s4EO {
      background: rgba(0,0,0,0.5);
-     border-radius: 3px;
+     border-radius: 10px;
+     filter:var(--small-box-shadow);
 }
 /*==============Avatars*/
  .image-33JSyf {
@@ -343,9 +341,27 @@ font-size: 15px;}
  .uploadModal-2ifh8j {
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), var(--user-profile-background);
      background-size: cover!important;
+     box-shadow: var(--big-box-shadow);
+     padding:45px;
+     border-radius: 30px;
+}
+.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .label-3aiqT2 {
+       filter:var(--small-box-shadow);
+}
+.white-2qwKC7, .white100-1kM2ad, .white200-3zgO-Z, .white300-9aRwFJ, .white400-18yif1, .white500-2pqdDy {
+  font-weight: 900;
+}
+ .uploadModal-2ifh8j .checkboxWrapper-SkhIWG {
+   background: transparent;
+     filter:var(--small-box-shadow);
+ }
+.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .label-3aiqT2 {
+  font-weight: 900;
 }
  .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {
-     border-color: var(--main-color)!important;
+     border:none;
+     border-radius: 25px;
+     filter:var(--small-box-shadow);
 }
  .uploadModal-2ifh8j .footer-3mqk7D {
      background: transparent;
@@ -358,6 +374,7 @@ font-size: 15px;}
      text-shadow:none;;
      font-size: 25px!important;
      padding: 10px;
+     filter:var(--small-box-shadow);
 }
 /*New Embeds*/
  .embedVideo-3nf0O9 {
@@ -450,7 +467,7 @@ padding: 0;
      border-radius: 15px;
      padding-left: 10px;
      padding-right: 10px;
-     padding-top: 0px!important;\
+     padding-top: 0px!important;
      padding-bottom: 0px!important;
      height: 75px;
      margin-bottom: 12.5px;
