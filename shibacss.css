@@ -6,7 +6,7 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
 */
 /*current version*/
 :root {
-    --version-content: " v4.1.2.3";
+    --version-content: " v4.2";
     --big-box-shadow: 5px 10px 50px rgba(0,0,0,0.75);
     --medium-box-shadow:drop-shadow(0px 6px 6px rgba(0,0,0,0.55));
     --small-box-shadow:drop-shadow(0px 9px 5px rgba(0,0,0,0.35));
@@ -999,6 +999,7 @@ transition: opacity ease-in-out 0.4s;
      box-shadow: 10px -10px 20px rgba(0,0,0,0)!important;
      width:70px;
 }
+
  .theme-dark .card-2WxYqG {
      background-color: rgba(0, 0, 0, 0.3)!important;
 }
@@ -1044,7 +1045,7 @@ transition: opacity ease-in-out 0.4s;
      background: linear-gradient(to bottom, rgba(0,0,0,0.41) 0%, rgba(0,0,0,0.4) 10px)!important;
      margin-top: -3px;
 }
- .theme-dark .guildsWrapper-5TJh6A {
+.theme-dark .wrapper-1Rf91z {
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.515) 100%),linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 245px)!important;
  }
 .theme-dark .applicationStore-1pNvnv,.theme-dark .gameLibrary-TTDw4Y {
@@ -2021,10 +2022,32 @@ border-radius: calc(var(--avatar-border-radius) + 5px )!important;
  .theme-dark .guildSeparator-1X4GQ1:after {
      display: none;
 }
-.guildSeparator-1X4GQ1{
+.guildSeparator-3s64Iy{
   background: var(--hover-color)!important;
   margin-left: 0;
   border-radius: 40px;
+}
+.container-1aNBdK {
+  margin-top: 10px;
+  height: var(--HSL-size);
+  width: var(--HSL-size);
+  margin-left: 10px;
+}
+.theme-dark .friendsOnline-2JkivW, .theme-light .friendsOnline-2JkivW{
+  font-weight: 900;
+  color:var(--hover-color);
+}
+.unread-2OHH1w:before {
+  background-color: transparent!important;
+  box-shadow: 0px 0px 10px var(--hover-color)!important;
+  transition: all ease-in-out 0.4s!important;
+  top:19px;
+  left:-2px;
+  width:calc(var(--HSL-size) - 2px);
+  height: calc(var(--HSL-size) - 2px);
+  border-radius: 50px;
+  border: 3px solid var(--main-color);
+  z-index: 9999;
 }
  .typing-1KJk_j {
      width: auto!important;
@@ -2034,10 +2057,16 @@ border-radius: calc(var(--avatar-border-radius) + 5px )!important;
      background: transparent;
      margin-top: -5px!important;
 }
-.theme-dark .homeIcon-1FoKUJ {
+.homeIcon-tEMBK1 {
     background: var(--DM-Icon)!important;
     background-size: cover!important;
 color:transparent;
+}
+.theme-dark .wrapper-2lTRaf {
+  background: transparent!important;
+  width:var(--HSL-size)!important;
+  height: var(--HSL-size)!important;
+  border-radius: var(--server-border-radius)!important;
 }
 .theme-dark .container-3-pyIM .content-2M3n_H a{
     font-weight: 900;
