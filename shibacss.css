@@ -1,17 +1,18 @@
 
+
 /*
----------------------------------------------------------------------------------------------------------------------------------------------
-Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing.
----------------------------------------------------------------------------------------------------------------------------------------------
+*********************************************************************************************************
+* Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing. *
+*********************************************************************************************************
 */
-/*current version*/
+/*current version & box shadows*/
 :root {
-    --version-content: " v4.2.3";
-    --big-box-shadow: 5px 10px 50px rgba(0,0,0,0.75);
-    --medium-box-shadow:drop-shadow(0px 6px 6px rgba(0,0,0,0.55));
-    --small-box-shadow:drop-shadow(0px 9px 5px rgba(0,0,0,0.35));
-    --small-box-shadow-2:0px 6px 15px rgba(0,0,0,0.55);
-    --big-filter-shadow:drop-shadow(0 10px 15px rgba(0,0,0,0.75));
+    --version-content   :  " v4.2.4";
+    --big-box-shadow    :  5px 10px 50px rgba(0,0,0,0.75);
+    --medium-box-shadow :  drop-shadow(0px 6px 6px rgba(0,0,0,0.55));
+    --small-box-shadow  :  drop-shadow(0px 9px 5px rgba(0,0,0,0.35));
+    --small-box-shadow-2:  0px 6px 15px rgba(0,0,0,0.55);
+    --big-filter-shadow :  drop-shadow(0 10px 15px rgba(0,0,0,0.75));
 }
 /*Smarter Embeds*/
 .container-1YxwTf .container-1e22Ot {
@@ -30,8 +31,12 @@ Base code: Please do not edit this or mess with it. Especially if you do not kno
     order: 9999999999;
 }
 /*Background Code*/
- body::after, #pubs-container::before, .auth-background, .auth-tiling-bg,
- .invite-modal .invite-splash, .radio-theme.light label,.radio-theme.dark label{
+body::after, #pubs-container::before,
+  .auth-background,
+  .auth-tiling-bg,
+  .invite-modal .invite-splash,
+  .radio-theme.light label,
+  .radio-theme.dark label{
      background:var(--main-background)!important;
      background-position: center!important;
      background-repeat: no-repeat!important;
@@ -2043,6 +2048,10 @@ border-radius: calc(var(--avatar-border-radius) + 5px )!important;
 .theme-dark .friendsOnline-2JkivW, .theme-light .friendsOnline-2JkivW{
   font-weight: 900;
   color:var(--hover-color);
+}
+/* ========= New Unreads =========*/
+.container-2td-dC.selected-nT-gM3.unread-2OHH1w:before{
+  left:0!important;
 }
 .unread-2OHH1w:before {
   background-color: transparent!important;
