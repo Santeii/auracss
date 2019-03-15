@@ -1492,6 +1492,10 @@ misc settings - classes that do not really belong in the other sections and/or a
 .icon-3ZzoN7 {
     width: calc(var(--emoji-size) - 20px);
 }
+/*Reaction buttons*/
+.buttonContainer-KtQ8wc>* {
+  z-index: 9999!important;
+}
 /*EditeD*/
  .theme-dark .edited-DL9ECl {
      color: transparent;
