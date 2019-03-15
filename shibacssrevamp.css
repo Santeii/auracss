@@ -6,7 +6,7 @@
 /*current version & box shadows*/
 
 :root {
-    --version-content       : " beta~v7";
+    --version-content       : "5.0.0";
 /*
     --big-box-shadow        : 5px 10px 50px rgba(0,0,0,0.75);
     --medium-box-shadow     : drop-shadow(0px 6px 3px rgba(0,0,0,0.55));
@@ -14,6 +14,7 @@
     --small-box-shadow-2    : 0px 6px 10px rgba(0,0,0,0.55);
     --big-filter-shadow     : drop-shadow(0 10px 10px rgba(0,0,0,0.75));*/
     --avatar-box-shadow     : drop-shadow(0px 5px 8px rgba(0,0,0,0.55));
+    --margin-size            : calc(var(--avatar-size) - 40px);
 }
 .typeWindows-1za-n7 {
     box-shadow              : none!important;
@@ -41,6 +42,9 @@
     display                 : none!important;
     box-shadow              : none!important;
     border                  : none!important;
+}
+.appMount-3lHmkl {
+    background              : rgba(0,0,0,var(--brightness))!important;
 }
 /*
 *********************************************************************************************************
@@ -601,6 +605,9 @@ opacity: 1;
 .tooltip-1OS-Ti.black-2bmmnj {
   background: linear-gradient(to right, var(--main-color) 0%, var(--second-color) 100%)!important;
   z-index: 99999!important;
+}
+.tooltip-1OS-Ti.black-2bmmnj.bottom-19kp6S:after {
+  border-bottom-color: var(--main-color);
 }
 .tooltip-1OS-Ti.black-2bmmnj.right-KM_vfY:after {
   border-right-color: var(--main-color);
@@ -1662,9 +1669,10 @@ a,.theme-dark .embedTitleLink-1Zla9e{
      letter-spacing: 0.3px;
      padding:0px 5px 0px 5px;
  }
-.usernameOnline-3jr_0Y,.usernameOffline-3VSVLk {
+.usernameOnline-3jr_0Y, .usernameOffline-3VSVLk {
     text-shadow: 0 2px 2px rgba(0,0,0,0.5);
     padding: 3px;
+    font-weight: 900;
 }
 .headerName-fajvi9, .headerTagUsernameNoNickname-2_H881,.headerTag-2pZJzA,.roleName-32vpEy,.tooltip-1OS-Ti.black-2bmmnj {
     filter:var(--small-box-shadow);
