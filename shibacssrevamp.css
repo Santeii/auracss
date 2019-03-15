@@ -14,7 +14,6 @@
     --small-box-shadow-2    : 0px 6px 10px rgba(0,0,0,0.55);
     --big-filter-shadow     : drop-shadow(0 10px 10px rgba(0,0,0,0.75));*/
     --avatar-box-shadow     : drop-shadow(0px 5px 8px rgba(0,0,0,0.55));
-    --margin-size            : calc(var(--avatar-size) - 40px);
 }
 .typeWindows-1za-n7 {
     box-shadow              : none!important;
