@@ -6,7 +6,7 @@
 /*current version & box shadows*/
 
 :root {
-    --version-content       : "5.0.2";
+    --version-content       : "5.0.3";
 /*
     --big-box-shadow        : 5px 10px 50px rgba(0,0,0,0.75);
     --medium-box-shadow     : drop-shadow(0px 6px 3px rgba(0,0,0,0.55));
@@ -1463,6 +1463,28 @@ filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5))!important;
 misc settings - classes that do not really belong in the other sections and/or are unsorted.
 *********************************************************************************************************
 */
+/*Search results fix*/
+.answer-1n6g43.da-answer,
+.displayUsername-Qekxml.da-displayUsername {
+  color:#fff!important;
+  font-weight: 900!important;
+}
+/*Smarter Embeds*/
+.container-1YxwTf .container-1e22Ot {
+    display: flex;
+    flex-flow: row wrap;
+}
+.container-1YxwTf .container-1e22Ot > :not(:last-of-type){
+    margin-right: 10px;
+}
+.container-1YxwTf .container-1e22Ot > *{
+    margin-top: 5px;
+}
+.reactions-1xb2Ex {
+    width: 100%;
+    flex: 100%;
+    order: 9999999999;
+}
 /*5.0.2 border removal*/
 .theme-dark .header-39GIC8,
 .theme-dark .rowWrapper-2fB6P0+.rowWrapper-2fB6P0 .row-ZLfFhY {
@@ -1471,7 +1493,6 @@ misc settings - classes that do not really belong in the other sections and/or a
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
   background: rgba(0,0,0,0.5);
 }
-
 /*5.0.1 nitro and activity fix*/
 .theme-dark .applicationStore-1pNvnv,
 .theme-dark .activityFeed-28jde9,
