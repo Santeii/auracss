@@ -1,3 +1,4 @@
+
 /*
 *********************************************************************************************************
 * Base code: Please do not edit this or mess with it. Especially if you do not know what you are doing. *
@@ -6,7 +7,7 @@
 /*current version & box shadows*/
 
 :root {
-    --version-content       : "5.0.0";
+    --version-content       : "5.0.1";
 /*
     --big-box-shadow        : 5px 10px 50px rgba(0,0,0,0.75);
     --medium-box-shadow     : drop-shadow(0px 6px 3px rgba(0,0,0,0.55));
@@ -875,12 +876,16 @@ filter:brightness(500%);
 .theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b {
   border:none;
 }
-/*dm icon fix 5.0.0*/
+/*dm icon fix 5.0.1*/
 .channel-2QD9_O a[href*="/@"] .linkButtonIcon-Mlm5d6,
-.channel-2QD9_O a[href*="/l"] .linkButtonIcon-Mlm5d6 {
+.channel-2QD9_O a[href*="/l"] .linkButtonIcon-Mlm5d6,
+.channel-2QD9_O a[href*="/a"] .linkButtonIcon-Mlm5d6,
+.channel-2QD9_O a[href*="/s"] .linkButtonIcon-Mlm5d6 {
   background: transparent;
   -webkit-mask:none;
+
 }
+
 .avatarXXLarge-GhVtwJ {height: var(--avatar-size)!important; width: var(--avatar-size); border-radius: var(--avatar-border-radius)!important;}
 
 .inner-1W0Bkn {border-radius: var(--avatar-border-radius)!important}
@@ -1459,6 +1464,46 @@ filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5))!important;
 misc settings - classes that do not really belong in the other sections and/or are unsorted.
 *********************************************************************************************************
 */
+/*5.0.1 nitro and activity fix*/
+.theme-dark .applicationStore-1pNvnv,
+.theme-dark .activityFeed-28jde9,
+.theme-dark .gameLibrary-TTDw4Y {
+  background: transparent;
+}
+.theme-dark .header-1RC2Wb,
+.theme-dark .header-39GIC8 {
+  background: transparent!important;
+}
+.theme-dark .username-XRo90I,
+.theme-dark .headerTitle-PE3TuN {
+  font-weight: 900;
+  font-size: 22px;
+}
+.theme-dark .gameName-wzJptK {
+  font-weight: 900;
+  font-size: 18px;
+}
+.theme-dark .card-7JP0BX {
+  color:#FFF;
+  background: rgba(0,0,0,.55);
+}
+.theme-dark .body-SKIE6r {
+  background: transparent;
+}
+.theme-dark .headerText-2niCs_{
+  border: none;
+}
+.theme-dark .headerText-2niCs_ {
+  color:#FFF;
+  font-weight: 900;
+  font-size: 24px;
+}
+.title-CZQTru {
+  font-weight: 900;
+  font-size: 26px;
+  padding: 10px;
+}
+
 /*server name hover removal*/
 .hasDropdown-2invhV .header-2o-2hj:hover {
   background: transparent;
@@ -1648,7 +1693,7 @@ a,.theme-dark .embedTitleLink-1Zla9e{
      background:transparent;
 }
 .theme-dark .container-3gCOGc {
-     background: linear-gradient(to bottom, rgba(0,0,0,.5) 0%, rgba(0,0,0,0.4) 40px);
+     background: transparent;
      border-radius: 60px 60px 0 0;
      padding: 20px;
      margin-left: 20px;
