@@ -1,4 +1,4 @@
-# **Shiba CSS 5.0.0**
+# **Shiba CSS 5.0.3**
  <img src="https://i.imgur.com/RqmO10u.png" width="30%" height="30%">
  
  a css theme I made for discord friends.
