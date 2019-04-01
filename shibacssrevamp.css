@@ -6,7 +6,7 @@
 /*current version & box shadows*/
 
 :root {
-    --version-content       : "5.0.4";
+    --version-content       : "5.0.5";
 /*
     --big-box-shadow        : 5px 10px 50px rgba(0,0,0,0.75);
     --medium-box-shadow     : drop-shadow(0px 6px 3px rgba(0,0,0,0.55));
@@ -61,52 +61,7 @@ main background settings - used when user references their main background in ro
     background-repeat          : no-repeat!important;
     background-size            : cover!important;
 }
-/*April fools collection*/
-.theme-dark .members-1998pB::before {
-content:"PLEASE ACTIVATE YOUR SHIBACSS THEME. YOU ARE USING A PIRATED VERSION. \A ALSO STAN IZONE";
-background: red;
-padding: 5px;
-display: block;
-font-weight: 900;
-border-radius: 10px!important;
-color:#FFF;
-position:relative;
-background-position        : bottom!important;
-background-repeat          : no-repeat!important;
-background-size            : cover!important;
-}
-.typeWindows-1za-n7::before {
-  opacity: 0.5!important;
-  background: red;
-  color:#fff;
-  height: 15px!important;
-  content: "STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA STAN IZONE STREAM VIOLETA "
-}
-.theme-dark .channelTextArea-rNsIhG::before {
-  content:"TESTTTTTTTTTTTTTTTTT";
-  color:rgba(0,0,0,0);
-  margin: 10px;
-  padding: 10px;
-  position: relative;
-  background: url("https://i.imgur.com/EFp1gTP.png")!important;
-  position:relative;
-  background-position        : bottom!important;
-  background-repeat          : no-repeat!important;
-  background-size            : cover!important;
-}
-.container-2Thooq::before {
-  content:"TESTTTTTTTTTTTTTTTTT";
-  color:rgba(0,0,0,0);
-  margin: 10px;
-  padding: 10px;
-  position: relative;
-  background: url("https://i.imgur.com/YolPWev.png")!important;
-  position:absolute;
-  top:130px;
-  background-position        : bottom!important;
-  background-repeat          : no-repeat!important;
-  background-size            : cover!important;
-}
+
   body {
    -webkit-backface-visibility : hidden;
     backface-visibility        : hidden;
