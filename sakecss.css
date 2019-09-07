@@ -1,15 +1,91 @@
-
 /*
 *********************************************************************************************************
 Main code - please do not edit this part.
 *********************************************************************************************************
 */
+
 /*
 *********************************************************************************************************
 Settings Page
 *********************************************************************************************************
 */
-
+/*Settings Background*/
+.theme-dark .sidebarRegion-VFTUkN
+{
+    background: var(--sBackground);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat!important;
+    border-radius: 0px 60px 60px 0px;
+}
+    /*Game Activity*/
+    .card-FDVird:before
+    {
+        border:none;
+        background: transparent;
+    }
+    /*List Items within Settings*/
+    .theme-dark .game-1ipmAa, .theme-dark .installationPath-24giJj, .theme-dark .item-3eFBNF,
+    #bd-settingspane-container .ui-switch-item
+    {
+        box-shadow: none;
+        background: rgba(0,0,0,0.75);
+        padding: 30px;
+        border-radius: 30px;
+        margin-top: 10px;
+    }
+    /*Nitro Settings*/
+    /*Nitro Descriptions*/
+    .theme-dark .finePrint-xGGTK5,.theme-dark .guildSubscriptionSubtitle-2pgoFL
+    {
+        color:var(--boldTextColor);
+        font-weight: 700;
+    }
+    /*Misc Settings OPtions*/
+    /*Containers*/
+    .marginBottom40-2vIwTv
+    {
+        background:rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 30px;
+    }
+    /*Titles*/
+    .theme-dark .h5-18_1nd
+    {
+        font-weight: 900;
+        color:var(--boldTextColor);
+        font-size: var(--fontSize);
+        background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--mainColor), var(--secondColor), transparent)!important;
+        background-size: 100% 2px!important;
+        /* This get flipped.*/
+         background-position: 0 0, 0 100%;
+        /* The last argument gets flipped.*/
+         background-repeat: no-repeat;
+        text-align: left!important;
+        transition: all 0.3s ease;
+        padding-bottom: 10px;
+        text-shadow: var(--textShadowValue);
+        }
+    /*Option Titles Under Privacy*/
+    .title-3BE6m5
+    {
+        font-weight: var(--boldTextSize);
+    }
+        /*Option Descriptions*/
+        .theme-dark .desc-2Dttbk
+        {
+            color:var(--boldTextColor);
+        }
+    /*Settings Transparecny*/
+    .theme-dark .contentRegion-3nDuYy
+    {
+        background: transparent;
+    }
+    /*Settings blur*/
+    .theme-dark .standardSidebarView-3F1I7i
+    {
+        background:transparent;
+    }
 /*User Profile Settings Card*/
 .theme-dark .cardPrimary-1Hv-to
 {
@@ -98,17 +174,16 @@ User Profiles
 *********************************************************************************************************
 */
 /*User Profile Avatars*/
-.profile-ZOdGIb
+.avatar-3EQepX
 {
-    height: var(--profileSize);
-    width: var(--profileSize);
+    height: var(--profileSize)!important;
+    width: var(--profileSize)!important;
 }
-/*Status Fix*/
-.profile-ZOdGIb .statusProfile-3ynqtt
-{
-    height: calc(var(--profileSize) - 80%)!important;
-    width:  calc(var(--profileSize) - 80%)!important;
-}
+    /*User Profile Avatar Box-shadow*/
+    .avatar-3EQepX
+    {
+        filter: drop-shadow(0 2px 8px rgba(0,0,0,0.75));
+    }
 /*Now Playing Fix*/
 .headerFill-adLl4x, .topSectionPlaying-1J5E4n, .topSectionSpotify-1lI0-P
 {
@@ -123,6 +198,7 @@ User Profiles
 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), var(--profileBackground)!important;
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 50px;
     border-radius: 50px;
 }
@@ -189,6 +265,37 @@ Code Boxes
   background: rgba(0,0,0,0.5);
   border-radius: 20px;
 }
+
+/*
+*********************************************************************************************************
+Quick Switcher
+*********************************************************************************************************
+*/
+.quickswitcher-3JagVE
+{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), var(--settingsBackground)!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+    /*Search Bar*/
+    .theme-dark .input-2VB9rf
+    {
+        background: rgba(0,0,0,0.5);
+    }
+        /*Font For Usernames*/
+        .username-2hHyRL
+        {
+            font-weight: var(--boldTextSize);
+            color: var(--boldTextColor);
+            text-shadow: var(--boldTextShadow);
+        }
+            /*Tips*/
+            .theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b
+            {
+                font-weight: var(--boldTextSize);
+                color: var(--boldTextColor);
+                text-shadow: var(--boldTextShadow);
+            }
 /*
 *********************************************************************************************************
 Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned Messages Menu.
@@ -199,6 +306,7 @@ Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned 
 {
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), var(--profileBackground)!important;
     background-size: cover!important;
+    background-repeat: no-repeat!important;
 }
     /*list options & usernames*/
     .answer-1n6g43, .displayUsername-Qekxml.da-displayUsername
@@ -259,21 +367,17 @@ Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned 
 Avatars
 *********************************************************************************************************
 */
-/*Avatars In Chat*/
-/*Avatar Border Radius*/
-/* .avatar-VxgULZ
-{
-    border-radius: var(--avatarRound);
-} */
 /* TEMP FIX */
 /* Change Avatar Size(also moves username for you) */
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA {
     width: var(--avatarSize) !important;
     height: var(--avatarSize) !important;
     background-size: cover;
+    filter: drop-shadow(0 9px 6px rgba(0,0,0,0.5));
 }
 /* DON'T TOUCH */
-.containerCozyBounded-1rKFAn {
+.containerCozyBounded-1rKFAn 
+{
      overflow: visible;
 }
 /* Moves chat message */
@@ -297,7 +401,7 @@ Avatars
 /* DON'T TOUCH */
 .theme-dark .dividerEnabled-2TTlcf {
   border: none;
-  margin-bottom: 22px;
+  margin-bottom: var(--messageSpacing);
 }
 /* DON'T TOUCH */
 .dividerContent-2L12VI:after, 
@@ -328,6 +432,11 @@ left: 0px;
 User Popouts
 *********************************************************************************************************
 */
+/*Userpopout Avatar Box Shadow*/
+.avatarWrapper-3H_478
+{
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+}
 /*UserPopout Background*/
  .theme-dark .headerNormal-T_seeN {
      background: transparent;
@@ -380,6 +489,11 @@ User Popouts
 {
     background: transparent;
 }
+    /*Spotify Box Shadow*/
+    .activity-11LB_k
+    {
+        filter: drop-shadow(0 1px 3px rgba(0,0,0,0.95));
+    }
 /*Text Within UserPopout*/
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6
 {
@@ -423,40 +537,6 @@ Mentions in chat
     border-radius: 8px;
     padding: 2px;
     background: var(--mainColor);
-}
-/*
-*********************************************************************************************************
-Status Dots, DND, AWAY, and ONLINE
-*********************************************************************************************************
-*/
-.avatarSmall-3ACRaI .status-2zcSVk
-{
-    border:none;
-    height:13px;
-    width:13px;
-    border-radius: 50%;
-    box-shadow: -1px -1px 15px #000;
-}
-.theme-dark .status-2s6iDp
-{
-    border:none;
-}
-/*Online dot box-shadow*/
-.online-2S838R
-{
-    box-shadow: var(--statusShadowValue) rgb(102, 245, 145)!important;
-}
-/*Away dot box shadow*/
-.idle-3DEnRT 
-{
-    box-shadow: var(--statusShadowValue) rgb(255, 181, 44)!important;
-
-}
-/*DND Dot box shadow*/
-.dnd-1_xrcq
-{
-    box-shadow: var(--statusShadowValue) rgb(255, 44, 44)!important;
-
 }
 /*
 *********************************************************************************************************
@@ -535,19 +615,48 @@ Discord Watermark removal
 }
 /*
 *********************************************************************************************************
+Attachments
+*********************************************************************************************************
+*/
+.theme-dark .attachment-33OFj0
+{
+    border:none;
+    background: rgba(0,0,0,0.75);
+    padding:15px;
+    border-radius: 20px;
+}
+    /*Attachment Title*/
+    .theme-dark .filenameLinkWrapper-1-14c5
+    {
+        color:var(--mainColor);
+        font-weight: var(--boldTextSize);
+    }
+        /*Attachment Metadata*/
+        .metadata-3WGS0M
+        {
+            color: #fff;
+            font-weight: 600;
+        }
+/*
+*********************************************************************************************************
 Home icon code
 *********************************************************************************************************
 */
 .wrapper-1Rf91z .homeIcon-tEMBK1{
 display:none;
 }
-.button-OhfaWu
+/* .button-OhfaWu pre-1.0.2
+{
+  background:var(--homeIcon)!important;
+  background-size: 100%!important;
+  background-repeat: no-repeat;
+} */
+.theme-dark .button-OhfaWu, .theme-light .button-OhfaWu
 {
   background:var(--homeIcon)!important;
   background-size: 100%!important;
   background-repeat: no-repeat;
 }
-
 /*
 *********************************************************************************************************
 ROOT and Variables
@@ -555,7 +664,7 @@ ROOT and Variables
 */
 :root 
 {
-  --version-content : ". 1.0 alpha";
+  --version-content : ". 1.0.2";
  
 /*
 *********************************************************************************************************
@@ -586,11 +695,6 @@ satoru8 - guild borders - https://github.com/satoru8/Addons
 	mask:none
 }
 
-.wrapper-1Rf91z .expandedGuilds-1JMD4M
-{
-    margin: 0 -10px 0 0px;
-    padding-left: 0px;
-}
 #app-mount .wrapper-25eVIn,
 #app-mount .wrapper-1Rf91z .svg-1X37T1,
 #app-mount .wrapper-232cHJ, 
@@ -601,12 +705,17 @@ satoru8 - guild borders - https://github.com/satoru8/Addons
     border-radius: var(--round);
 }
 /*Guild Borders Within Server Folders*/
-
-.item-2hkk8m.da-item
+/*
+*********************************************************************************************************
+folder icons
+*********************************************************************************************************
+*/
+/*Folder background*/
+.theme-dark .expandedFolderBackground-2sPsd-, .theme-dark .folder-21wGz3, .theme-light .expandedFolderBackground-2sPsd-, .theme-light .folder-21wGz3,
+.theme-dark .expandedFolderBackground-2sPsd-.collapsed-1GMuSb, .theme-light .expandedFolderBackground-2sPsd-.collapsed-1GMuSb
 {
-    z-index: 99!important;
+    background: transparent;
 }
-
 
 /******* Members List Area ******/
 /*Code Snippet from Laxr's CSS Theme*/
@@ -635,13 +744,13 @@ satoru8 - guild borders - https://github.com/satoru8/Addons
 }
 
 .theme-dark .members-1998pB .membersGroup-v9BXpm {
-    color: var(--main-color, var(--defMC));
+    color: var(--mainColor)!important;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     background: rgba(0,0,0,.2);
     border-radius: 3px;
-    padding: 0;
+    padding: 10px;
     margin: 5px auto;
     display: none;
     min-width: 10px;
@@ -655,7 +764,10 @@ satoru8 - guild borders - https://github.com/satoru8/Addons
     border-radius: 5px;
 }
 .members-1998pB .username-1cB_5E {
-    font-size: 14px;
+    font-size: var(--fontSize);
+    font-weight: 900;
+    text-shadow: var(--textShadowValue);
+    line-height: calc(var(--fontSize) + 6px);
 }
 .members-1998pB .activity-1IYsbk {
     overflow: visible;
@@ -698,104 +810,7 @@ satoru8 - guild borders - https://github.com/satoru8/Addons
     transform:scale(1);
 }
 /*-------------------made by Beard Design-------------------------*/
-/*
-*********************************************************************************************************
-satoru8 - compact settings - https://github.com/satoru8/Addons
-*********************************************************************************************************
-*/
-#app-mount .layers-3iHuyZ {
-    align-items: center;
-    justify-content: center;
-}
 
-#app-mount .layer-3QrUeG:nth-child(2) {
-    background: transparent;
-}
-
-#app-mount .layers-3iHuyZ > .layer-3QrUeG:first-child {
-    opacity: 1!important;
-    transform: none!important;
-}
-
-#app-mount .layers-3iHuyZ > .layer-3QrUeG.stop-animations:first-child {
-    z-index: 1;
-}
-
-#app-mount .layers-3iHuyZ > .layer-3QrUeG:nth-child(2)::before {
-    content: "";
-    background: var(--sBackdrop2);
-    background-repeat: no-repeat;
-    background-size: contain;
-    filter: blur(55px);
-    opacity: 0.5;
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    right: -100%;
-    padding: 100%;
-    width: 100%;
-    height: 100%
-}
-
-#app-mount .layers-3iHuyZ > .layer-3QrUeG:nth-child(2) {
-    width: var(--sWidth2);
-    height: var(--sHeight2);
-    top: unset;
-    bottom: unset;
-    right: unset;
-    left: unset;
-    display: block;
-    overflow: visible;
-    transform: translateZ(0);
-    z-index: 3;
-}
-
-#app-mount #bd-settingspane-container {
-    width: var(--sWidth2);
-}
-
-#app-mount .standardSidebarView-3F1I7i {
-    background: var(--sBackground);
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.61);
-}
-
-#app-mount .standardSidebarView-3F1I7i {
-    border-radius: var(--sRadius2);
-}
-
-#app-mount .standardSidebarView-3F1I7i .contentRegion-3nDuYy {
-    border-radius: 0 var(--sRadius2) var(--sRadius2) 0;
-    background: var(--sBackgroundRight)
-}
-
-#app-mount .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
-    border-radius: var(--sRadius2) 0 0 var(--sRadius2);
-    background: var(--sBackgroundLeft)
-}
-
-#app-mount .standardSidebarView-3F1I7i .contentColumn-2hrIYH {
-    width:0px
-}
-
-#app-mount .animating-rRxada {
-    transform: none !important
-}
-
-#app-mount .standardSidebarView-3F1I7i .payment-info .description-3_Ncsb, 
-#app-mount .standardSidebarView-3F1I7i .paymentSourceRow-3FbcL_ .subText-V8PTt8, 
-#app-mount .standardSidebarView-3F1I7i .userSettingsAccount-2eMFVR div:nth-child(2) > div:nth-child(2) > .viewBody-2Qz-jg {
-    transition: all var(--blurSpeed) cubic-bezier(.550, .085, .680, .530);
-    filter: blur(4px);opacity: var(--blurOpacity)
-}
-
-#app-mount .standardSidebarView-3F1I7i .payment-info .description-3_Ncsb:hover, 
-#app-mount .standardSidebarView-3F1I7i .paymentSourceRow-3FbcL_ .subText-V8PTt8:hover, 
-#app-mount .standardSidebarView-3F1I7i .userSettingsAccount-2eMFVR div:nth-child(2) > div:nth-child(2) > .viewBody-2Qz-jg:hover {
-    transition: all var(--blurSpeed) cubic-bezier(.550, .085, .680, .530);
-    filter: none;opacity: var(--blurOpacity)
-}
 /*
 *********************************************************************************************************
 OPACITY SETTINGS - Chat background opacity, .channellist, .memberlist, .guildlist and more.
@@ -1012,10 +1027,15 @@ Friendslist names, etc.
   transition: all 0.3s ease;  
   opacity: 1!important;
 }
-/*Friendlist Icons*/
+/*Friendlist Icons - 1.0.2 - 9/5/2019*/
 .channel-2QD9_O .linkButtonIcon-Mlm5d6
 {
     color: var(--mainColor);
+}
+.name-uJV0GL
+{
+    color: var(--boldTextColor);
+    font-weight: var(--boldTextSize);
 }
 /*Friendslist Searchbar*/
 .searchBar-6Kv8R2
@@ -1048,17 +1068,23 @@ Friendslist names, etc.
 {
     filter:drop-shadow(var(--dropShadowValue))!important;
 }
-/*Friendslist Statuses */
-.children-19S4PO .status-1XNdyw
+/*Freinds list avatars drop shadow*/
+.channel-2QD9_O a /*1.0.2 - 9/5/2019*/
 {
-    height: 10px;
-    width: 10px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
 }
 /*
 *********************************************************************************************************
 Usernames in chat, main chat font, and guild channels, Divider Settings
 *********************************************************************************************************
 */
+/*Channels Arrow*/
+
+/*Muted*/
+.muted-1NRuDm
+{
+    color: var(--secondColor);
+}
 /*Dividers*/
 .theme-dark .dividerEnabled-2TTlcf
 {
@@ -1072,8 +1098,9 @@ Usernames in chat, main chat font, and guild channels, Divider Settings
 /*Usernames*/
 .username-_4ZSMR
 {
-    font-weight: 900;
+    font-weight: 900!important;
     text-shadow: var(--textShadowValue);
+    font-size: var(--fontSize);
 }
 /*Links in Main Chat*/
 .theme-dark .markup-2BOw-j a
@@ -1150,6 +1177,9 @@ Emoji/Mention backdrop
 .autocompleteInner-zh20B_
 {
     background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%), var(--settingsBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .theme-dark .selectorSelected-1_M1WV
 {
@@ -1317,6 +1347,26 @@ Bottom-left of discord - user container and text box
 *********************************************************************************************************
 */
 /*User Container*/
+/*Game Activity User Container*/
+.activityPanel-28dQGo
+{
+    border:none;
+}
+.theme-dark .panel-VoWSbJ, .theme-light .panel-VoWSbJ
+{
+    background: transparent;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+/*User Container Watermark*/
+.container-3baos1::after
+{
+    content:"sake. css v" var(--version-content) " - made by sake#1229";
+    margin-top: 40px;
+    position: absolute;
+    font-weight: 900;
+    font-size: 11px;
+    opacity: 0.7;
+}
 .theme-dark .container-3baos1, .theme-light .container-3baos1
 {
     background:transparent!important;
@@ -1325,9 +1375,51 @@ Bottom-left of discord - user container and text box
     /*Profile Image Within User Container*/
     .container-3baos1 .avatar-SmRMf2
     {
-        height: calc(var(--avatarSize) - 30px)!important;
-        width: calc(var(--avatarSize) - 30px)!important;
+        height: calc(var(--avatarSize) - 20px)!important;
+        width : calc(var(--avatarSize) - 20px)!important;
+        filter: drop-shadow(0 10px 8px rgba(0,0,0,0.55));
     }
+    /*Name within user container*/
+    .nameTag-3uD-yy
+    {
+        font-weight: var(--boldTextSize);
+        text-shadow: var(--boldTextShadow);
+    }
+    .theme-dark .colorStandard-2KCXvj
+    {
+        color: var(--boldTextColor);
+        font-size: var(--fontSize);
+    }
+    /*Buttons within user container*/
+    .theme-dark .button-2JbWXs, .theme-light .button-2JbWXs
+    {
+        filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+        opacity: 1;
+        color:var(--mainColor)!important;
+    }
+    /*User Container Status*/
+    .theme-dark .item-1GzJrl
+    {
+        filter:drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+        padding:17px;
+    }
+        /*User Container Status Text*/
+        .alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH
+        {
+            font-weight: var(--boldTextSize);
+            color:var(--boldTextColor);
+        }
+            /*Description Of Status*/
+            .theme-dark .alt-3btY0e .helper-2c73HK
+            {
+                color:var(--boldTextColor);
+            }
+/*Voice Connection Container*/
+.container-1giJp5
+{
+    background: transparent;
+    border:none;
+}
 /*Text-area border*/
 .theme-dark .channelTextArea-rNsIhG
 {
@@ -1348,6 +1440,21 @@ Bottom-left of discord - user container and text box
 {
     display:none;
 }
+
+/*
+*********************************************************************************************************
+Canary Changes
+*********************************************************************************************************
+*/
+/* .theme-dark - update 1.0.2
+{
+    /*--background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: transparent;
+    --deprecated-panel-background: transparent;
+}
+*/
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
