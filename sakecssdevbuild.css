@@ -1,5 +1,3 @@
-
-
 /*
 *********************************************************************************************************
 Main code - please do not edit this part.
@@ -18,8 +16,66 @@ Settings Page
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat!important;
-    border-radius: 60px 60px 60px 0px;
+    border-radius: 0px 60px 60px 0px;
 }
+    /*Game Activity*/
+    .card-FDVird:before
+    {
+        border:none;
+        background: transparent;
+    }
+    /*List Items within Settings*/
+    .theme-dark .game-1ipmAa, .theme-dark .installationPath-24giJj, .theme-dark .item-3eFBNF,
+    #bd-settingspane-container .ui-switch-item
+    {
+        box-shadow: none;
+        background: rgba(0,0,0,0.75);
+        padding: 30px;
+        border-radius: 30px;
+        margin-top: 10px;
+    }
+    /*Nitro Settings*/
+    /*Nitro Descriptions*/
+    .theme-dark .finePrint-xGGTK5,.theme-dark .guildSubscriptionSubtitle-2pgoFL
+    {
+        color:var(--boldTextColor);
+        font-weight: 700;
+    }
+    /*Misc Settings OPtions*/
+    /*Containers*/
+    .marginBottom40-2vIwTv
+    {
+        background:rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 30px;
+    }
+    /*Titles*/
+    .theme-dark .h5-18_1nd
+    {
+        font-weight: 900;
+        color:var(--boldTextColor);
+        font-size: var(--fontSize);
+        background-image: linear-gradient(90deg, transparent, transparent), linear-gradient(90deg, transparent, var(--mainColor), var(--secondColor), transparent)!important;
+        background-size: 100% 2px!important;
+        /* This get flipped.*/
+         background-position: 0 0, 0 100%;
+        /* The last argument gets flipped.*/
+         background-repeat: no-repeat;
+        text-align: left!important;
+        transition: all 0.3s ease;
+        padding-bottom: 10px;
+        text-shadow: var(--textShadowValue);
+        }
+    /*Option Titles Under Privacy*/
+    .title-3BE6m5
+    {
+        font-weight: var(--boldTextSize);
+    }
+        /*Option Descriptions*/
+        .theme-dark .desc-2Dttbk
+        {
+            color:var(--boldTextColor);
+        }
     /*Settings Transparecny*/
     .theme-dark .contentRegion-3nDuYy
     {
@@ -311,12 +367,6 @@ Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned 
 Avatars
 *********************************************************************************************************
 */
-/*Avatars In Chat*/
-/*Avatar Border Radius*/
-/* .avatar-VxgULZ
-{
-    border-radius: var(--avatarRound);
-} */
 /* TEMP FIX */
 /* Change Avatar Size(also moves username for you) */
 .containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA {
@@ -490,40 +540,6 @@ Mentions in chat
 }
 /*
 *********************************************************************************************************
-Status Dots, DND, AWAY, and ONLINE
-*********************************************************************************************************
-*/
-.avatarSmall-3ACRaI .status-2zcSVk
-{
-    border:none;
-    height:13px;
-    width:13px;
-    border-radius: 50%;
-    box-shadow: -1px -1px 15px #000;
-}
-.theme-dark .status-2s6iDp
-{
-    border:none;
-}
-/*Online dot box-shadow*/
-.online-2S838R
-{
-    box-shadow: var(--statusShadowValue) rgb(102, 245, 145)!important;
-}
-/*Away dot box shadow*/
-.idle-3DEnRT 
-{
-    box-shadow: var(--statusShadowValue) rgb(255, 181, 44)!important;
-
-}
-/*DND Dot box shadow*/
-.dnd-1_xrcq
-{
-    box-shadow: var(--statusShadowValue) rgb(255, 44, 44)!important;
-
-}
-/*
-*********************************************************************************************************
 Roles on userpopout
 *********************************************************************************************************
 */
@@ -597,6 +613,30 @@ Discord Watermark removal
 {
   display: none;
 }
+/*
+*********************************************************************************************************
+Attachments
+*********************************************************************************************************
+*/
+.theme-dark .attachment-33OFj0
+{
+    border:none;
+    background: rgba(0,0,0,0.75);
+    padding:15px;
+    border-radius: 20px;
+}
+    /*Attachment Title*/
+    .theme-dark .filenameLinkWrapper-1-14c5
+    {
+        color:var(--mainColor);
+        font-weight: var(--boldTextSize);
+    }
+        /*Attachment Metadata*/
+        .metadata-3WGS0M
+        {
+            color: #fff;
+            font-weight: 600;
+        }
 /*
 *********************************************************************************************************
 Home icon code
@@ -1307,6 +1347,17 @@ Bottom-left of discord - user container and text box
 *********************************************************************************************************
 */
 /*User Container*/
+/*Game Activity User Container*/
+.activityPanel-28dQGo
+{
+    border:none;
+}
+.theme-dark .panel-VoWSbJ, .theme-light .panel-VoWSbJ
+{
+    background: transparent;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+/*User Container Watermark*/
 .container-3baos1::after
 {
     content:"sake. css v" var(--version-content) " - made by sake#1229";
@@ -1346,6 +1397,23 @@ Bottom-left of discord - user container and text box
         opacity: 1;
         color:var(--mainColor)!important;
     }
+    /*User Container Status*/
+    .theme-dark .item-1GzJrl
+    {
+        filter:drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+        padding:17px;
+    }
+        /*User Container Status Text*/
+        .alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH
+        {
+            font-weight: var(--boldTextSize);
+            color:var(--boldTextColor);
+        }
+            /*Description Of Status*/
+            .theme-dark .alt-3btY0e .helper-2c73HK
+            {
+                color:var(--boldTextColor);
+            }
 /*Voice Connection Container*/
 .container-1giJp5
 {
@@ -1373,15 +1441,20 @@ Bottom-left of discord - user container and text box
     display:none;
 }
 
-.theme-dark /*update 1.0.2*/
+/*
+*********************************************************************************************************
+Canary Changes
+*********************************************************************************************************
+*/
+/* .theme-dark - update 1.0.2
 {
-    /*--background-primary: transparent;*/
+    /*--background-primary: transparent;
     --background-secondary: transparent;
     --background-tertiary: transparent;
     --background-accent: transparent;
-
     --deprecated-panel-background: transparent;
 }
+*/
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
