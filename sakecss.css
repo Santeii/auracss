@@ -660,7 +660,7 @@ ROOT and Variables
 */
 :root 
 {
-  --version-content : ". 1.0.3";
+  --version-content : ". 1.0.4";
  
 /*
 *********************************************************************************************************
@@ -1420,6 +1420,7 @@ Bottom-left of discord - user container and text box
 {
     border:none;
 }
+
 /*Text area font*/
 .theme-dark .textArea-2Spzkt
 {
@@ -1489,6 +1490,7 @@ Canary Changes - 9/9/19
     opacity: 1!important;
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.95));
 }
+
 /*
 
 Update 1.0.3 - Canary update 9/9/2019
@@ -1508,6 +1510,36 @@ activity text, bold color shaadow
 temp fix: 
 margin broken from laxr's code
 */
+
+/*
+*********************************************************************************************************
+General Changes - 9/11/19
+*********************************************************************************************************
+*/
+.theme-dark .bda-slist .bda-header
+{
+    font-weight: 900!important;
+    font-size: var(--fontSize);
+    letter-spacing: -0.5px;
+}
+/*
+*********************************************************************************************************
+emoji picker update, margin fix for various elements that are cut off or overlapping
+*********************************************************************************************************
+*/
+.channelTextArea-rNsIhG
+{
+margin-left: -40px;
+}
+
+.theme-dark .inner-zqa7da
+{
+padding-left: 20px;
+}
+.autocompleteInner-zh20B_
+{
+    padding-left: 20px;
+}
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
