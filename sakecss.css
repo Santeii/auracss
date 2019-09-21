@@ -202,6 +202,7 @@ User Profiles
     background-repeat: no-repeat;
     padding: 50px;
     border-radius: 50px;
+    box-shadow: 0 10px 100px rgba(0,0,0,0.95);
 }
 /*Border Removal*/
 .theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx
@@ -428,6 +429,7 @@ Avatars
 {
 left: 0px;
 }
+
 /*
 *********************************************************************************************************
 User Popouts
@@ -880,6 +882,12 @@ height: 20px;
 }
 /*
 *********************************************************************************************************
+Guild Channel Unread Messages
+*********************************************************************************************************
+*/
+
+/*
+*********************************************************************************************************
 smarter embeds
 *********************************************************************************************************
 */
@@ -1256,6 +1264,11 @@ new message bar at the top of discord
 {
     background: linear-gradient(to right, var(--mainColor), var(--secondColor))!important;
 }
+    /*Bottom new Message bar*/
+    .unread-1xRYoj
+    {
+     background: linear-gradient(to right, var(--mainColor), var(--secondColor))!important;
+    }
 /*
 *********************************************************************************************************
 Bold Text Edits
@@ -1539,6 +1552,29 @@ padding-left: 20px;
 .autocompleteInner-zh20B_
 {
     padding-left: 20px;
+}
+
+.imageWrapper-2p5ogY img
+{
+    border-radius: 25px;
+}
+.container-1YxwTf .container-1e22Ot > *
+{
+        border-radius: 25px;
+}
+/*Canary Changes 9/19/19*/
+.content-yTz4x3:before
+{
+    display: none;
+}
+/*9/21/19*/
+.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6
+{
+    background:none;
+}
+.messages-3amgkR
+{
+    margin-right: 90px;
 }
 /*
 *********************************************************************************************************
