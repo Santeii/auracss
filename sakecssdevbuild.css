@@ -1,3 +1,4 @@
+
 /*
 *********************************************************************************************************
 Main code - please do not edit this part.
@@ -201,6 +202,7 @@ User Profiles
     background-repeat: no-repeat;
     padding: 50px;
     border-radius: 50px;
+    box-shadow: 0 10px 100px rgba(0,0,0,0.95);
 }
 /*Border Removal*/
 .theme-dark .connectedAccount-36nQx7, .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx
@@ -427,6 +429,7 @@ Avatars
 {
 left: 0px;
 }
+
 /*
 *********************************************************************************************************
 User Popouts
@@ -645,13 +648,8 @@ Home icon code
 .wrapper-1Rf91z .homeIcon-tEMBK1{
 display:none;
 }
-/* .button-OhfaWu pre-1.0.2
-{
-  background:var(--homeIcon)!important;
-  background-size: 100%!important;
-  background-repeat: no-repeat;
-} */
-.theme-dark .button-OhfaWu, .theme-light .button-OhfaWu
+
+.childWrapper-anI2G9
 {
   background:var(--homeIcon)!important;
   background-size: 100%!important;
@@ -664,7 +662,7 @@ ROOT and Variables
 */
 :root 
 {
-  --version-content : ". 1.0.2";
+  --version-content : ". 1.0.4";
  
 /*
 *********************************************************************************************************
@@ -736,9 +734,7 @@ folder icons
 .members-1998pB:hover {
     width: 240px
 }
-.content-yTz4x3 {
-    margin-right: 60px
-}
+
 .theme-dark .members-1998pB .member-3W1lQa:hover .content-OzHfo4{
     background: rgba(255, 255, 255, 0.07);
 }
@@ -884,6 +880,12 @@ Guild Channel Top Bar
 width: 20px;
 height: 20px;
 }
+/*
+*********************************************************************************************************
+Guild Channel Unread Messages
+*********************************************************************************************************
+*/
+
 /*
 *********************************************************************************************************
 smarter embeds
@@ -1262,6 +1264,11 @@ new message bar at the top of discord
 {
     background: linear-gradient(to right, var(--mainColor), var(--secondColor))!important;
 }
+    /*Bottom new Message bar*/
+    .unread-1xRYoj
+    {
+     background: linear-gradient(to right, var(--mainColor), var(--secondColor))!important;
+    }
 /*
 *********************************************************************************************************
 Bold Text Edits
@@ -1366,6 +1373,7 @@ Bottom-left of discord - user container and text box
     font-weight: 900;
     font-size: 11px;
     opacity: 0.7;
+    color:#fff!important;
 }
 .theme-dark .container-3baos1, .theme-light .container-3baos1
 {
@@ -1425,6 +1433,7 @@ Bottom-left of discord - user container and text box
 {
     border:none;
 }
+
 /*Text area font*/
 .theme-dark .textArea-2Spzkt
 {
@@ -1443,18 +1452,130 @@ Bottom-left of discord - user container and text box
 
 /*
 *********************************************************************************************************
-Canary Changes
+Canary Changes - 9/9/19
 *********************************************************************************************************
 */
-/* .theme-dark - update 1.0.2
+/*Discord Variable Changes - Transparency settings*/
+.theme-dark
 {
-    /*--background-primary: transparent;
+    --background-primary: transparent;
     --background-secondary: transparent;
     --background-tertiary: transparent;
     --background-accent: transparent;
     --deprecated-panel-background: transparent;
 }
+/*New Message Red Divider Removal*/
+.dividerRed-MKoLlr .dividerContent-2L12VI:after, .dividerRed-MKoLlr .dividerContent-2L12VI:before
+{
+    background: transparent;
+}
+/*Date Border Removal*/
+.dividerContent-2L12VI:after, .dividerContent-2L12VI:before
+{
+    background: transparent;
+}
+/*Temporary Margin Fix*/
+.base-3dtUhz
+{
+    left: calc((var(--columns) + 1) * 40px);
+}
+/*Reaction Buttons*/
+.containerCozy-jafyvG
+{
+    margin-right: 40px;
+}
+
+/*Channel Category Colors*/
+.wrapper-CU3qI5.muted-1NRuDm, .wrapper-CU3qI5.muted-1NRuDm .name-IbjUBS
+{
+    color: var(--mainColor);
+}
+/*Activity Text*/
+.text-zpzAjW
+{
+    font-weight: var(--boldTextSize);
+}
+.header-zu8eWb,.searchBar-6Kv8R2 .searchBarComponent-32dTOx input
+{
+    font-weight: var(--boldTextSize);
+    font-size: var(--fontSize);
+    color: var(--boldTextColor)!important;
+    opacity: 1!important;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.95));
+}
+
+/*
+
+Update 1.0.3 - Canary update 9/9/2019
+
+to be fixed:
+
+fixed:
+home icon broken
+colors on channel category arrows broken
+watermark - color changed
+transparency broken, discord using variables now
+reaction buttons fixed
+date border removal
+direct messages header, bold color shadow
+activity text, bold color shaadow
+
+temp fix: 
+margin broken from laxr's code
 */
+
+/*
+*********************************************************************************************************
+General Changes - 9/11/19
+*********************************************************************************************************
+*/
+.theme-dark .bda-slist .bda-header
+{
+    font-weight: 900!important;
+    font-size: var(--fontSize);
+    letter-spacing: -0.5px;
+}
+/*
+*********************************************************************************************************
+emoji picker update, margin fix for various elements that are cut off or overlapping
+*********************************************************************************************************
+*/
+.channelTextArea-rNsIhG
+{
+margin-left: -40px;
+}
+
+.theme-dark .inner-zqa7da
+{
+padding-left: 20px;
+}
+.autocompleteInner-zh20B_
+{
+    padding-left: 20px;
+}
+
+.imageWrapper-2p5ogY img
+{
+    border-radius: 25px;
+}
+.container-1YxwTf .container-1e22Ot > *
+{
+        border-radius: 25px;
+}
+/*Canary Changes 9/19/19*/
+.content-yTz4x3:before
+{
+    display: none;
+}
+/*9/21/19*/
+.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6
+{
+    background:none;
+}
+.messages-3amgkR
+{
+    margin-right: 90px;
+}
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
