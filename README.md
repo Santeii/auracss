@@ -7,7 +7,22 @@
  
  a css theme I made for discord friends.
  
- before installing my theme, please watch the installation video located [here](https://youtu.be/23HTB91V-n8).
+ ### **Features include:**
  
- if you have any questions please join my discord and contact me there.
+1. Main Background Image
+2. Two accent colors
+3. Settings background image
+4. Home icon image
+5. User Profile Background
+6. User Popout Background
+7. Customizable **EMOJI (emoji on hover), FONT , and AVATAR (avatar profile), sizes.**
+8. Customizable server coulumns. **cr: mwittrien**
+9. Compact memberlist. **cr: laxr**
+10. Gradient on background to dynamically change dark/light top or bottom of background image.
+11. Avatar border radius.
+12. Dynamic spaces between messages based on user input.
+ 
+before installing my theme, please watch the installation video located [here](https://youtu.be/23HTB91V-n8).
+ 
+# if you have any questions please join my discord.
 ## ```https://discord.gg/HDZ9UhK```
