@@ -1,7 +1,7 @@
 
  <img src="https://i.imgur.com/gTOqBFP.png" width="40%" height="40%">
  
- # **ver. 1.0.5**
+ # **ver. 1.1**
  
  <img src="https://i.imgur.com/hxFPZ9c.png" width="150%" height="150%">
  
