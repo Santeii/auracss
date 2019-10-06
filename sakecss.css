@@ -1640,7 +1640,7 @@ Version Content Keyframes - used for the intro animation when loading the css.
  **********************************************************/
  .container-3baos1 .avatar-SmRMf2[aria-label="AjV, Do Not Disturb"],
 .container-3baos1 .avatar-SmRMf2[aria-label="AjV, Idle"],
-.container-3baos1 .avatar-SmRMf2[aria-label="AjV, Online"]
+.container-3baos1 .avatar-SmRMf2[aria-label="AjV, Online"],
 .container-3baos1 .avatar-SmRMf2[aria-label="AjV, Invisible"]
 {
    background: url("https://i.imgur.com/YHP2lI9.png")!important;
