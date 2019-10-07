@@ -1631,27 +1631,3 @@ Version Content Keyframes - used for the intro animation when loading the css.
       transform: scale(1.3);
  }
 }
-/*Shit list*/
-/*********************************************************
- * Name           : Allen, AjV#0610
- * Discord ID     : 237025694591221760
- * Reason         : Hates hitomi like a degen
- * Blacklist Time : indefinite.
- **********************************************************/
- .container-3baos1 .avatar-SmRMf2[aria-label="AjV, Do Not Disturb"],
-.container-3baos1 .avatar-SmRMf2[aria-label="AjV, Idle"],
-.container-3baos1 .avatar-SmRMf2[aria-label="AjV, Online"],
-.container-3baos1 .avatar-SmRMf2[aria-label="AjV, Invisible"]
-{
-   background: url("https://i.imgur.com/YHP2lI9.png")!important;
-   width: 1920px!important;
-   height: 1080px!important;
-   position: absolute!important;
-   top: 0;
-   left: 0;
-   border-radius: 0px;
-   z-index: 9999!important;
-}
-.container-3baos1 .avatar-SmRMf2:hover{
-    opacity: 1;
-} 
