@@ -1749,6 +1749,12 @@ height: 20px;
 {
     display: none;
 }
+
+/*Typing Indicator full color*/
+.base-gE7OpD
+{
+    color: var(--mainColor)!important;
+}
     /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
