@@ -3,7 +3,7 @@
 sake. css - Source Code
 Programmed by: sake#1229
 Theme Name   : sake.
-version      : 1.1.1
+version      : 1.1.2
 Last Updated : 10.29.19
 *********************************************************************************************************
 */
@@ -671,7 +671,7 @@ ROOT and Variables
 */
 :root 
 {
-  --version-content : ". 1.1.1";
+  --version-content : ". 1.1.2";
  
 /*
 *********************************************************************************************************
@@ -1701,7 +1701,8 @@ emoji {
 .customStatus-1KPfFb .emoji,
 .hoverRoll-YK53gQ .emoji,
 .friendActivityText-2lmziy .emoji,
-.activityEmoji-1AR8K6
+.activityEmoji-1AR8K6,
+.activityEmoji-2GDGtF
 {
     width: 20px;
     height: 20px;
