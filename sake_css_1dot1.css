@@ -281,7 +281,8 @@ Quick Switcher
 */
 .quickswitcher-3JagVE
 {
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), var(--settingsBackground)!important;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), 
+                                                          var(--profileBackground)!important;
     background-size: cover!important;
     background-repeat: no-repeat!important;
 }
@@ -374,7 +375,7 @@ Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned 
 }
 /*
 *********************************************************************************************************
-Avatars
+Avatars & Main Chat/ chat message
 *********************************************************************************************************
 */
 /* TEMP FIX */
@@ -389,6 +390,23 @@ Avatars
 .containerCozyBounded-1rKFAn 
 {
      overflow: visible;
+}
+
+/*Typing Indicator full color*/
+.base-gE7OpD
+{
+    color: var(--mainColor)!important;
+}
+
+/*chat message alignment*/
+.scrollableContainer-38zsVD
+{
+    background: transparent;
+}
+.form-2fGMdU
+{
+    border: none;
+    filter: drop-shadow(0 2px 3px #000)
 }
 /* Moves chat message */
 .markup-2BOw-j,
@@ -677,7 +695,7 @@ Variables
 */
 :root 
 {
-  --version-content : " 1.2";
+  --version-content : " 1.2.1";
   --themeName       : "sharon";
   --watermark       :  "made by sake#0324";
 
@@ -702,11 +720,6 @@ Settings
                    var(--settingsBackground); 
     /* Overall Main Settings Background */ 
 }
-/*
-*********************************************************************************************************
- guild borders
-*********************************************************************************************************
-*/
 
 /*UNREAD BADGES*/
 .numberBadge-2s8kKX.base-PmTxvP.da-numberBadge.da-base
@@ -746,22 +759,7 @@ folder icons
     border-radius: 5px;
     background: linear-gradient(to bottom, var(--mainColor)  0%, var(--secondColor) 100%);
 }
-/* .wrapper-1Rf91z .listItem-2P_4kh
-{
-    border: 2px solid transparent;
-}
-.listItem-2P_4kh.da-listItem.bd-guild.bd-selected
-{
-    border: 2px solid var(--mainColor);
-    box-shadow: 0 0 13px var(--mainColor);
-    border-radius: 50%;
-}
-.listItem-2P_4kh.da-listItem.bd-guild.bd-unread
-{
-    box-shadow: 0 0 13px var(--secondColor);
-    border: 2px solid var(--secondColor);
-    border-radius: 50%;
-} */
+
 /******* Members List Area ******/
 /*Code Snippet from Laxr's CSS Theme*/
 .membersWrap-2h-GB4 {
@@ -859,35 +857,12 @@ folder icons
 .members-1998pB:hover .avatar-16XVId.small-5Os1Bb {
     transform:scale(1);
 }
-
-/*
-*********************************************************************************************************
-OPACITY SETTINGS - Chat background opacity, .channellist, .memberlist, .guildlist and more.
-*********************************************************************************************************
-*/
-/*Transperancy Patches, used to remove discord's grey color from the background.*/
- /* #voice-connection, #friends, .friends-header, .friends-table, .guilds-wrapper, .guild-header header,
- .channels-wrap, .private-channels .search-bar, .private-channels, .guild-channels,
- .account, .friend-table-add-header, .chat, .content, .title-wrap:not(.search-bar),
- .messages-wrapper, .messages .divider span, .messages .divider:before, .content,
- .message-group-blocked, .is-local-bot-message, .channel-members-loading, .channel-members-loading .heading,
- .channel-members-loading .member, .typing, .container-RYiLUQ, .theme-dark .ui-standard-sidebar-view,
- .theme-dark .ui-standard-sidebar-view .sidebar-region, .theme-dark .ui-standard-sidebar-view .content-region,
- .theme-dark .channel-members, .container-2OU7Cz, .theme-dark .chat form, .channels-3g2vYe,
- .theme-dark .friends-table, .theme-dark .messages-wrapper, .content .flex-spacer, .theme-dark .chat>.content,
- .theme-dark .chat, .channel-members, .search .search-bar, .container-3lnMWU, .theme-dark .title-qAcLxz,
- .theme-dark .typing-3eiiL_, .theme-dark .activityFeed-HeiGwL, .theme-dark .headerBar-cxbhPD, .theme-dark .lfg-3xoFkI,
- .video-3lOWa6, .theme-dark .private-channel-call, .container-2lgZY8,  .container-PNkimc,
- .theme-dark .title-3qD0b-, .theme-dark .typing-2GQL18, .search-bar.search-bar-light,
- .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S,
- .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .wrapper-1Rf91z,
- .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .messagesWrapper-3lZDfY,
- .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3,.theme-dark .container-1r6BKw,
- .theme-dark .activityFeed-1C0EmJ,.theme-dark .gameLibrary-TTDw4Y,.theme-dark .header-39GIC8,.theme-dark .applicationStore-1pNvnv,
- .theme-dark .container-3gCOGc
+/*Activity Text*/
+.activity-3mKQ-i, .activityText-OW8WYb, .activity-2Gy-9S
 {
-  background: transparent!important;
-} */
+    color:var(--secondColor);
+    font-weight: 900;
+}
 /*
 *********************************************************************************************************
 Guild Banners
@@ -928,12 +903,11 @@ Guild Channel Top Bar
     width: 2px;
 }
 
-/*
-*********************************************************************************************************
-Guild Channel Unread Messages
-*********************************************************************************************************
-*/
-
+/*Guild title background on hover and selected*/
+.clickable-2ap7je .header-2o-2hj:hover, .selected-WP3kCM .header-2o-2hj
+{
+    background: transparent;
+}
 /*
 *********************************************************************************************************
 smarter embeds
@@ -972,23 +946,19 @@ smarter embeds
 embed edits
 *********************************************************************************************************
 */
-/*Embed Background*/
-.theme-dark .embedInner-1-fpTo
+/*new embeds*/
+.grid-1nZz7S
 {
-    border: none;
-    background: rgba(0,0,0,0.5);
-    border-radius: 0 15px 15px 0;
-    margin-right: -10px;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
 }
-.theme-dark .embedPill-1Zntps
+.embedDescription-1Cuq9a, .embedFieldValue-nELq2s
 {
-    width: 15px;
-    border-radius: 15px 0 0 15px;
-    background: linear-gradient(to bottom, var(--mainColor) 0% , var(--secondColor) 100%)
-}
-#app-mount [src*="https://open.spotify.com/"]
-{
-border-radius: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 2px 3px #000;
 }
 /*
 *********************************************************************************************************
@@ -1124,13 +1094,60 @@ Friendslist names, etc.
 {
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
 }
+/*Friends Search*/
+.input-1Rv96N
+{
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+/*
+*********************************************************************************************************
+Friendslist Edits - Text Color, shadow, etc
+*********************************************************************************************************
+*/
+/*Friendslist Names & Nicknames */
+.name-2WpE7M, .nicknames-1XK4Zt
+{
+    font-weight: var(--boldTextSize)!important;
+    color: var(--boldTextColor)!important;
+}
+/*Friendslist Searchbar Text*/
+.darkTheme-3uETC4 .input-1Rv96N
+{
+    font-weight: var(--boldTextSize);
+    color: var(--boldTextColor);
+    opacity: 1!important;
+}
+/*Friendslist List Text*/
+.friendsTable-133bsv .friendsRow-2yicud .discord-tag .username
+{
+        font-weight: var(--boldTextSize);
+    color: var(--boldTextColor);
+    opacity: 1!important;
+}
 /*
 *********************************************************************************************************
 Usernames in chat, main chat font, and guild channels, Divider Settings
 *********************************************************************************************************
 */
 /*Channels Arrow*/
+/*Upload Modual*/
+.uploadModal-2ifh8j
+{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), var(--profileBackground);
+    background-size: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
 
+.uploadModal-2ifh8j .footer-3mqk7D
+{
+    background: none;
+}
+.uploadModal-2ifh8j .inner-3nWsbo
+{
+    border: none;
+}
 /*Muted*/
 .muted-1NRuDm
 {
@@ -1371,31 +1388,7 @@ Bold Text Edits
 {
     opacity: 0.75;
 }
-/*
-*********************************************************************************************************
-Friendslist Edits - Text Color, shadow, etc
-*********************************************************************************************************
-*/
-/*Friendslist Names & Nicknames */
-.name-2WpE7M, .nicknames-1XK4Zt
-{
-    font-weight: var(--boldTextSize)!important;
-    color: var(--boldTextColor)!important;
-}
-/*Friendslist Searchbar Text*/
-.darkTheme-3uETC4 .input-1Rv96N
-{
-    font-weight: var(--boldTextSize);
-    color: var(--boldTextColor);
-    opacity: 1!important;
-}
-/*Friendslist List Text*/
-.friendsTable-133bsv .friendsRow-2yicud .discord-tag .username
-{
-        font-weight: var(--boldTextSize);
-    color: var(--boldTextColor);
-    opacity: 1!important;
-}
+
 /*
 *********************************************************************************************************
 Searchbars
@@ -1432,6 +1425,16 @@ DM Call Video Background
 Bottom-left of discord - user container and text box
 *********************************************************************************************************
 */
+
+/*Status Color Update*/
+.customStatusText-3YJeRZ
+{
+    /*when no game is being played*/
+    color: #fff!important;
+    font-weight: 900;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.65);
+}
+
 /*User Container*/
 /*Game Activity User Container*/
 .container-3T1zWi:before
@@ -1647,9 +1650,21 @@ emoji picker update, margin fix for various elements that are cut off or overlap
 */
 .channelTextArea-rNsIhG
 {
-margin-left: -40px;
+width: 95%;
+margin-left: 0px;
+margin-bottom: 30px;
+margin-top: 0px;
 }
-
+.scrollableContainer-2NUZem
+{
+    background: transparent;
+}
+.placeholder-37qJjk
+{
+    color: #fff;
+    opacity: 0.4;
+    left: 40px;
+}
 .theme-dark .inner-zqa7da
 {
 padding-left: 20px;
@@ -1779,26 +1794,17 @@ background: linear-gradient(to right, var(--mainColor) 0%, var(--secondColor) 10
     border-radius: 45px;
 }
 /*
-To Do List: Update 10/25/19
-    emoji size within the container
-    emoji size when setting custom status
-    font on user-popout for the custom status
-    text cutting off in user profiles
-    main bg backdrop blur w/ dark overlay oapcity = 1
+*********************************************************************************************************
+Custom Status Emoji
+*********************************************************************************************************
 */
 
-/*Emoji*/
 .theme-dark .topic-TCb_qw .emoji
 {
 width: 20px;
 height: 20px;
 }
 
-/*Custom Status Emoji
-
-emoji {
-    
-    */
 .text-16xCj0 .emoji,
 .customStatus-1KPfFb .emoji,
 .hoverRoll-YK53gQ .emoji,
@@ -1827,30 +1833,6 @@ emoji {
     margin-left: 40px;
     width: 360px;
 }
-
-.theme-dark .root-1gCeng
-{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%), var(--profileBackground);
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
-    border-radius: 30px;
-}
-.art-347BZj
-{
-    top: 50px;
-}
-.headerContainer-3N-yWX
-{
-    padding-top: 80px;
-}
-/**/
-
-.theme-dark .lookFilled-1h1y05.select-1Pkeg4
-{
-    background: rgba(0,0,0,0.8);
-    border-radius: 20px;
-}
 /*Custom Status*/
 .itemBase-1Qj4z6
 {
@@ -1871,13 +1853,32 @@ emoji {
 {
     font-weight: 900;
 }
-/*Activity Text*/
-.activity-3mKQ-i, .activityText-OW8WYb, .activity-2Gy-9S
+
+/*Custom Status Box*/
+.theme-dark .root-1gCeng
 {
-    color:var(--secondColor);
-    font-weight: 900;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%), var(--profileBackground);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 30px;
+}
+.art-347BZj
+{
+    top: 50px;
+}
+.headerContainer-3N-yWX
+{
+    padding-top: 80px;
 }
 
+/*Selected Dropdown Menu*/
+.theme-dark .lookFilled-1h1y05.select-1Pkeg4
+{
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+/*Misc*/
 .topSectionNormal-2-vo2m .username-3gJmXY,
 .username-2b1r56
 {
@@ -1895,72 +1896,17 @@ emoji {
 {
     display: none;
 }
-/*Friends Search*/
-.input-1Rv96N
-{
-    background: rgba(255, 255, 255, 0.75);
-}
-/*Typing Indicator full color*/
-.base-gE7OpD
-{
-    color: var(--mainColor)!important;
-}
-
-/*new embeds*/
- .grid-1nZz7S
-{
-    background: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-}
-.embedDescription-1Cuq9a, .embedFieldValue-nELq2s
-{
-    font-weight: 900;
-    color: #fff;
-    text-shadow: 0 2px 3px #000;
-}
-
-/*Upload Modual*/
-.uploadModal-2ifh8j
-{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), var(--profileBackground);
-    background-size: cover;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
-}
-.uploadModal-2ifh8j .footer-3mqk7D
-{
-    background: none;
-}
-.uploadModal-2ifh8j .inner-3nWsbo
-{
-    border: none;
-}
 
 .placeholder-P6ptfj
 {
     margin-left: 30px;
 }
-
-/*Status Color Update*/
-.customStatusText-3YJeRZ
+.icon-2Po-VO
 {
-    /*when no game is being played*/
-    color: #fff!important;
-    font-weight: 900;
-    text-shadow: 0 2px 3px rgba(0,0,0,0.65);
+  height: 24px;
+  width: 29px;
 }
 
-/*Guild title background*/
-.clickable-2ap7je .header-2o-2hj:hover, .selected-WP3kCM .header-2o-2hj
-{
-    background: transparent;
-}
-
-.inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerNoAutocomplete-1WpcVO.da-innerNoAutocomplete
-{
-    padding-left: 15.2px!important;
-}
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
