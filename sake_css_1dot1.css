@@ -1906,7 +1906,28 @@ height: 20px;
   height: 24px;
   width: 29px;
 }
+/*Friendslist Fixes*/
+.theme-dark .container-1D34oG
+{
+    background: transparent;
+}
 
+.tabBody-3YRQ8W:before
+{
+    display: none;
+}
+
+.text-37NqbO .customStatusEmoji-1o3-7b
+{
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0;
+}
+.peopleListItem-2nzedh
+{
+    border: none;
+}
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
