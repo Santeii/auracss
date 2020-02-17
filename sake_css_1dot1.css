@@ -1,11 +1,13 @@
+
 /*
 *********************************************************************************************************
 sharon. source code
 Author       : sake#0324
-version      : 1.2
-Last Updated : 12/7/19
+version      : 1.3
+Last Updated : 12/23/19
 *********************************************************************************************************
 */
+
 /*
 *********************************************************************************************************
 Settings Page
@@ -232,7 +234,7 @@ User Profiles
     background-repeat: no-repeat!important;
     background-position: right center!important;
     background-size: cover!important;
-    filter: blur(15px);
+    filter: blur(5px);
 }
 /*Border Removal*/
 .tabBarContainer-1s1u-z
@@ -292,11 +294,12 @@ Quick Switcher
         background: rgba(0,0,0,0.5);
     }
         /*Font For Usernames*/
-        .username-2hHyRL
+        .username-1A8OIy
         {
-            font-weight: var(--boldTextSize);
+            font-weight: var(--boldTextSize)!important;
             color: var(--boldTextColor);
             text-shadow: var(--boldTextShadow);
+            margin-left: calc(var(--avatarSize) - 39px);
         }
             /*Tips*/
             .theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b
@@ -380,7 +383,7 @@ Avatars & Main Chat/ chat message
 */
 /* TEMP FIX */
 /* Change Avatar Size(also moves username for you) */
-.containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA {
+.clickableHeader-2Cygs8 .avatar-1BDn8e{
     width: var(--avatarSize) !important;
     height: var(--avatarSize) !important;
     background-size: cover;
@@ -599,11 +602,27 @@ Emojis
 Reaction Size Fix For Emoji
 *********************************************************************************************************
 */
-.reaction-1ELvT8 .emoji
+.reaction-1hd86g .emoji
 {
   height: calc(var(--emojiSize) - 10%)!important;
   width: calc(var(--emojiSize) - 10%)!important;
+  margin: .5rem 0;
   transition: 0.7s all ease-in-out;
+  max-width: var(--emojiSize)!important;
+}
+.reactionCount-2mvXRV
+{
+text-align: right!important;
+}
+.reaction-1hd86g.reactionMe-wv5HKu
+{
+    background: var(--secondColor);
+}
+.reactionMe-wv5HKu .reactionCount-2mvXRV, .reactionMe-wv5HKu:hover .reactionCount-2mvXRV
+{
+    color: var(--boldTextColor)!important;
+    font-weight: var(--boldTextSize);
+    text-shadow: var(--boldTextShadow);
 }
 .theme-dark .reactionCount-2ddRoS, .theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS
 {
@@ -695,9 +714,9 @@ Variables
 */
 :root 
 {
-  --version-content : " 1.2.1";
+  --version-content : " 1.3";
   --themeName       : "sharon";
-  --watermark       :  "made by sake#0324";
+  --watermark       :  "made by Sake#0324";
 
 /*
 *********************************************************************************************************
@@ -1169,26 +1188,41 @@ Usernames in chat, main chat font, and guild channels, Divider Settings
     font-weight: 900!important;
     font-size: var(--fontSize);
 }
+/*hover message removal*/
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode .message-2qnXI6:hover
+{
+    background-color: transparent;
+}
 /*Links in Main Chat*/
 .theme-dark .markup-2BOw-j a
 {
     color: var(--mainColor);
     font-weight: 900;
 }
+
 /*Main Text / Chat Text*/
 .theme-dark .markup-2BOw-j
 {
     font-weight: var(--mainTextSize)!important;
-
     font-size: calc(var(--fontSize) - 3px);
 }
+.container-3FojY8
+{
+    margin-top: -5px;
+}
 /*Date and Time*/
-.theme-dark .timestampCozy-2hLAPV
+.theme-dark .timestampCozy-1HNQR2
 {
     font-weight: 700;
     font-style: italic;
     letter-spacing: -0.3px;
     color: hsla(0,0%,100%,.4);
+    opacity: 0.275;
+    transition: ease opacity 0.4s;
+}
+.theme-dark .timestampCozy-1HNQR2:hover
+{
+    opacity: 1;
 }
 /*All Channel Topics*/
 /* .theme-dark .notInteractive-YF5EXq.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .notInteractive-YF5EXq.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg,
@@ -1425,7 +1459,10 @@ DM Call Video Background
 Bottom-left of discord - user container and text box
 *********************************************************************************************************
 */
-
+.panels-j1Uci_
+{
+    background: transparent;
+}
 /*Status Color Update*/
 .customStatusText-3YJeRZ
 {
@@ -1456,9 +1493,10 @@ Bottom-left of discord - user container and text box
     content:var(--themeName) var(--version-content) " - " var(--watermark);
     margin-top: 40px;
     position: absolute;
-    font-weight: 900;
+    font-weight: 900!important;
     font-size: 11px;
     opacity: 0.7;
+    font-family: 'IBM Plex Mono', 'Whitney';
     color:var(--mainColor)!important;
 }
 /*User Container Buttons*/
@@ -1577,10 +1615,7 @@ Canary Changes - 9/9/19
     background: transparent;
 }
 /*Temporary Margin Fix*/
-.base-3dtUhz
-{
-    left: calc((var(--columns) + 1) * 40px);
-}
+
 /*Reaction Buttons*/
 .containerCozy-jafyvG
 {
@@ -1663,7 +1698,7 @@ margin-top: 0px;
 {
     color: #fff;
     opacity: 0.4;
-    left: 40px;
+    left: 30px;
 }
 .theme-dark .inner-zqa7da
 {
@@ -1888,23 +1923,99 @@ height: 20px;
 {
     background: transparent;
 }
+/*Streaming Background Remover.*/
 .headerPlaying-j0WQBV, .headerStreaming-2FjmGz
 {
     background: transparent;
 }
+/*Friends List Border Removal*/
 .friendsTable-133bsv:before
 {
     display: none;
 }
-
+/*Fixing left aligned margin for the text box*/ 
 .placeholder-P6ptfj
 {
     margin-left: 30px;
 }
+
+/*Resetting the server boost icon to preven it being bigger.*/
 .icon-2Po-VO
 {
-  height: 24px;
-  width: 29px;
+  height: 24px!important;
+  width: 29px!important;
+}
+
+/*Canary Updates 1/30/2020*/
+.headerCozy-2H1QuU
+{
+    font-size: var(--fontSize);
+}
+.container-1ov-mD
+{
+    margin-left: 30px;
+    display: inherit;
+}
+.embedFull-2tM8--
+{
+    margin-left: -30px;
+    border: none;
+}
+.button-1ZiXG9 .emoji
+{
+    height: 20px;
+    width: 20px;
+    border: none!important;
+}
+.wrapper-2aW0bm
+{
+    box-shadow: none;
+    padding-top: 8px;
+}
+.button-1ZiXG9 
+{
+    color: var(--mainColor)
+}
+.wrapper-2aW0bm
+{
+    background: rgba(0,0,0,0);
+    border: none!important;
+}
+/*Scrollbar update*/
+.scroller-2FKFPG::-webkit-scrollbar
+{
+    width: 5px;
+}
+.isUnread-3Ef-o9
+{
+    border-color: var(--secondColor);
+    margin-top: 30px;
+    z-index: -1;
+}
+.unreadPill-2HyYtt
+{
+    padding-right: 140px;
+    border: none;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 15px;
+    background-color: var(--secondColor);
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    top: -16px;
+}
+.isUnread-3Ef-o9 .content-1o0f9g
+{
+    background-color: black;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 15px;
+}
+.unreadPillCap-3_K2q2
+{
+    display: none;
 }
 /*Friendslist Fixes*/
 .theme-dark .container-1D34oG
@@ -1928,6 +2039,32 @@ height: 20px;
 {
     border: none;
 }
+/*margin for chat messages*/
+.group-spacing-16 .groupStart-23k01U
+{
+    margin-top: calc(var(--avatarSize) - var(--messageSpacing));
+}
+/*Smart Embeds*/
+.embed-IeVjo6,
+.embedImage-2W1cML, .embedThumbnail-2Y84-K, .embedVideo-3nf0O9,
+.container-1ov-mD>*
+{
+    display: inline-block!important;
+    margin-right: 5px;
+}
+/*Border for new msgs*/
+.group-spacing-16 .beforeGroup-1rH1F0
+{
+    margin-left: 103px;
+    border-width: 4px;
+    margin-top: 10px;
+    border-color: var(--mainColor);
+}
+.container-3FojY8
+{
+    overflow: visible;
+}
+
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
@@ -1947,7 +2084,7 @@ Version Content Keyframes - used for the intro animation when loading the css.
     font-size: 80px;
     font-weight: bolder;
     text-align: center;
-    font-family: Whitney,Whitney!important;
+    font-family:'Whitney'!important;
     line-height: 100vh;
     opacity: 0;
     text-shadow: 5px 4px 20px rgba(0,0,0,1)!important;
