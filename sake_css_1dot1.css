@@ -2044,14 +2044,6 @@ height: 20px;
 {
     margin-top: calc(var(--avatarSize) - var(--messageSpacing));
 }
-/*Smart Embeds*/
-.embed-IeVjo6,
-.embedImage-2W1cML, .embedThumbnail-2Y84-K, .embedVideo-3nf0O9,
-.container-1ov-mD>*
-{
-    display: inline-block!important;
-    margin-right: 5px;
-}
 /*Border for new msgs*/
 .group-spacing-16 .beforeGroup-1rH1F0
 {
