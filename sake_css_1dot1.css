@@ -383,11 +383,12 @@ Avatars & Main Chat/ chat message
 */
 /* TEMP FIX */
 /* Change Avatar Size(also moves username for you) */
-.clickableHeader-2Cygs8 .avatar-1BDn8e{
+.avatar-1BDn8e{
     width: var(--avatarSize) !important;
     height: var(--avatarSize) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 999999;
 }
 /* DON'T TOUCH */
 .containerCozyBounded-1rKFAn 
@@ -716,7 +717,7 @@ Variables
 {
   --version-content : " 1.3";
   --themeName       : "sharon";
-  --watermark       :  "made by Sake#0324";
+  --watermark       :  "made by tsuki#0009";
 
 /*
 *********************************************************************************************************
@@ -2044,6 +2045,26 @@ height: 20px;
 {
     margin-top: calc(var(--avatarSize) - var(--messageSpacing));
 }
+/*
+.container-1YxwTf .container-1e22Ot {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot > :not(:last-of-type){
+	margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot > *{
+	margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+	width: 100%;
+	flex: 100%;
+	order: 9999999999;
+}
+*/
 /*Border for new msgs*/
 .group-spacing-16 .beforeGroup-1rH1F0
 {
@@ -2055,6 +2076,14 @@ height: 20px;
 .container-3FojY8
 {
     overflow: visible;
+}
+.timestampCozyAlt-1Hs08c
+{
+color: white;
+left: 40px;
+font-weight: 900;
+z-index: 9999999999;
+text-shadow: 0 1px 2px rgba(0,0,0,1)!important;
 }
 
 /*
