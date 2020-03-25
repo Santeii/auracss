@@ -2077,14 +2077,6 @@ font-weight: 900;
 z-index: 9999999999;
 text-shadow: 0 1px 2px rgba(0,0,0,1)!important;
 }
-.theme-dark .markup-2BOw-j:hover
-{
-    filter: drop-shadow(var(--secondColor) 0 0 5px) drop-shadow(var(--mainColor) 0 0 5px);
-}
-.theme-dark .markup-2BOw-j
-{
-    transition: filter ease 1s;
-}
 
 .message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover
 {
