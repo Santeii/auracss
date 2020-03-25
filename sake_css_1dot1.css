@@ -1,10 +1,9 @@
-
 /*
 *********************************************************************************************************
 sharon. source code
 Author       : sake#0324
-version      : 1.3
-Last Updated : 12/23/19
+version      : 1.3.1
+Last Updated : 3/24/20
 *********************************************************************************************************
 */
 
@@ -715,7 +714,7 @@ Variables
 */
 :root 
 {
-  --version-content : " 1.3";
+  --version-content : " 1.3.1";
   --themeName       : "sharon";
   --watermark       :  "made by tsuki#0009";
 
@@ -1212,18 +1211,11 @@ Usernames in chat, main chat font, and guild channels, Divider Settings
     margin-top: -5px;
 }
 /*Date and Time*/
-.theme-dark .timestampCozy-1HNQR2
+.cozy-3raOZG .timestamp-3ZCmNB
 {
-    font-weight: 700;
-    font-style: italic;
     letter-spacing: -0.3px;
-    color: hsla(0,0%,100%,.4);
-    opacity: 0.275;
+    color: hsla(0,0%,100%,.4)!important;
     transition: ease opacity 0.4s;
-}
-.theme-dark .timestampCozy-1HNQR2:hover
-{
-    opacity: 1;
 }
 /*All Channel Topics*/
 /* .theme-dark .notInteractive-YF5EXq.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .notInteractive-YF5EXq.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg,
@@ -2085,7 +2077,19 @@ font-weight: 900;
 z-index: 9999999999;
 text-shadow: 0 1px 2px rgba(0,0,0,1)!important;
 }
+.theme-dark .markup-2BOw-j:hover
+{
+    filter: drop-shadow(var(--secondColor) 0 0 5px) drop-shadow(var(--mainColor) 0 0 5px);
+}
+.theme-dark .markup-2BOw-j
+{
+    transition: filter ease 1s;
+}
 
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover
+{
+    background-color: transparent;
+}
 /*
 *********************************************************************************************************
 Version Content Keyframes - used for the intro animation when loading the css.
