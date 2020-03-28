@@ -2,10 +2,11 @@
 *********************************************************************************************************
 sharon. source code
 Author       : sake#0324
-version      : 1.2
-Last Updated : 12/7/19
+version      : 1.3.
+Last Updated : 3/24/20
 *********************************************************************************************************
 */
+
 /*
 *********************************************************************************************************
 Settings Page
@@ -232,7 +233,7 @@ User Profiles
     background-repeat: no-repeat!important;
     background-position: right center!important;
     background-size: cover!important;
-    filter: blur(15px);
+    filter: blur(5px);
 }
 /*Border Removal*/
 .tabBarContainer-1s1u-z
@@ -281,7 +282,8 @@ Quick Switcher
 */
 .quickswitcher-3JagVE
 {
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), var(--settingsBackground)!important;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), 
+                                                          var(--profileBackground)!important;
     background-size: cover!important;
     background-repeat: no-repeat!important;
 }
@@ -291,11 +293,12 @@ Quick Switcher
         background: rgba(0,0,0,0.5);
     }
         /*Font For Usernames*/
-        .username-2hHyRL
+        .username-1A8OIy
         {
-            font-weight: var(--boldTextSize);
+            font-weight: var(--boldTextSize)!important;
             color: var(--boldTextColor);
             text-shadow: var(--boldTextShadow);
+            margin-left: calc(var(--avatarSize) - 39px);
         }
             /*Tips*/
             .theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b
@@ -374,21 +377,39 @@ Context Menu, Server Settings Menu, Search results menu, and @ Mentions/ Pinned 
 }
 /*
 *********************************************************************************************************
-Avatars
+Avatars & Main Chat/ chat message
 *********************************************************************************************************
 */
 /* TEMP FIX */
 /* Change Avatar Size(also moves username for you) */
-.containerCozyBounded-1rKFAn .avatar-17mtNa .wrapper-3t9DeA {
+.avatar-1BDn8e{
     width: var(--avatarSize) !important;
     height: var(--avatarSize) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 999999;
 }
 /* DON'T TOUCH */
 .containerCozyBounded-1rKFAn 
 {
      overflow: visible;
+}
+
+/*Typing Indicator full color*/
+.base-gE7OpD
+{
+    color: var(--mainColor)!important;
+}
+
+/*chat message alignment*/
+.scrollableContainer-38zsVD
+{
+    background: transparent;
+}
+.form-2fGMdU
+{
+    border: none;
+    filter: drop-shadow(0 2px 3px #000)
 }
 /* Moves chat message */
 .markup-2BOw-j,
@@ -581,11 +602,27 @@ Emojis
 Reaction Size Fix For Emoji
 *********************************************************************************************************
 */
-.reaction-1ELvT8 .emoji
+.reaction-1hd86g .emoji
 {
   height: calc(var(--emojiSize) - 10%)!important;
   width: calc(var(--emojiSize) - 10%)!important;
+  margin: .5rem 0;
   transition: 0.7s all ease-in-out;
+  max-width: var(--emojiSize)!important;
+}
+.reactionCount-2mvXRV
+{
+text-align: right!important;
+}
+.reaction-1hd86g.reactionMe-wv5HKu
+{
+    background: var(--secondColor);
+}
+.reactionMe-wv5HKu .reactionCount-2mvXRV, .reactionMe-wv5HKu:hover .reactionCount-2mvXRV
+{
+    color: var(--boldTextColor)!important;
+    font-weight: var(--boldTextSize);
+    text-shadow: var(--boldTextShadow);
 }
 .theme-dark .reactionCount-2ddRoS, .theme-dark .reaction-1ELvT8.reactionMe-23mbRf .reactionCount-2ddRoS
 {
@@ -677,9 +714,9 @@ Variables
 */
 :root 
 {
-  --version-content : " 1.2";
+  --version-content : " 1.3.1";
   --themeName       : "sharon";
-  --watermark       :  "made by sake#0324";
+  --watermark       :  "made by tsuki#0009";
 
 /*
 *********************************************************************************************************
@@ -702,11 +739,6 @@ Settings
                    var(--settingsBackground); 
     /* Overall Main Settings Background */ 
 }
-/*
-*********************************************************************************************************
- guild borders
-*********************************************************************************************************
-*/
 
 /*UNREAD BADGES*/
 .numberBadge-2s8kKX.base-PmTxvP.da-numberBadge.da-base
@@ -746,22 +778,7 @@ folder icons
     border-radius: 5px;
     background: linear-gradient(to bottom, var(--mainColor)  0%, var(--secondColor) 100%);
 }
-/* .wrapper-1Rf91z .listItem-2P_4kh
-{
-    border: 2px solid transparent;
-}
-.listItem-2P_4kh.da-listItem.bd-guild.bd-selected
-{
-    border: 2px solid var(--mainColor);
-    box-shadow: 0 0 13px var(--mainColor);
-    border-radius: 50%;
-}
-.listItem-2P_4kh.da-listItem.bd-guild.bd-unread
-{
-    box-shadow: 0 0 13px var(--secondColor);
-    border: 2px solid var(--secondColor);
-    border-radius: 50%;
-} */
+
 /******* Members List Area ******/
 /*Code Snippet from Laxr's CSS Theme*/
 .membersWrap-2h-GB4 {
@@ -859,35 +876,12 @@ folder icons
 .members-1998pB:hover .avatar-16XVId.small-5Os1Bb {
     transform:scale(1);
 }
-
-/*
-*********************************************************************************************************
-OPACITY SETTINGS - Chat background opacity, .channellist, .memberlist, .guildlist and more.
-*********************************************************************************************************
-*/
-/*Transperancy Patches, used to remove discord's grey color from the background.*/
- /* #voice-connection, #friends, .friends-header, .friends-table, .guilds-wrapper, .guild-header header,
- .channels-wrap, .private-channels .search-bar, .private-channels, .guild-channels,
- .account, .friend-table-add-header, .chat, .content, .title-wrap:not(.search-bar),
- .messages-wrapper, .messages .divider span, .messages .divider:before, .content,
- .message-group-blocked, .is-local-bot-message, .channel-members-loading, .channel-members-loading .heading,
- .channel-members-loading .member, .typing, .container-RYiLUQ, .theme-dark .ui-standard-sidebar-view,
- .theme-dark .ui-standard-sidebar-view .sidebar-region, .theme-dark .ui-standard-sidebar-view .content-region,
- .theme-dark .channel-members, .container-2OU7Cz, .theme-dark .chat form, .channels-3g2vYe,
- .theme-dark .friends-table, .theme-dark .messages-wrapper, .content .flex-spacer, .theme-dark .chat>.content,
- .theme-dark .chat, .channel-members, .search .search-bar, .container-3lnMWU, .theme-dark .title-qAcLxz,
- .theme-dark .typing-3eiiL_, .theme-dark .activityFeed-HeiGwL, .theme-dark .headerBar-cxbhPD, .theme-dark .lfg-3xoFkI,
- .video-3lOWa6, .theme-dark .private-channel-call, .container-2lgZY8,  .container-PNkimc,
- .theme-dark .title-3qD0b-, .theme-dark .typing-2GQL18, .search-bar.search-bar-light,
- .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S,
- .theme-dark .chat-3bRxxu, .theme-dark .content-yTz4x3, .theme-dark .wrapper-1Rf91z,
- .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .messagesWrapper-3lZDfY,
- .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3,.theme-dark .container-1r6BKw,
- .theme-dark .activityFeed-1C0EmJ,.theme-dark .gameLibrary-TTDw4Y,.theme-dark .header-39GIC8,.theme-dark .applicationStore-1pNvnv,
- .theme-dark .container-3gCOGc
+/*Activity Text*/
+.activity-3mKQ-i, .activityText-OW8WYb, .activity-2Gy-9S
 {
-  background: transparent!important;
-} */
+    color:var(--secondColor);
+    font-weight: 900;
+}
 /*
 *********************************************************************************************************
 Guild Banners
@@ -928,12 +922,11 @@ Guild Channel Top Bar
     width: 2px;
 }
 
-/*
-*********************************************************************************************************
-Guild Channel Unread Messages
-*********************************************************************************************************
-*/
-
+/*Guild title background on hover and selected*/
+.clickable-2ap7je .header-2o-2hj:hover, .selected-WP3kCM .header-2o-2hj
+{
+    background: transparent;
+}
 /*
 *********************************************************************************************************
 smarter embeds
@@ -972,23 +965,19 @@ smarter embeds
 embed edits
 *********************************************************************************************************
 */
-/*Embed Background*/
-.theme-dark .embedInner-1-fpTo
+/*new embeds*/
+.grid-1nZz7S
 {
-    border: none;
-    background: rgba(0,0,0,0.5);
-    border-radius: 0 15px 15px 0;
-    margin-right: -10px;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
 }
-.theme-dark .embedPill-1Zntps
+.embedDescription-1Cuq9a, .embedFieldValue-nELq2s
 {
-    width: 15px;
-    border-radius: 15px 0 0 15px;
-    background: linear-gradient(to bottom, var(--mainColor) 0% , var(--secondColor) 100%)
-}
-#app-mount [src*="https://open.spotify.com/"]
-{
-border-radius: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 2px 3px #000;
 }
 /*
 *********************************************************************************************************
@@ -1124,13 +1113,60 @@ Friendslist names, etc.
 {
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
 }
+/*Friends Search*/
+.input-1Rv96N
+{
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+/*
+*********************************************************************************************************
+Friendslist Edits - Text Color, shadow, etc
+*********************************************************************************************************
+*/
+/*Friendslist Names & Nicknames */
+.name-2WpE7M, .nicknames-1XK4Zt
+{
+    font-weight: var(--boldTextSize)!important;
+    color: var(--boldTextColor)!important;
+}
+/*Friendslist Searchbar Text*/
+.darkTheme-3uETC4 .input-1Rv96N
+{
+    font-weight: var(--boldTextSize);
+    color: var(--boldTextColor);
+    opacity: 1!important;
+}
+/*Friendslist List Text*/
+.friendsTable-133bsv .friendsRow-2yicud .discord-tag .username
+{
+        font-weight: var(--boldTextSize);
+    color: var(--boldTextColor);
+    opacity: 1!important;
+}
 /*
 *********************************************************************************************************
 Usernames in chat, main chat font, and guild channels, Divider Settings
 *********************************************************************************************************
 */
 /*Channels Arrow*/
+/*Upload Modual*/
+.uploadModal-2ifh8j
+{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), var(--profileBackground);
+    background-size: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
 
+.uploadModal-2ifh8j .footer-3mqk7D
+{
+    background: none;
+}
+.uploadModal-2ifh8j .inner-3nWsbo
+{
+    border: none;
+}
 /*Muted*/
 .muted-1NRuDm
 {
@@ -1152,26 +1188,34 @@ Usernames in chat, main chat font, and guild channels, Divider Settings
     font-weight: 900!important;
     font-size: var(--fontSize);
 }
+/*hover message removal*/
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode .message-2qnXI6:hover
+{
+    background-color: transparent;
+}
 /*Links in Main Chat*/
 .theme-dark .markup-2BOw-j a
 {
     color: var(--mainColor);
     font-weight: 900;
 }
+
 /*Main Text / Chat Text*/
 .theme-dark .markup-2BOw-j
 {
     font-weight: var(--mainTextSize)!important;
-
     font-size: calc(var(--fontSize) - 3px);
 }
-/*Date and Time*/
-.theme-dark .timestampCozy-2hLAPV
+.container-3FojY8
 {
-    font-weight: 700;
-    font-style: italic;
+    margin-top: -5px;
+}
+/*Date and Time*/
+.cozy-3raOZG .timestamp-3ZCmNB
+{
     letter-spacing: -0.3px;
-    color: hsla(0,0%,100%,.4);
+    color: hsla(0,0%,100%,.4)!important;
+    transition: ease opacity 0.4s;
 }
 /*All Channel Topics*/
 /* .theme-dark .notInteractive-YF5EXq.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .notInteractive-YF5EXq.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg,
@@ -1371,31 +1415,7 @@ Bold Text Edits
 {
     opacity: 0.75;
 }
-/*
-*********************************************************************************************************
-Friendslist Edits - Text Color, shadow, etc
-*********************************************************************************************************
-*/
-/*Friendslist Names & Nicknames */
-.name-2WpE7M, .nicknames-1XK4Zt
-{
-    font-weight: var(--boldTextSize)!important;
-    color: var(--boldTextColor)!important;
-}
-/*Friendslist Searchbar Text*/
-.darkTheme-3uETC4 .input-1Rv96N
-{
-    font-weight: var(--boldTextSize);
-    color: var(--boldTextColor);
-    opacity: 1!important;
-}
-/*Friendslist List Text*/
-.friendsTable-133bsv .friendsRow-2yicud .discord-tag .username
-{
-        font-weight: var(--boldTextSize);
-    color: var(--boldTextColor);
-    opacity: 1!important;
-}
+
 /*
 *********************************************************************************************************
 Searchbars
@@ -1432,6 +1452,19 @@ DM Call Video Background
 Bottom-left of discord - user container and text box
 *********************************************************************************************************
 */
+.panels-j1Uci_
+{
+    background: transparent;
+}
+/*Status Color Update*/
+.customStatusText-3YJeRZ
+{
+    /*when no game is being played*/
+    color: #fff!important;
+    font-weight: 900;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.65);
+}
+
 /*User Container*/
 /*Game Activity User Container*/
 .container-3T1zWi:before
@@ -1453,9 +1486,10 @@ Bottom-left of discord - user container and text box
     content:var(--themeName) var(--version-content) " - " var(--watermark);
     margin-top: 40px;
     position: absolute;
-    font-weight: 900;
+    font-weight: 900!important;
     font-size: 11px;
     opacity: 0.7;
+    font-family: 'IBM Plex Mono', 'Whitney';
     color:var(--mainColor)!important;
 }
 /*User Container Buttons*/
@@ -1574,10 +1608,7 @@ Canary Changes - 9/9/19
     background: transparent;
 }
 /*Temporary Margin Fix*/
-.base-3dtUhz
-{
-    left: calc((var(--columns) + 1) * 40px);
-}
+
 /*Reaction Buttons*/
 .containerCozy-jafyvG
 {
@@ -1647,9 +1678,21 @@ emoji picker update, margin fix for various elements that are cut off or overlap
 */
 .channelTextArea-rNsIhG
 {
-margin-left: -40px;
+width: 95%;
+margin-left: 0px;
+margin-bottom: 30px;
+margin-top: 0px;
 }
-
+.scrollableContainer-2NUZem
+{
+    background: transparent;
+}
+.placeholder-37qJjk
+{
+    color: #fff;
+    opacity: 0.4;
+    left: 30px;
+}
 .theme-dark .inner-zqa7da
 {
 padding-left: 20px;
@@ -1779,26 +1822,17 @@ background: linear-gradient(to right, var(--mainColor) 0%, var(--secondColor) 10
     border-radius: 45px;
 }
 /*
-To Do List: Update 10/25/19
-    emoji size within the container
-    emoji size when setting custom status
-    font on user-popout for the custom status
-    text cutting off in user profiles
-    main bg backdrop blur w/ dark overlay oapcity = 1
+*********************************************************************************************************
+Custom Status Emoji
+*********************************************************************************************************
 */
 
-/*Emoji*/
 .theme-dark .topic-TCb_qw .emoji
 {
 width: 20px;
 height: 20px;
 }
 
-/*Custom Status Emoji
-
-emoji {
-    
-    */
 .text-16xCj0 .emoji,
 .customStatus-1KPfFb .emoji,
 .hoverRoll-YK53gQ .emoji,
@@ -1827,30 +1861,6 @@ emoji {
     margin-left: 40px;
     width: 360px;
 }
-
-.theme-dark .root-1gCeng
-{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%), var(--profileBackground);
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
-    border-radius: 30px;
-}
-.art-347BZj
-{
-    top: 50px;
-}
-.headerContainer-3N-yWX
-{
-    padding-top: 80px;
-}
-/**/
-
-.theme-dark .lookFilled-1h1y05.select-1Pkeg4
-{
-    background: rgba(0,0,0,0.8);
-    border-radius: 20px;
-}
 /*Custom Status*/
 .itemBase-1Qj4z6
 {
@@ -1871,13 +1881,32 @@ emoji {
 {
     font-weight: 900;
 }
-/*Activity Text*/
-.activity-3mKQ-i, .activityText-OW8WYb, .activity-2Gy-9S
+
+/*Custom Status Box*/
+.theme-dark .root-1gCeng
 {
-    color:var(--secondColor);
-    font-weight: 900;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%), var(--profileBackground);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 30px;
+}
+.art-347BZj
+{
+    top: 50px;
+}
+.headerContainer-3N-yWX
+{
+    padding-top: 80px;
 }
 
+/*Selected Dropdown Menu*/
+.theme-dark .lookFilled-1h1y05.select-1Pkeg4
+{
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+/*Misc*/
 .topSectionNormal-2-vo2m .username-3gJmXY,
 .username-2b1r56
 {
@@ -1887,79 +1916,171 @@ emoji {
 {
     background: transparent;
 }
+/*Streaming Background Remover.*/
 .headerPlaying-j0WQBV, .headerStreaming-2FjmGz
 {
     background: transparent;
 }
+/*Friends List Border Removal*/
 .friendsTable-133bsv:before
 {
     display: none;
 }
-/*Friends Search*/
-.input-1Rv96N
-{
-    background: rgba(255, 255, 255, 0.75);
-}
-/*Typing Indicator full color*/
-.base-gE7OpD
-{
-    color: var(--mainColor)!important;
-}
-
-/*new embeds*/
- .grid-1nZz7S
-{
-    background: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-}
-.embedDescription-1Cuq9a, .embedFieldValue-nELq2s
-{
-    font-weight: 900;
-    color: #fff;
-    text-shadow: 0 2px 3px #000;
-}
-
-/*Upload Modual*/
-.uploadModal-2ifh8j
-{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), var(--profileBackground);
-    background-size: cover;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
-}
-.uploadModal-2ifh8j .footer-3mqk7D
-{
-    background: none;
-}
-.uploadModal-2ifh8j .inner-3nWsbo
-{
-    border: none;
-}
-
+/*Fixing left aligned margin for the text box*/ 
 .placeholder-P6ptfj
 {
     margin-left: 30px;
 }
 
-/*Status Color Update*/
-.customStatusText-3YJeRZ
+/*Resetting the server boost icon to preven it being bigger.*/
+.icon-2Po-VO
 {
-    /*when no game is being played*/
-    color: #fff!important;
-    font-weight: 900;
-    text-shadow: 0 2px 3px rgba(0,0,0,0.65);
+  height: 24px!important;
+  width: 29px!important;
 }
 
-/*Guild title background*/
-.clickable-2ap7je .header-2o-2hj:hover, .selected-WP3kCM .header-2o-2hj
+/*Canary Updates 1/30/2020*/
+.headerCozy-2H1QuU
+{
+    font-size: var(--fontSize);
+}
+.container-1ov-mD
+{
+    margin-left: 30px;
+    display: inherit;
+}
+.embedFull-2tM8--
+{
+    margin-left: -30px;
+    border: none;
+}
+.button-1ZiXG9 .emoji
+{
+    height: 20px;
+    width: 20px;
+    border: none!important;
+}
+.wrapper-2aW0bm
+{
+    box-shadow: none;
+    padding-top: 8px;
+}
+.button-1ZiXG9 
+{
+    color: var(--mainColor)
+}
+.wrapper-2aW0bm
+{
+    background: rgba(0,0,0,0);
+    border: none!important;
+}
+/*Scrollbar update*/
+.scroller-2FKFPG::-webkit-scrollbar
+{
+    width: 5px;
+}
+.isUnread-3Ef-o9
+{
+    border-color: var(--secondColor);
+    margin-top: 30px;
+    z-index: -1;
+}
+.unreadPill-2HyYtt
+{
+    padding-right: 140px;
+    border: none;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 15px;
+    background-color: var(--secondColor);
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    top: -16px;
+}
+.isUnread-3Ef-o9 .content-1o0f9g
+{
+    background-color: black;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 15px;
+}
+.unreadPillCap-3_K2q2
+{
+    display: none;
+}
+/*Friendslist Fixes*/
+.theme-dark .container-1D34oG
 {
     background: transparent;
 }
 
-.inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerNoAutocomplete-1WpcVO.da-innerNoAutocomplete
+.tabBody-3YRQ8W:before
 {
-    padding-left: 15.2px!important;
+    display: none;
+}
+
+.text-37NqbO .customStatusEmoji-1o3-7b
+{
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0;
+}
+.peopleListItem-2nzedh
+{
+    border: none;
+}
+/*margin for chat messages*/
+.group-spacing-16 .groupStart-23k01U
+{
+    margin-top: calc(var(--avatarSize) - var(--messageSpacing));
+}
+/*
+.container-1YxwTf .container-1e22Ot {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot > :not(:last-of-type){
+	margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot > *{
+	margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+	width: 100%;
+	flex: 100%;
+	order: 9999999999;
+}
+*/
+/*Border for new msgs*/
+.group-spacing-16 .beforeGroup-1rH1F0
+{
+    margin-left: 103px;
+    border-width: 4px;
+    margin-top: 10px;
+    border-color: var(--mainColor);
+}
+.container-3FojY8
+{
+    overflow: visible;
+}
+.timestampCozyAlt-1Hs08c
+{
+color: white;
+left: 40px;
+font-weight: 900;
+z-index: 9999999999;
+text-shadow: 0 1px 2px rgba(0,0,0,1)!important;
+}
+
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover
+{
+    background-color: transparent;
 }
 /*
 *********************************************************************************************************
@@ -1980,7 +2101,7 @@ Version Content Keyframes - used for the intro animation when loading the css.
     font-size: 80px;
     font-weight: bolder;
     text-align: center;
-    font-family: Whitney,Whitney!important;
+    font-family:'Whitney'!important;
     line-height: 100vh;
     opacity: 0;
     text-shadow: 5px 4px 20px rgba(0,0,0,1)!important;
