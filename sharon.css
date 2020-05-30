@@ -2264,101 +2264,147 @@ Version Content Keyframes - used for the intro animation when loading the css.
 {
     width: 100%;
 }
-#app-mount::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    letter-spacing: 5px;
-    text-transform: lowercase;
-    color: var(--mainColor);
-    font-size: 80px;
-    font-weight: bolder;
-    text-align: center;
-    font-family:'Whitney'!important;
-    line-height: 100vh;
-    opacity: 0;
-    text-shadow: 5px 4px 20px rgba(0,0,0,1)!important;
-    filter:drop-shadow(5px 5px 20px rgba(0,0,0,1))!important;
-    z-index: 9999;
-    pointer-events: none;
-    animation: initialize-bg 10s;
-    /* animation-iteration-count: infinite; */
-  }
-   @keyframes initialize-bg {
-       0% {
-           content: var(--themeName) var(--version-content);
-           -webkit-transform: scale(.7);
-           transform: scale(.7);
-      }
-       10% {
-           opacity: 0;
-           -webkit-transform: scale(.7);
-           transform: scale(.7);
-      }
-       15% {
-           opacity: 1;
-           -webkit-transform: scale(1);
-           transform: scale(1);
-      }
-       25% {
-           opacity: 1;
-           -webkit-transform: scale(1);
-           transform: scale(1);
-      }
-       29% {
-           content: var(--themeName) var(--version-content);
-           opacity: 0;
-           -webkit-transform: scale(1.3);
-           transform: scale(1.3);
-      }
-       34% {
-           content: "change your settings within the theme file"; 
-           opacity: 0;
-           -webkit-transform: scale(.7);
-           transform: scale(.7);
-      }
-       40% {
-           opacity: 1;
-           -webkit-transform: scale(1);
-           transform: scale(1);
-      }
-       55% {
-           opacity: 1;
-           -webkit-transform: scale(1);
-           transform: scale(1);
-      }
-       59% {
-           content: "change your settings within the theme file"; 
-           opacity: 0;
-           -webkit-transform: scale(1.3);
-           transform: scale(1.3);
-      }
-       60% {
-           content:var(--watermark);
-           opacity: 0;
-           -webkit-transform: scale(.7);
-           transform: scale(.7);
-      }
-       65% {
-           opacity: 1;
-           -webkit-transform: scale(1);
-           transform: scale(1);
-      }
-       77% {
-           -webkit-transform: scale(1);
-           transform: scale(1);
-           opacity: 1;
-      }
-       83% {
-           opacity: 0;
-      }
-       100% {
-           content: var(--watermark);
-           -webkit-transform: scale(.6);
-           transform: scale(.6);
-           opacity: 0;
-      }
-  }
+/*
+*********************************************************************************************************
+emoji picker update, margin fix for various elements that are cut off or overlapping
+*********************************************************************************************************
+*/
+.channelTextArea-rNsIhG
+{
+margin-left: -40px;
+}
+
+.theme-dark .inner-zqa7da
+{
+padding-left: 20px;
+}
+.autocompleteInner-zh20B_
+{
+    padding-left: 20px;
+}
+
+.imageWrapper-2p5ogY img
+{
+    border-radius: 25px;
+}
+.container-1YxwTf .container-1e22Ot > *
+{
+        border-radius: 25px;
+}
+/*Canary Changes 9/19/19*/
+.content-yTz4x3:before
+{
+    display: none;
+}
+/*9/21/19*/
+.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6
+{
+    background:none;
+}
+.messages-3amgkR
+{
+    margin-right: 90px;
+}
+/*
+*********************************************************************************************************
+Version Content Keyframes - used for the intro animation when loading the css.
+*********************************************************************************************************
+*/
+ #app-mount::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  color: var(--mainColor);
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: Whitney,Whitney!important;
+  line-height: 100vh;
+  opacity: 0;
+  text-shadow: 5px 4px 20px rgba(0,0,0,1)!important;
+  filter:drop-shadow(5px 5px 20px rgba(0,0,0,1))!important;
+  z-index: 9999;
+  pointer-events: none;
+  animation: initialize-bg 20s;
+  animation-iteration-count: infinite;
+}
+ @keyframes initialize-bg {
+     0% {
+         content: "please update to the most recent file in #css-theme";
+         -webkit-transform: scale(.7);
+         transform: scale(.7);
+    }
+     10% {
+         opacity: 0;
+         -webkit-transform: scale(.7);
+         transform: scale(.7);
+    }
+     15% {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     25% {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     29% {
+         content: "please update to the most recent file in #css-theme";
+         opacity: 0;
+         -webkit-transform: scale(1.3);
+         transform: scale(1.3);
+    }
+     34% {
+         content: "please update to the most recent file in #css-theme"; 
+         opacity: 0;
+         -webkit-transform: scale(.7);
+         transform: scale(.7);
+    }
+     40% {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     55% {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     59% {
+         content: "please update to the most recent file in #css-theme"; 
+         opacity: 0;
+         -webkit-transform: scale(1.3);
+         transform: scale(1.3);
+    }
+     60% {
+         content: "please update to the most recent file in #css-theme";
+         opacity: 0;
+         -webkit-transform: scale(.7);
+         transform: scale(.7);
+    }
+     65% {
+         opacity: 1;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     77% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         opacity: 1;
+    }
+     83% {
+         opacity: 0;
+    }
+     100% {
+         content: "please update to the most recent file in #css-theme";
+         -webkit-transform: scale(.6);
+         transform: scale(.6);
+         opacity: 0;
+    }
+}
